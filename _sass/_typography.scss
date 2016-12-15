@@ -21,92 +21,65 @@ input, textarea, keygen, select, button {
 
 // -------- Headings --------
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5 {
+.title {
   font-family: $title-font-family;
-  color: $text-heading;
-  line-height: 1.2;
-  margin-bottom: .5em;
-}
+  letter-spacing: .025em;
+  line-height: 1.15;
+  + * { margin-top: .5em; }
 
-h1, .h1 {
-  font-size: 3.375em;
-  @include bp(medium) {
-    font-size: 4em;
+  &--spacing {
+    * + & { margin-top: 15px; }
   }
-  @include bp(large) {
-    font-size: 5.063em;
-  }
-}
+  &--extra-margin { margin-top: 1.5em; }
+  &--sub-heading { margin-top: 0 !important; }
 
-h2, .h2 {
-  font-size: 2em;
-  @include bp(medium) {
-    font-size: 2.488em;
-  }
-  @include bp(large) {
-    font-size: 2.986em;
-  }
-}
+  &--light     { font-weight: 200; }
+  &--bold      { font-weight: 500; }
+  &--bolder    { font-weight: 600; }
+  &--expanded  { letter-spacing: .2em; }
+  &--condense  { letter-spacing: 0; }
+  &--tight     { line-height: .9; }
+  &--tighter   { line-height: .8; }
+  &--upper     { text-transform: uppercase; }
+  &--italic    { font-style: italic; }
 
-h3, .h3 {
-  font-size: 1.728em;
-  @include bp(medium) {
-    font-size: 2.074em;
-  }
-  @include bp(large) {
-    font-size: 2.488em;
-  }
-}
-
-h4, .h4 { font-size: 1.728em; }
-
-
-// -------- Lists --------
-
-ul {
-  li {}
-}
-
-ol {
-  li {}
-}
-
-dl {
-  dt { margin-bottom: 5px; }
-  dd {}
-}
-
-.list {
-  &--horizontal {
-    list-style: none; padding: 0; margin: 0;
-    li {
-      display: inline-block; position: relative; padding: 0 1em;
-    }
-    li + li:after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
+  &--largest {
+    font-size: 4.3em;
+    &-sub {
       display: block;
-      height: 100%;
-      width: 1px;
-      background-color: rgba(255, 255, 255, 0.15);
-      transform: translateY(-50%);
+      font-size: .55em;
     }
   }
-  &--lined {
-    li {
-      list-style: none;
-      font-size: 0.9em;
-      padding: 4px 0;
-    }
-    li + li { border-top: 1px solid $light-grey; }
+  &--larger      { font-size: 3.375em; }
+  &--large       { font-size: 2.986em; }
+  &--medium      { font-size: 2.25em; }
+  &--small       { font-size: 2em; }
+  &--smaller     { font-size: 1.867em; }
+  &--smallest    { font-size: 1.5em; }
+  &--tiny        { font-size: 1.44em; }
+  &--micro       { font-size: 1.2em; }
+  @include bp(xxlarge){
+    &--largest     { font-size: 8em; }
+    &--larger      { font-size: 6em; }
+    &--large       { font-size: 4em; }
+    &--medium      { font-size: 2.933em; }
+    &--small       { font-size: 2.467em; }
+    &--smaller     { font-size: 2.25em; }
   }
 }
+
+.paragraph {
+  &--lead {
+    font-size: 1.25em;
+    line-height: 1.25;
+  }
+  &--large { font-size: 1.05em; }
+  @include bp(large){
+    &--lead { font-size: 1.467em; }
+    &--large { font-size: 1.2em; }
+  }
+}
+
 
 // -------- general content styles --------
 
@@ -119,12 +92,6 @@ strong        { font-weight: 800; }
 .align-left   { text-align: left; }
 .align-right  { text-align: right; }
 .align-center { text-align: center; }
-.text-white {
-  color: #fff;
-  p,h1,h2,h3,h4,h5,h6,
-  .h1,.h2,.h3,.h4,.h5,.h6 { color: #fff; }
-  hr { background-color: $white-15; }
-}
 
 hr {
   border: 0;

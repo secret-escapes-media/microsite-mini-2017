@@ -1,23 +1,6 @@
 // custom styles for styleguide
 
-.styleguide {
-  &--section {
-    padding: 20px 0;
-  }
-  &--title{
-    font-size: 1.2em;
-    letter-spacing: 0.2em;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  &--colour {
-    height: 20px;
-    width: 20px;
-    display: inline-block;
-    border: 1px solid $black-15;
-    margin: 0px 10px -5px 0;
-  }
-}
+.styleguide-title { padding: 1em 0; }
 
 code {
   padding: 2px 4px;
@@ -30,22 +13,37 @@ code {
 }
 
 
+// -------- Lists --------
 
-.bg {
-  &--white { background-color: $white; }
-  &--black { background-color: $black; }
-  &--light-grey { background-color: $light-grey; }
-  &--dark-grey { background-color: $dark-grey; }
-
-  &--text-black { background-color: $text-black; }
-  &--text-heading { background-color: $text-heading; }
-  &--text-paragraph { background-color: $text-paragraph; }
-
-  &--se-orange { background-color: $se-orange; }
-  &--se-light-grey { background-color: $se-light-grey; }
-  &--se-dark-grey { background-color: $se-dark-grey; }
-
-  &--partner-primary { background-color: $partner-primary; }
-  &--partner-secondary { background-color: $partner-secondary; }
+dl {
+  dt { margin-bottom: 5px; }
+  dd {}
 }
 
+.list {
+  &--horizontal {
+    list-style: none; padding: 0; margin: 0;
+    li {
+      display: inline-block; position: relative; padding: 0 1em;
+    }
+    li + li:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      height: 100%;
+      width: 1px;
+      background-color: rgba(255, 255, 255, 0.15);
+      transform: translateY(-50%);
+    }
+  }
+  &--lined {
+    li {
+      list-style: none;
+      font-size: 0.9em;
+      padding: 4px 0;
+    }
+    li + li { border-top: 1px solid $light-grey; }
+  }
+}

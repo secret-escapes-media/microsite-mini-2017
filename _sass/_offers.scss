@@ -1,6 +1,4 @@
-
 // Offer block styles for {{ include offer-block.html }}
-
 
 
 .offer {
@@ -66,8 +64,6 @@
     font-size: 1.44em;
   }
 
-
-
   // Stacked style offer
   &--stack {
     .offer__image {
@@ -75,8 +71,6 @@
       display: block;
     }
   }
-
-
 
   // Featured style offer
   &--featured {
@@ -86,8 +80,6 @@
       display: block;
     }
   }
-
-
   .offer__data {
     &:before {
       font-size: 1.2em;
@@ -108,7 +100,4 @@
     &-saved:before { background-image: url("../img/icons/saved.svg"); }
     &-expires:before { background-image: url("../img/icons/expires.svg"); }
   }
-
-
 }
-

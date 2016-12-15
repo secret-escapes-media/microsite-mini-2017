@@ -1,14 +1,13 @@
 ---
 layout: default
 title: Style Guide
-class: style-guide
 nav-order: 5
-meta-description: Accusamus ab expedita in impedit pariatur molestiae eveniet adipisci obcaecati autem explicabo, laudantium dolor amet, commodi officia enim tempora illum dolorem. Culpa.
+intro: Accusamus ab expedita in impedit pariatur molestiae eveniet adipisci obcaecati autem explicabo, laudantium dolor amet, commodi officia enim tempora illum dolorem. Culpa.
 ---
 
-<section class="section--fixed-bg intro site-header__offset text-white">
+<section class="invert-text">
   <div class="row row--padding">
-    <h1>{{ page.title }}</h1>
+    <h1 class="title title--larger title--light">{{ page.title }}</h1>
     <ul class="list--horizontal">
       <li><a href="#Typography">Typography</a></li>
       <li><a href="#Buttons">Buttons</a></li>
@@ -24,30 +23,30 @@ meta-description: Accusamus ab expedita in impedit pariatur molestiae eveniet ad
 <!--// Typography
 ======================================-->
 
-<section class="section--light-grey-bg styleguide--section" id="Typography">
+<section class="bg--light-grey styleguide-title" id="Typography">
   <div class="row row--padding">
-    <span class="styleguide--title">Typography</span>
+    <span class="title title--upper title--micro title--bolder title--expanded">Typography</span>
   </div>
 </section>
 
-<section>
+<section class="bg--white">
   <div class="row row--padding">
-    <h1>This is an H1 heading</h1>
+    <h1 class="title title--larger title--light">This is an H1 heading</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     <hr />
-    <h2>This is an H2 heading</h2>
+    <h2 class="title title--large title--light">This is an H2 heading</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     <hr />
-    <h3>This is an H3 heading</h3>
+    <h3 class="title title--medium title--light">This is an H3 heading</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     <hr />
-    <h4>This is an H4 heading</h4>
+    <h4 class="title title--smaller title--light">This is an H4 heading</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     <hr />
-    <h5>This is an H5 heading</h5>
+    <h5 class="title title--smallest title--light">This is an H5 heading</h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     <hr />
-    <h6>This is an H6 heading</h6>
+    <h6 class="title title--micro title--light">This is an H6 heading</h6>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     <hr />
   </div>
@@ -58,13 +57,13 @@ meta-description: Accusamus ab expedita in impedit pariatur molestiae eveniet ad
 <!--// Buttons
 ======================================-->
 
-<section class="section--light-grey-bg styleguide--section" id="Buttons">
+<section class="bg--light-grey styleguide-title" id="Buttons">
   <div class="row row--padding">
-    <span class="styleguide--title">Buttons</span>
+    <span class="title title--upper title--micro title--bolder title--expanded">Buttons</span>
   </div>
 </section>
 
-<section>
+<section class="bg--white">
   <div class="row row--padding">
     <dl>
       <dt>
@@ -88,13 +87,13 @@ meta-description: Accusamus ab expedita in impedit pariatur molestiae eveniet ad
 <!--// Colours
 ======================================-->
 
-<section class="section--light-grey-bg styleguide--section" id="Colours">
+<section class="bg--light-grey styleguide-title" id="Colours">
   <div class="row row--padding">
-    <span class="styleguide--title">Colours</span>
+    <span class="title title--upper title--micro title--bolder title--expanded">Colours</span>
   </div>
 </section>
 
-<section>
+<section class="bg--white">
   <div class="row row--padding row--columns-6-6 row--columns-6-6-gutters">
 
     <div class="row__column">
@@ -166,13 +165,13 @@ meta-description: Accusamus ab expedita in impedit pariatur molestiae eveniet ad
 <!--// Modal
 ======================================-->
 
-<section class="section--light-grey-bg styleguide--section" id="Modal">
+<section class="bg--light-grey styleguide-title" id="Modal">
   <div class="row row--padding">
-    <span class="styleguide--title">Modals</span>
+    <span class="title title--upper title--micro title--bolder title--expanded">Modals</span>
   </div>
 </section>
 
-<section>
+<section class="bg--white">
   <div class="row row--padding">
     <p>Click below to open the modal. Assign class <code>.js-open-modal</code> to the button.</p>
     <a href="#" class="btn btn--solid js-open-modal">Open modal</a>
@@ -186,21 +185,21 @@ meta-description: Accusamus ab expedita in impedit pariatur molestiae eveniet ad
 <!--// Offers
 ======================================-->
 
-<section class="section--light-grey-bg styleguide--section" id="Offers">
+<section class="bg--light-grey styleguide-title" id="Offers">
   <div class="row row--padding">
-    <span class="styleguide--title">Offers</span>
+    <span class="title title--upper title--micro title--bolder title--expanded">Offers</span>
   </div>
 </section>
 
 {% assign offers = site.data.offers %}
-<section>
+<section class="bg--white">
 
   <div class="row row--padding">
     <h4>Default offer</h4>
     <code>.offer</code>
     <hr />
     {% for offer in offers limit:1 %}
-      {% include offer-block.html %}
+      {% include offer/full-width.html %}
     {% endfor %}
   </div>
 
@@ -210,7 +209,7 @@ meta-description: Accusamus ab expedita in impedit pariatur molestiae eveniet ad
     <hr />
     <div class="row--columns-6-6 row--columns-6-6-gutters">
       {% for offer in offers limit:2 %}
-        {% include offer-block.html class="stack" %}
+        {% include offer/half-width.html %}
       {% endfor %}
     </div>
   </div>
@@ -220,7 +219,7 @@ meta-description: Accusamus ab expedita in impedit pariatur molestiae eveniet ad
     <code>.offer.offer--featured</code>
     <hr />
     {% for offer in offers limit:1 %}
-      {% include offer-block.html class="featured" %}
+      {% include offer/feature.html %}
     {% endfor %}
   </div>
 
