@@ -1,63 +1,33 @@
 // all custom styles for the site
 
 
-.site-footer {
-  padding-top: $margin;
-  padding-bottom: $margin;
-  color: darken( $white, 20 );
-  font-size: .8em;
-  font-weight: 400;
-  background-color: $black;
-
-  .footer-nav {
-    &__link {
-      text-transform: uppercase;
-      font-size: 1.2em;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      padding: 0 10px;
-    }
-  }
+body {
+  background-color: $se-light-grey;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../img/bg/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
 }
-
 
 // ---------- Section styles ----------
 
-.section {
-  // Fixed background section
-  &--fixed-bg {
-    padding-top: 8em;
-    padding-bottom: 8em;
-    color: $white;
-    background-color: $se-light-grey;
-    background: $se-light-grey center no-repeat;
-    background-image: url('../img/bg/bg.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    p { font-weight: 400; }
-    .page-content &:first-child:before {
-      content: '';
-      display: block;
-      height: 3.375em;
-    }
-  }
-  // Coloured backgrounds
-  &--light-grey-bg {
-    background-color: $light-grey;
-  }
-  &--dark-grey-bg {
-    background-color: $dark-grey;
-    color: $white;
-  }
-  &--black-bg {
-    background-color: $black;
-    color: $white;
-  }
-  &--partner-bg {
-    background-color: $partner-secondary;
-    color: $white;
-  }
+.invert-text { color: $white; }
+.bg {
+  &--white      { background-color: $white; }
+  &--black      { background-color: $black; }
+  &--light-grey { background-color: $light-grey; }
+  &--dark-grey  { background-color: $dark-grey; }
+  &--text-black     { background-color: $text-black; }
+  &--text-heading   { background-color: $text-heading; }
+  &--text-paragraph { background-color: $text-paragraph; }
+  &--se-orange     { background-color: $se-orange; }
+  &--se-light-grey { background-color: $se-light-grey; }
+  &--se-dark-grey  { background-color: $se-dark-grey; }
+  &--partner-primary   { background-color: $partner-primary; }
+  &--partner-secondary { background-color: $partner-secondary; }
 }
+
 
 // ---------- button ----------
 

@@ -64,15 +64,15 @@
 //      [ example: <div class="parallax" data-parallax-speed="0.2"> ]
 ///////////////////////////////////////
 
-  $(document).scroll(function(){
-    var scrolled = $(document).scrollTop();
-    $('.parallax').each(function(){
-      var speed = $(this).attr('data-parallax-speed');
-      var offset = $(this).offset();
-      var parallax = -(scrolled - offset.top) * speed ;
-      $(this).css('background-position', 'center ' + parallax + 'px');
-    });
-  });
+  // $(document).scroll(function(){
+  //   var scrolled = $(document).scrollTop();
+  //   $('.parallax').each(function(){
+  //     var speed = $(this).attr('data-parallax-speed');
+  //     var offset = $(this).offset();
+  //     var parallax = -(scrolled - offset.top) * speed ;
+  //     $(this).css('background-position', 'center ' + parallax + 'px');
+  //   });
+  // });
 
 
 ///////////////////////////////////////

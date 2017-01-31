@@ -1,6 +1,5 @@
   - title: An offer
     category: category-1
-    class: unique-offer-class
     location: Region, Country
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
     price: 999999
@@ -11,7 +10,6 @@
 
   - title: Another offer
     category: category-2
-    class: unique-offer-class
     location: Region, Country
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
     price: 999999
@@ -20,7 +18,6 @@
 
   - title: A third offer
     category: category-3
-    class: unique-offer-class
     location: Region, Country
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
     price: 999999
