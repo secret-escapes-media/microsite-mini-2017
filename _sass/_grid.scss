@@ -13,9 +13,16 @@ $gutters:( gutters: 1 / 2, );
 $margin: 2em;
 
 
-// -------- grid sections --------
+// -------- sections --------
 
 section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   padding-top: 2.25em;
   padding-bottom: 2.25em;
   @include bp(large) {
@@ -23,11 +30,52 @@ section {
     padding-bottom: 3.375em;
   }
 }
+.section {
+  width: 100%;
+  overflow: hidden;
+  &--padding {
+    padding-top: 2.25em; @include bp(large){ padding-top: 3.375em; }
+    padding-bottom: 2.25em; @include bp(large){ padding-bottom: 3.375em; }
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  &--padding-top { padding-top: 2.25em; @include bp(large){ padding-top: 3.375em; }}
+  &--padding-bottom { padding-bottom: 2.25em; @include bp(large){ padding-bottom: 3.375em; }}
+  &--padding-left { padding-left: 2.25em; @include bp(large){ padding-left: 3.375em; }}
+  &--padding-right { padding-right: 2.25em; @include bp(large){ padding-right: 3.375em; }}
+
+  &--padding-large {
+    padding-top: 4.3em;
+    padding-bottom: 4.3em;
+    @include bp(large){
+      padding-bottom: 5.063em;
+      padding-top: 5.063em;
+    }
+  }
+
+  &--padding-none { padding: 0; }
+}
+
+
+
+// -------- rows --------
 
 .row {
-  @include container( $xxlarge );
+  @include container( $xxxlarge );
   position: relative;
   & + .row { margin-top: $margin; }
+
+  &--wide {
+    @include container( $xxxxlarge );
+    position: relative;
+    & + .row { margin-top: $margin; }
+  }
+
+  &--thin {
+    @include container( $xxlarge );
+    position: relative;
+    & + .row { margin-top: $margin; }
+  }
 }
 
 .row--padding {
@@ -36,6 +84,14 @@ section {
   @include bp(medium) {
     padding-left: $margin;
     padding-right: $margin;
+  }
+  &-vertical {
+    padding-top: $margin;
+    padding-bottom: $margin;
+    @include bp(large) {
+      padding-top: $margin*2;
+      padding-bottom: $margin*2;
+    }
   }
 }
 .row--margin {
@@ -82,18 +138,22 @@ section {
 @include bp(large){
 
   // two columns without gutter
+  .row--columns-3-9 { @include two-column-grid( 3, 9 ); }
   .row--columns-4-8 { @include two-column-grid( 4, 8 ); }
   .row--columns-5-7 { @include two-column-grid( 5, 7 ); }
   .row--columns-6-6 { @include two-column-grid( 6, 6 ); }
   .row--columns-7-5 { @include two-column-grid( 7, 5 ); }
   .row--columns-8-4 { @include two-column-grid( 8, 4 ); }
+  .row--columns-9-3 { @include two-column-grid( 9, 3 ); }
 
   // two columns with gutter
+  .row--columns-3-9-gutters { @include two-column-grid( 3, 9, gutters ); }
   .row--columns-4-8-gutters { @include two-column-grid( 4, 8, gutters ); }
   .row--columns-5-7-gutters { @include two-column-grid( 5, 7, gutters ); }
   .row--columns-6-6-gutters { @include two-column-grid( 6, 6, gutters ); }
   .row--columns-7-5-gutters { @include two-column-grid( 7, 5, gutters ); }
   .row--columns-8-4-gutters { @include two-column-grid( 8, 4, gutters ); }
+  .row--columns-9-3-gutters { @include two-column-grid( 9, 3, gutters ); }
 
   // three columns without gutter
   .row--columns-4-4-4 .row__column { @include gallery(4); }
@@ -111,3 +171,4 @@ section {
   }
 
 }
+

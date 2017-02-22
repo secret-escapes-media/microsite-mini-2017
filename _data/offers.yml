@@ -1,5 +1,9 @@
-  - title: An offer
-    category: category-1
+
+##======= COTSWOLDS =======##
+
+  - title: Cotswolds offer
+    category: cotswolds
+    region: west-midlands
     location: Region, Country
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
     price: 999999
@@ -8,18 +12,132 @@
     expires: 2016-03-23
     link: #
 
-  - title: Another offer
-    category: category-2
+  - title: Cotswolds offer
+    category: cotswolds
+    region: west-midlands
     location: Region, Country
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
     price: 999999
     price-description: per room per night
+    saved: 40%
+    expires: 2016-03-23
     link: #
 
-  - title: A third offer
-    category: category-3
+  - title: Cotswolds offer
+    category: cotswolds
+    region: west-midlands
     location: Region, Country
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
     price: 999999
     price-description: per room per night
+    saved: 40%
+    expires: 2016-03-23
+    link: #
+
+
+##======= LAKE DISTRICT =======##
+
+  - title: Lake District offer
+    category: lake-district
+    region: north-west
+    location: Region, Country
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+    price: 999999
+    price-description: per room per night
+    saved: 40%
+    expires: 2016-03-23
+    link: #
+
+  - title: Lake District offer
+    category: lake-district
+    region: north-west
+    location: Region, Country
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+    price: 999999
+    price-description: per room per night
+    saved: 40%
+    expires: 2016-03-23
+    link: #
+
+  - title: Lake District offer
+    category: lake-district
+    region: north-west
+    location: Region, Country
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+    price: 999999
+    price-description: per room per night
+    saved: 40%
+    expires: 2016-03-23
+    link: #
+
+
+##======= PEAK DISTRICT =======##
+
+  - title: Peak District offer
+    category: peak-district
+    region: east-midlands
+    location: Region, Country
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+    price: 999999
+    price-description: per room per night
+    saved: 40%
+    expires: 2016-03-23
+    link: #
+
+  - title: Peak District offer
+    category: peak-district
+    region: east-midlands
+    location: Region, Country
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+    price: 999999
+    price-description: per room per night
+    saved: 40%
+    expires: 2016-03-23
+    link: #
+
+  - title: Peak District offer
+    category: peak-district
+    region: east-midlands
+    location: Region, Country
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+    price: 999999
+    price-description: per room per night
+    saved: 40%
+    expires: 2016-03-23
+    link: #
+
+
+##======= BRECON BEACONS =======##
+
+  - title: Brecon Beacons offer
+    category: brecon-beacons
+    region: south-wales
+    location: Region, Country
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+    price: 999999
+    price-description: per room per night
+    saved: 40%
+    expires: 2016-03-23
+    link: #
+
+  - title: Brecon Beacons offer
+    category: brecon-beacons
+    region: south-wales
+    location: Region, Country
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+    price: 999999
+    price-description: per room per night
+    saved: 40%
+    expires: 2016-03-23
+    link: #
+
+  - title: Brecon Beacons offer
+    category: brecon-beacons
+    region: south-wales
+    location: Region, Country
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+    price: 999999
+    price-description: per room per night
+    saved: 40%
+    expires: 2016-03-23
     link: #

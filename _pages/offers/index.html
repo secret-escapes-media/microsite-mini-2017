@@ -1,0 +1,34 @@
+---
+layout: default
+title: Offers
+class: offers
+nav-order: 6
+
+banner-title: Offers
+banner-intro:
+
+intro: >
+  <p class="paragraph--lead">It’s time to let us inspire you with only the best luxury country stays. Take to the road and leave the hustle and bustle of city life behind, with opulent stays in quiet, peaceful country digs.</p>
+  <p>Book any country escape and be in with the chance to take the new MINI Countryman away with you for your break. Discover epic scenic drives from the comfort of the new MINI Countryman. Simply opt-in on the booking confirmation page!</p>
+---
+
+
+
+<section class="section--intro">
+  <div class="row row--padding align-center">
+    {{ page.intro }}
+  </div>
+</section>
+
+<section class="offers bg--light-grey">
+  <div class="row row--padding row--columns-4-4-4-gutters">
+    {% assign offers = site.data.offers %}
+    {% for offer in offers %}
+      {% include offer/default.html %}
+    {% endfor %}
+  </div>
+</section>
+
+
+
+{% include partner-banner.html %}

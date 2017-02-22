@@ -1,0 +1,156 @@
+---
+layout: content
+title: Lake District
+class: lake-district
+nav-order: 3
+
+banner-title: Lake District
+banner-intro:
+
+intro: >
+  <p class="paragraph--lead">Ragged peaks drop dramatically to crystalline waters, with a frequency that translates to a vast, compelling landscape. It’s no surprise then, that the Romantics were so enthralled with this stunning scenery.</p>
+
+roadtrip-title: Little Langdale to Eskdale
+roadtrip-content: >
+  <p class="paragraph--lead">This drive is famous, infamous, and wholly awe-inspiring all in one fell swoop.</p>
+  <p> It dramatically winds through the hills and and mountainous climbs of the Lake District, in a fashion not dissimilar to a child’s squiggle on paper. Encompassing the Wrynose and Hardknott passes, expect handbrake-triggering steepness, sharp hairpin bends, and views that encompass glorious landscapes unfolding in front of your eyes. Don’t miss the Roman fort at the end of the Hardknott Pass. If these epic roads have you hooked and wanting more, the Kirkstone and Honister passes are also worth exploring. </p>
+
+
+sights:
+
+  - title: Keswick
+    class: keswick
+    feature: true
+    location: Keswick, Cumbria
+    description: >
+      This beautiful market town, nestled between the looming Skiddaw and the tranquil Derwentwater, epitomises the Lake District’s charms. A draw for the Romantics, you’ll discover quaint local shops, a host of quirky museums (like the Pencil Museum – well worth a visit), and a bustling market on Thursdays and Saturdays.
+
+  - title: Beatrix Potter’s House
+    class: hill-top-beatrix-potter-s-house
+    feature: true
+    location: Sawrey, Ambleside
+    description: >
+      A time-capsule home that illuminates the life of Beatrix Potter, beloved children’s author. Each room has a reference to one of her famous tales, and a walk through the garden reveals the rhubarb patch where Jemima Puddle-Duck laid her egg and the garden where Tom Kitten and his sister played – an enchanting space for all ages.
+
+  - title: Windermere
+    class: windermere
+    location: Windermere, Cumbria
+    description: >
+      The Queen of the Lakes, Windermere is the largest in the country, and a hive of activity. The towns on its shores have grown since the Victorians flocked here, offering quaint shopping, plenty of boat trips, and activity centres for those who seek a bit more adventure.
+
+  - title: Lowther Castle
+    class: lowther-castle
+    location: Lowther, Penrith
+    description: >
+      If the Lakes weren’t already stunning enough, this ruinous castle is the stuff of fairytales. Its vast size and embellished turrets evoke the words of Keats, Wordsworth and Coleridge. Plus it’s a great picnic spot!
+
+  - title: Hawkshead Brewery
+    class: hawkshead-brewery
+    location: Staveley, Cumbria
+    description: >
+      Enjoy the finest Lakeland brews at this independent brewery. Take a tour and learn what it takes to balance the finest hops, barley and yeast and round it off with a visit to the beer hall, where you can expect live music on the weekends – this one calls for a taxi...
+
+  - title: Dove Cottage
+    class: dove-cottage
+    location: Grasmere, Ambleside
+    description: >
+      The great Romantic, William Wordsworth, lived and wrote much of his work in this cottage. Dove Cottage houses the greatest collection of his personal belongings, from poetry to paintings, that illuminate the life of this seminal English poet and his love affair with the Lake District.
+
+  - title: Boat Trip
+    class: boat-trip
+    location: Windermere, Cumbria
+    description: >
+      With deep blue lakes encroached by towering tarns, the Lake District offers a drama that captivates any visitor. It is complimentary, therefore, to glide across the waters by boat and relish in this unique landscape. Windermere, the largest of the lakes, offers ample opportunity for cruising.
+
+  - title: Hiking in Great Langdale
+    class: hiking-in-great-langdale
+    location: Great Langdale
+    description: >
+      Great Langdale offers some of the most stunning hikes in the Lakes. Scale vast pikes for epic views or stick to the lowlands and peer upward in awe at this dramatic land. Whichever you choose, ending at the Old Dungeon Ghyll is a welcome prospect to refresh with a local tipple.
+
+  - title: Drunken Duck, Hawkshead
+    class: drunken-duck-hawkshead
+    location: Ambleside, Cumbria
+    description: >
+      You won’t struggle to find pub grub in the Lakes, but the Drunken Duck draws patrons from far and wide. The food is renowned, adventurous, and delicious, whilst the ale selection is brewed in-house and named after the old pub dogs.
+
+  - title: L’Enclume
+    class: l-enclume
+    location: Cartmel, Grange-over-Sands
+    description: >
+      For an evening of only the finest gastronomy, seek out this Michelin-starred riverside restaurant. Chef Simon Rogan selects only the finest seasonal and local ingredients, most picked from the restaurant’s own farm. Indulge, if only for one evening.
+
+  - title: Sarah Nelson’s Gingerbread
+    class: sarah-nelson-s-grasmere-gingerbread
+    location: Grasmere, Ambleside
+    description: >
+      If you want to have an authentic go at hiking in the Lakes, you’d be a fool to go without two vital things – Kendal Mint Cake and a slab of Grasmere Gingerbread. A delicacy invented here in 1854, the shop still occupies the cottage where Sarah Nelson sold her gingerbread to Victorian visitors to Grasmere.
+
+---
+
+
+
+
+<!-- MAP JAVASCRIPT -->
+<script>
+  function initMap() {
+
+    var mapOptions = {
+      center: new google.maps.LatLng(51.466848, -0.010015),
+
+      // How zoomed in you want the map to start at (always required)
+      zoom: 13,
+      panControl: false,
+      zoomControl: true,
+      mapTypeControl: false,
+      scaleControl: false,
+      streetViewControl: false,
+      overviewMapControl: false,
+      scrollwheel: false,
+
+      // How you would like to style the map.
+      // This is where you would paste any style found on Snazzy Maps.
+      styles: [ { "featureType": "administrative", "elementType": "all", "stylers": [ { "saturation": "-100" } ] }, { "featureType": "administrative.province", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "landscape", "elementType": "all", "stylers": [ { "saturation": -100 }, { "lightness": 65 }, { "visibility": "on" } ] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [ { "lightness": "-30" } ] }, { "featureType": "poi", "elementType": "all", "stylers": [ { "saturation": "-100" }, { "lightness": "50" }, { "visibility": "simplified" } ] }, { "featureType": "road", "elementType": "all", "stylers": [ { "saturation": "-100" }, { "lightness": "-33" } ] }, { "featureType": "road.highway", "elementType": "all", "stylers": [ { "visibility": "simplified" } ] }, { "featureType": "road.arterial", "elementType": "all", "stylers": [ { "lightness": "30" } ] }, { "featureType": "road.local", "elementType": "all", "stylers": [ { "lightness": "40" } ] }, { "featureType": "transit", "elementType": "all", "stylers": [ { "saturation": -100 }, { "visibility": "simplified" } ] }, { "featureType": "water", "elementType": "geometry", "stylers": [ { "hue": "#ffff00" }, { "lightness": "39" }, { "saturation": "-100" } ] }, { "featureType": "water", "elementType": "labels", "stylers": [ { "lightness": -25 }, { "saturation": -100 } ] } ]
+    };
+
+    var directionsService = new google.maps.DirectionsService;
+    var directionsDisplay = new google.maps.DirectionsRenderer;
+
+    var mapElement = document.getElementById('map');
+    var map = new google.maps.Map(mapElement, mapOptions);
+
+    directionsDisplay.setMap(map);
+
+
+
+    //------ ROUTE ------
+
+    // three points through which the directions pass
+        // three points through which the directions pass
+        var point1 = new google.maps.LatLng(54.402321, -3.204748);
+
+        // build an array of the points
+        var wps = [{ location: point1 }];
+
+        // set the origin and destination
+        var org = new google.maps.LatLng ( 54.430159, -3.090787 );
+        var dest = new google.maps.LatLng ( 54.399605, -3.270868 );
+
+    directionsService.route({
+      origin: org,
+      destination: dest,
+      waypoints: wps,
+      travelMode: 'DRIVING'
+    }, function(response, status) {
+      if (status === 'OK') {
+        directionsDisplay.setDirections(response);
+      } else {
+        window.alert('Directions request failed due to ' + status);
+      }
+    });
+
+  }
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvcJtBKtS2zAqS-nk2AsFJvpb0L37dDjg&callback=initMap"></script>
+

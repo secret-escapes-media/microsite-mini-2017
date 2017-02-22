@@ -1,0 +1,157 @@
+---
+layout: content
+title: Peak District
+class: peak-district
+nav-order: 4
+
+banner-title: Peak District
+banner-intro:
+
+intro: >
+  <p class="paragraph--lead">Rolling valleys and dramatic peaks define the landscape of the southern Pennines, a stunning patchwork of wilderness and charming villages. From grand stately homes to cosy country pubs, get lost in a hive of active pursuits and indulgent relaxation. </p>
+
+roadtrip-title: Holme to Castleton
+roadtrip-content: >
+  <p>Start at the village of Holme, heading south on the A6024 toward Woodhead. As the hills begin to undulate, and the road twists around, you’ll be confronted with the Woodhead Reservoir, as you briefly join the A628 before veering left onto the B6105. As the road winds over the peaks, drop into Glossop, and go left at the main crossroads in town. As you leave suburbia, the Snake Pass opens in-front of you. A fitting title, the road meanders high and low, with nerve-wracking bends and stunning views. As you pass the Ladybower Reservoir, head left toward Hope Valley, then right toward Hope. At the village of Hope, Castleton is just a little further ahead. Instead, take a detour around Edale Road, for one last run of twists and turns before going left into picturesque Castleton, a fittingly beautiful destination to relax in and wind-down after a thrilling drive through the best of the Peaks. </p>
+
+
+sights:
+
+  - title: Buxton
+    class: buxton
+    feature: true
+    location: Buxton, Derbyshire
+    description: >
+      Georgian Regency architecture frames this historic spa town, lauded as the capital of the Peak District – though, admittedly, just outside the border. Discover the Pavilion Gardens, and other Regency highlights like the Devonshire Dome, before perusing the local market (Tuesdays and Saturdays) and checking into a spa for a pampering.
+
+  - title: Eyam
+    class: eyam
+    feature: true
+    location: Eyam, Derbyshire
+    description: >
+      This charming village has a dark past. In an extraordinary tale of self sacrifice, the village quarantined itself after an outbreak of bubonic plague in 1665, thus saving the neighbouring area from the horrors of the plague. Its remarkable story is told in the museum, and in the graves and markings across the doomed village.
+
+  - title: Bakewell
+    class: bakewell
+    location: Bakewell, Derbyshire
+    description: >
+      This quaint and picturesque village is the busiest in the Peak District, with a famous Monday market and distinctive cottages that set a glorious archaic tone to any visit. It’s also home to the Bakewell Pudding, and three shops all vie for the claim of holding the original recipe – as good an excuse as any to try all three!
+
+  - title: Chatsworth House
+    class: chatsworth-house
+    location: Bakewell, Derbyshire
+    description: >
+      This grand stately home is an awe-inspiring place to visit, not only for its vast, opulent edifice, but also the cultural riches found within. Dubbed the Palace of the Peaks, it was also conversely the prison of Mary, Queen of Scots. Inside you’ll find a treasure trove of artworks, including portraits of the current Devonshires by Lucian Freud, and Damien Hirst’s sculpture, Exquisite Pain.
+
+  - title: Thornbridge Brewery
+    class: thornbridge-brewery
+    location: Bakewell, Derbyshire
+    description: >
+      Thornbridge have long been pioneers in the craft beer world, for producing experimental yet refined beers in the heart of the Peaks. Go on a brewery tour, and indulge in Bakewell Sours, IPAs and Saisons. Taxi recommended.
+
+  - title: Peveril Castle
+    class: peveril-castle
+    location: Castleton, Derbyshire
+    description: >
+      This romantic ruin clings to the peak and towers over the village of Castleton. The 11th century stronghold is an evocative landmark that, on ascent, offers sublime views over Hope Valley.
+
+  - title: Derwent Dam
+    class: derwent-dam
+    location: Upper Derwent Valley, Derbyshire
+    description: >
+      Not just a practicality, the Derwent Dam is a landmark oft photographed for the stunning valleys that surround it. More significant is its use during WWII, where it became useful for testing the Dambuster bomb. Find out more about this history in the museum, located in one of the the dam’s towers.
+
+  - title: Fischer’s at Baslow Hall
+    class: fischer-s-at-baslow-hall
+    location: Bakewell, Derbyshire
+    description: >
+      Michelin dining in the Peak District, with a focus on local, seasonal produce. Set in the beautiful Edwardian manor house, Chef Rupert Rowley serves up delectable dishes with mainly British ingredients, from Derbyshire Lamb to Scottish Razor Clams. Weekday lunch offers two courses for little over 20 pounds.
+
+  - title: Speedwell Cavern
+    class: speedwell-cavern
+    location: Castleton, Derbyshire
+    description: >
+      Descend into the belly of the peaks, to find a boat waiting for you at the bottom. As you glide through the old lead mine through the narrowest of passages, you’ll find relief as the network opens out into a cathedral-like cavern, as you float above the ‘bottomless pit’. An eerie, enchanting experience not to be missed.
+
+  - title: Haddon Hall
+    class: haddon-hall
+    location: Bakewell, Derbyshire
+    description: >
+      A treasure from the middle ages, Haddon Hall is resplendent in its remarkable preservation of age-old architecture. Its Elizabethan gardens only hint at the riches of its interior, a mesmerising glimpse at medieval stateliness.
+
+  - title: Heights of Abraham
+    class: heights-of-abraham
+    location: Matlock, Derbyshire
+    description: >
+      At the edge of the Peak District, spoil yourself with panoramic views from a cable-car. As you descend the heights, explore the two caverns that will see you navigated deep under the hillside for an enthralling glance at the caves.
+
+---
+
+
+
+
+<!-- MAP JAVASCRIPT -->
+<script>
+  function initMap() {
+
+    var mapOptions = {
+      center: new google.maps.LatLng(51.466848, -0.010015),
+
+      // How zoomed in you want the map to start at (always required)
+      zoom: 13,
+      panControl: false,
+      zoomControl: true,
+      mapTypeControl: false,
+      scaleControl: false,
+      streetViewControl: false,
+      overviewMapControl: false,
+      scrollwheel: false,
+
+      // How you would like to style the map.
+      // This is where you would paste any style found on Snazzy Maps.
+      styles: [ { "featureType": "administrative", "elementType": "all", "stylers": [ { "saturation": "-100" } ] }, { "featureType": "administrative.province", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "landscape", "elementType": "all", "stylers": [ { "saturation": -100 }, { "lightness": 65 }, { "visibility": "on" } ] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [ { "lightness": "-30" } ] }, { "featureType": "poi", "elementType": "all", "stylers": [ { "saturation": "-100" }, { "lightness": "50" }, { "visibility": "simplified" } ] }, { "featureType": "road", "elementType": "all", "stylers": [ { "saturation": "-100" }, { "lightness": "-33" } ] }, { "featureType": "road.highway", "elementType": "all", "stylers": [ { "visibility": "simplified" } ] }, { "featureType": "road.arterial", "elementType": "all", "stylers": [ { "lightness": "30" } ] }, { "featureType": "road.local", "elementType": "all", "stylers": [ { "lightness": "40" } ] }, { "featureType": "transit", "elementType": "all", "stylers": [ { "saturation": -100 }, { "visibility": "simplified" } ] }, { "featureType": "water", "elementType": "geometry", "stylers": [ { "hue": "#ffff00" }, { "lightness": "39" }, { "saturation": "-100" } ] }, { "featureType": "water", "elementType": "labels", "stylers": [ { "lightness": -25 }, { "saturation": -100 } ] } ]
+    };
+
+    var directionsService = new google.maps.DirectionsService;
+    var directionsDisplay = new google.maps.DirectionsRenderer;
+
+    var mapElement = document.getElementById('map');
+    var map = new google.maps.Map(mapElement, mapOptions);
+
+    directionsDisplay.setMap(map);
+
+
+
+    //------ ROUTE ------
+
+    // three points through which the directions pass
+    var point1 = new google.maps.LatLng(53.495744, -1.860014);
+    var point2 = new google.maps.LatLng(53.387492, -1.753375);
+    var point3 = new google.maps.LatLng(53.368516, -1.790724);
+    var point4 = new google.maps.LatLng(53.346384, -1.816129);
+
+    // build an array of the points
+    var wps = [{ location: point1 }, { location: point2 }, {location: point3}, {location: point4}];
+
+    // set the origin and destination
+    var org = new google.maps.LatLng ( 53.549999, -1.838612 );
+    var dest = new google.maps.LatLng ( 53.343504, -1.775963 );
+
+    directionsService.route({
+      origin: org,
+      destination: dest,
+      waypoints: wps,
+      travelMode: 'DRIVING'
+    }, function(response, status) {
+      if (status === 'OK') {
+        directionsDisplay.setDirections(response);
+      } else {
+        window.alert('Directions request failed due to ' + status);
+      }
+    });
+
+  }
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvcJtBKtS2zAqS-nk2AsFJvpb0L37dDjg&callback=initMap"></script>
+

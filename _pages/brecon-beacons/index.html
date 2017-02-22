@@ -1,0 +1,156 @@
+---
+layout: content
+title: Brecon Beacons
+class: brecon-beacons
+nav-order: 5
+
+banner-title: Brecon Beacons
+banner-intro:
+
+intro: >
+  <p class="paragraph--lead">The rugged crags and peaks of the Brecon Beacons typify the unique landscape of Wales. Dramatic, in parts harsh, but nevertheless beautiful. Sink into the wilderness and relish the great outdoors.</p>
+
+roadtrip-title:
+roadtrip-content: >
+  <p>Start at the southern edge of the Beacons, on the A4067. As you head north, look out for the Tarfan-y-Garreg pub (it’s a rather awful shade of pink) and take the next signposted left exit for Trecastle. This single track road may begin with obscured views from lined trees and fauna that encroaches on the lane, but perseverance rewards as the track slowly climbs to the rugged heights of the beacons. Glorious views from a winding single-track road abound. As you reach the end of this stretch, take a left instead of heading to Trecastle. As the road heads into the tiny village of Twynllanan, look out for the left turning which winds down the hillside. At the end, take a left, and then another. You have reached the highlight of the drive, the A4069, otherwise known as the Black Mountain Pass. Climb the rugged peaks, and hurtle round hairpins as the landscape unravels ahead. </p>
+
+
+sights:
+
+  - title: Brecon
+    class: brecon
+    feature: true
+    location: Brecon, Powys
+    description: >
+      An old market town, Brecon is the gateway into the beacons. Rub shoulders with hikers galore as you discover that typical Welsh trait, the castle, as well as a bustling market, a stunning cathedral and bars and restaurants a-plenty.
+
+  - title: Hay-on-Wye
+    class: hay-on-wye
+    feature: true
+    location: Hay-on-Wye, Powys
+    description: >
+      This picturesque village, with narrow cobbled streets leading to a variety of eclectic shops and a great market, has a remarkable claim to fame. It’s the secondhand book capital of the world. What that means, we’re not sure, but you can guarantee plenty of secondhand bookshops – one of which is in a castle.
+
+  - title: Abergavenny
+    class: abergavenny
+    location: Abergavenny, Monmouthshire
+    description: >
+      Surrounded by three peaks, Abergavenny is a charming spot for idling in independent shops and cafes, and finding treasures at the indoor market. In typical Welsh fashion, it has a castle, plenty of pubs, and a burgeoning foodie scene played out in an annual festival, artisan treats at the market, and a selection of fine restaurants.
+
+  - title: Sgywd yr Eira
+    class: sgywd-yr-eira
+    location: Sgywd yr Eira, Powys
+    description: >
+      A breathtaking scene emanating with romance and wonder. This cascading waterfall carves a platform from the cliff, creating a silver stream that pushes its way into the wide pool beneath. Remarkably, the area behind the falls have been hollowed, allowing you to stand behind the waterfall. Magical.
+
+  - title: Canal Boat Trip
+    class: canal-boat-trip
+    location: Monmouthshire & Brecon
+    description: >
+      Take a scenic cruise along the Monmouthshire & Brecon canal, which hugs the mountainside above the valley of the river Usk. Enjoy scenic views over the countryside as you gently put-put-put along the waterways.
+
+  - title: The Walnut Tree Inn
+    class: the-walnut-tree-inn
+    location: Abergavenny, Monmouthshire
+    description: >
+      For a Michelin-starred feast in typical Welsh unpretentious surrounds don’t miss this acclaimed restaurant. Modern British fayre is craftily executed with the finest local ingredients, and without breaking the bank either.
+
+  - title: Dan Yr Ogof
+    class: dan-yr-ogof
+    location: Abercrave, Powys
+    description: >
+      Venture deep into the mountainside and discover a cavernous world of awe and wonder. From vast, cathedral-like spaces to astounding geological formations, or even a rather grisly bone cave, explore this fascinating underground network.
+
+  - title: Brecon Mountain Railway
+    class: brecon-mountain-railway
+    location: Merthyr Tydfil
+    description: >
+      Be driven into the heart of the Brecon Beacons on a steam train, with views to die for. This is a most charming way of seeing the countryside, all the more so for the railway’s smaller gauge; it’s almost like travelling on a toy set!
+
+  - title: Carreg Cennen Castle
+    class: carreg-cennen-castle
+    location: Trapp, Llandeilo
+    description: >
+      Dominating the surrounding area, Carreg Cennen leaves a ruin that stands rather impressively on a rocky outcrop that juts angular out of the land. A noteworthy hike to the top reveals glorious views, and an intrepid glance at the 13th century ruin, complete with mystery cave.
+
+  - title: Llanthony Priory
+    class: llanthony-priory
+    location: Llanthony, Abergavenny
+    description: >
+      A ruined priory nestled in a valley of outstanding beauty, Llanthony paints an atmospheric scene. So much so, that the Romantic William Turner felt the need to immortalise it on canvas. Lose yourself amongst the fading arches of this dissolved Priory, in all its stoic glory.
+
+  - title: Big Pit National Museum
+    class: big-pit-national-museum
+    location: Blaenafon, Pontypool
+    description: >
+      The importance of mining for the communities of Wales was paramount to thousands of families’ income. As the pits started to close, communities fractured. This museum goes some way to preserve the history and importance of the industry to the people, and allows a chilling descent deep into the pit.
+
+---
+
+
+
+
+<!-- MAP JAVASCRIPT -->
+<script>
+  function initMap() {
+
+    var mapOptions = {
+      center: new google.maps.LatLng(51.466848, -0.010015),
+
+      // How zoomed in you want the map to start at (always required)
+      zoom: 13,
+      panControl: false,
+      zoomControl: true,
+      mapTypeControl: false,
+      scaleControl: false,
+      streetViewControl: false,
+      overviewMapControl: false,
+      scrollwheel: false,
+
+      // How you would like to style the map.
+      // This is where you would paste any style found on Snazzy Maps.
+      styles: [ { "featureType": "administrative", "elementType": "all", "stylers": [ { "saturation": "-100" } ] }, { "featureType": "administrative.province", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "landscape", "elementType": "all", "stylers": [ { "saturation": -100 }, { "lightness": 65 }, { "visibility": "on" } ] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [ { "lightness": "-30" } ] }, { "featureType": "poi", "elementType": "all", "stylers": [ { "saturation": "-100" }, { "lightness": "50" }, { "visibility": "simplified" } ] }, { "featureType": "road", "elementType": "all", "stylers": [ { "saturation": "-100" }, { "lightness": "-33" } ] }, { "featureType": "road.highway", "elementType": "all", "stylers": [ { "visibility": "simplified" } ] }, { "featureType": "road.arterial", "elementType": "all", "stylers": [ { "lightness": "30" } ] }, { "featureType": "road.local", "elementType": "all", "stylers": [ { "lightness": "40" } ] }, { "featureType": "transit", "elementType": "all", "stylers": [ { "saturation": -100 }, { "visibility": "simplified" } ] }, { "featureType": "water", "elementType": "geometry", "stylers": [ { "hue": "#ffff00" }, { "lightness": "39" }, { "saturation": "-100" } ] }, { "featureType": "water", "elementType": "labels", "stylers": [ { "lightness": -25 }, { "saturation": -100 } ] } ]
+    };
+
+    var directionsService = new google.maps.DirectionsService;
+    var directionsDisplay = new google.maps.DirectionsRenderer;
+
+    var mapElement = document.getElementById('map');
+    var map = new google.maps.Map(mapElement, mapOptions);
+
+    directionsDisplay.setMap(map);
+
+
+
+    //------ ROUTE ------
+
+    // three points through which the directions pass
+    var point1 = new google.maps.LatLng(51.840494, -3.672473);
+    var point2 = new google.maps.LatLng(51.935495, -3.648099);
+    var point3 = new google.maps.LatLng(51.904203, -3.849944);
+
+    // build an array of the points
+    var wps = [{ location: point1 }, { location: point2 }, {location: point3}];
+
+    // set the origin and destination
+    var org = new google.maps.LatLng ( 51.800712, -3.702708 );
+    var dest = new google.maps.LatLng ( 51.819144, -3.859154 );
+
+    directionsService.route({
+      origin: org,
+      destination: dest,
+      waypoints: wps,
+      travelMode: 'DRIVING'
+    }, function(response, status) {
+      if (status === 'OK') {
+        directionsDisplay.setDirections(response);
+      } else {
+        window.alert('Directions request failed due to ' + status);
+      }
+    });
+
+  }
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvcJtBKtS2zAqS-nk2AsFJvpb0L37dDjg&callback=initMap"></script>
+

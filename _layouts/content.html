@@ -1,0 +1,146 @@
+---
+layout: default
+---
+
+
+<section class="section--intro bg--dark-grey invert-text">
+  <div class="row row--padding row--columns-8-4-gutters">
+
+    <div class="row__column">
+      {{ page.intro }}
+      <hr />
+      <h4 class="title title--smallest">Read our {{ page.title }} holiday test run.</h4>
+
+      <div class="row">
+        <div class="row__column">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo corporis officiis quasi tempora itaque modi ducimus pariatur.</p>
+        </div>
+        <div class="row__column align-right">
+          <a href="{{ site.baseurl }}/expert-{{ page.class }}" class="btn btn--solid btn--invert">Read now</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row__column">
+      <h5 class="title title--smallest">Jump to:</h5>
+      <ul class="list--lined">
+        <li><a href="#roadtrip" class="title--upper title--tracking">Roadtrip</a></li>
+        <li><a href="#sights" class="title--upper title--tracking">Sights</a></li>
+        <li><a href="#offers" class="title--upper title--tracking">Offers</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section--padding-none bg--grey invert-text" id="roadtrip">
+  <div class="row--columns-6-6 row--columns-vertical-align">
+
+    <div class="row__column row--padding row--padding-vertical align-center">
+      <h2 class="title title--medium title--upper title--bold">Roadtrip</h2>
+      <h4 class="title title--italic title--smallest">{{ page.roadtrip-title }}</h4>
+      {{ page.roadtrip-content }}
+    </div>
+
+    <div class="row__column">
+      <div class="bg-image-ratio bg-image-ratio--3-2" id="map" style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/roadtrip.jpg');">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="" id="sights">
+  <div class="row row--padding align-center">
+    <h2 class="title title--medium title--upper title--bold">Sights</h2>
+    {{ page.sights-content }}
+    <hr />
+  </div>
+  <div class="row row--padding row--columns-6-6-gutters">
+    {% for sight in page.sights %}
+      {% if sight.feature %}
+        {% include sight.html type="feature" %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="row row--padding row--columns-4-4-4-gutters">
+    {% for sight in page.sights %}
+      {% unless sight.feature %}
+        {% include sight.html %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+</section>
+
+
+
+<section class="bg--light-grey" id="offers">
+  <div class="row row--padding align-center">
+    <h2 class="title title--medium title--upper title--bold">{{ page.title }} Offers</h2>
+    <p>It’s time to let us inspire you with only the best luxury country stays. Take to the road and leave the hustle and bustle of city life behind, with opulent stays in quiet, peaceful country digs.</p>
+  </div>
+  <div class="row row--padding row--columns-4-4-4-gutters">
+    {% assign offers = site.data.offers | where:'category',page.class %}
+    {% for offer in offers %}
+      {% include offer/default.html %}
+    {% endfor %}
+  </div>
+  <div class="row row--padding align-center">
+    <a href="{{ site.baseurl }}/offers" class="btn btn--solid">View all offers</a>
+  </div>
+</section>
+
+
+
+{% include partner-banner.html %}
+
+
+
+<!-- SIGHT MODAL -->
+
+<div class="js-modal modal modal--vertical-align is-closed" id="modal-sight">
+
+  <div class="modal__wrap row">
+    <div class="modal__content row--padding" id="modal_slider">
+
+      {% for sight in page.sights %}
+      <div class="slide modal__item modal__item-inactive row row--columns-6-6 row--columns-vertical-align" id="modal__item-{{ sight.class }}">
+
+        <div class="row__column modal__item__content">
+          <h2 class="title title--small title--bold">
+            {{ sight.title }}
+          </h2>
+          <p class="paragraph--small paragraph--upper paragraph--tracking">{{ sight.location }}</p>
+          <p>{{ sight.description }}</p>
+        </div>
+
+        <div class="row__column">
+          <div class="js-close-modal modal__close"></div>
+          <div
+            class="bg-image-ratio bg-image-ratio--3-2"
+            style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/sight-{{ sight.class }}.jpg');">
+          </div>
+        </div>
+
+      </div>
+      {% endfor %}
+
+      <div class="modal__slider-nav">
+        <a class="modal__slider-previous" id="modal_slider--previous" href="javascript:void(0);">
+          <img class="js-svg-swap" width="20" src="{{site.baseurl}}/img/icons/arrow-previous.png" alt="<">
+        </a>
+        <a class="modal__slider-next" id="modal_slider--next" href="javascript:void(0);">
+          <img class="js-svg-swap" width="20" src="{{site.baseurl}}/img/icons/arrow-next.png" alt=">">
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+{{ content }}

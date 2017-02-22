@@ -1,0 +1,156 @@
+---
+layout: content
+title: Cotswolds
+class: cotswolds
+nav-order: 2
+
+banner-title: Cotswolds
+banner-intro:
+
+intro: >
+  <p class="paragraph--lead">The famous honey-hue stone that adorns the quaint villages of the Cotswolds are only matched in beauty by the rolling hills and lush green valleys that frame them. From picturesque walks, rustic pubs and romantic castles, the Cotswolds are a charmed country destination.</p>
+
+roadtrip-title: Bourton-on-the-Water to Chipping Campden
+roadtrip-content: >
+  <p>Any drive through the Cotswolds is guaranteed to offer scenic countryside and colourful villages that beg to be explored. Start your drive at Bourton-on-the-Water, and head to Lower and Upper Slaughter. Breeze through these quaint villages in the direction of Stow-on-the-Wold, an old market town that typifies the iconic golden shimmer of Cotswolds’ stone. Head toward Moreton-in-Marsh, another quaint market town, and on to Broadway for its famous tower. After taking in the views, finish your drive in Chipping Campden, described as the most perfect high street in England. </p>
+
+
+sights:
+
+  - title: Bath
+    class: bath
+    feature: true
+    location: Bath, Somerset
+    description: >
+      This stunning spa town needs little introduction. This jewel of Georgian architecture is a mix of classic style and sleek sophistication. From boutique shopping, smart restaurants or a trip to the famous Roman baths, lose yourself for a day...
+
+  - title: Antique Shopping
+    class: antique-shopping
+    feature: true
+    location: Cotswolds
+    description: >
+      The Cotswolds’ classic charm makes it a suitable setting for digging out antique treasures from a plethora of rickety shops that adorn the picturesque high streets of its villages. If you’re an avid antique hunter or you just fancy browsing, you could do far worse than exploring Stow-on-Wold, Moreton-in-Marsh, Tewkesbury, and Winchcombe.
+
+  - title: Cirencester
+    class: cirencester
+    location: Gloucestershire
+    description: >
+      Overshadowed by Cheltenham, Cirencester remains a true hidden gem that retains its quaint Cotswold market-town vibe. From antiques to lively pubs, market days on Monday and Friday and boutique shopping interspersed with chic delis, discover this historic and beautiful town.
+
+  - title: Rousham House
+    class: rousham-house
+    location: Rousham, Bicester
+    description: >
+      No visit to the country is complete without spying a grand stately home. Rousham is a particularly evocative example, with historically significant landscape gardens that make for charmed walks amongst the flower beds.
+
+  - title: Cheltenham Racecourse
+    class: cheltenham-racecourse
+    location: Cheltenham, Gloucestershire
+    description: >
+      This celebrated course is the premier spot to catch jump racing, in the sublime setting of the Cotswolds. Dress up for race day, and let the excitement of the leaping steeds carry you away...
+
+  - title: GWR Steam Railway
+    class: gwr-steam-railway
+    location: Toddington, Gloucestershire
+    description: >
+      Tucked on the western flanks of the Cotswolds is a railway line that stretches from Laverton down to Cheltenham Racecourse. Let nostalgia fill the air with steam and hop on the best way to see this beautiful area – on a steam train.
+
+  - title: Broadway Tower
+    class: broadway-tower
+    location: Broadway, Worcestershire
+    description: >
+      This stoic tower looms over the landscape with a distinct gothic presence. A folly which William Morris fell for, among others, where a climb to the top offers stunning panoramic views that stretch over 16 counties.
+
+  - title: Cotswolds Distillery
+    class: cotswolds-distillery
+    location: Shipston-on-Stour
+    description: >
+      The only distillery in the Cotswolds. Alight for gin, alight for whiskey. Definitely take a tour, and don’t drink and drive.
+
+  - title: Lords of the Manor
+    class: lords-of-the-manor
+    location: Upper Slaughter
+    description: >
+      This charming hotel restaurant has held its Michelin star for eight consecutive years, an achievement that ensures only the finest the Cotswolds has to offer. Chef Richard Picard-Edwards excels in sourcing fine local ingredients and lightly applying French technique to offer up a dining experience only matched by stunning location and an excellent cellar.
+
+  - title: Sudeley Castle
+    class: sudeley-castle
+    location: Winchcombe, Gloucestershire
+    description: >
+      This stunning Tudor castle has played host to some of the most pivotal moments in British history. From civil war to four queens –  Anne Boleyn, Katherine Parr, Lady Jane Grey and Elizabeth I – Sudeley has a surprising history set in breathtaking gardens and access to regal private rooms that seep with a tumultuous past.
+
+  - title: Tewkesbury Abbey
+    class: tewkesbury-abbey
+    location: Tewkesbury, Gloucestershire
+    description: >
+      This vast Norman Abbey seems wholly out of place in its immediate surrounds. Its scale dwarfs the village around it, and from its unique entrance arch to its vast tower, it stands as the finest example of Norman architecture in Britain. The vaulted ceiling is framed by a patchwork of luminous stained glass, creating a dramatic, breathtaking scene certainly worth visiting.
+
+---
+
+
+
+
+<!-- MAP JAVASCRIPT -->
+<script>
+  function initMap() {
+
+    var mapOptions = {
+      center: new google.maps.LatLng(51.466848, -0.010015),
+
+      // How zoomed in you want the map to start at (always required)
+      zoom: 13,
+      panControl: false,
+      zoomControl: true,
+      mapTypeControl: false,
+      scaleControl: false,
+      streetViewControl: false,
+      overviewMapControl: false,
+      scrollwheel: false,
+
+      // How you would like to style the map.
+      // This is where you would paste any style found on Snazzy Maps.
+      styles: [ { "featureType": "administrative", "elementType": "all", "stylers": [ { "saturation": "-100" } ] }, { "featureType": "administrative.province", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "landscape", "elementType": "all", "stylers": [ { "saturation": -100 }, { "lightness": 65 }, { "visibility": "on" } ] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [ { "lightness": "-30" } ] }, { "featureType": "poi", "elementType": "all", "stylers": [ { "saturation": "-100" }, { "lightness": "50" }, { "visibility": "simplified" } ] }, { "featureType": "road", "elementType": "all", "stylers": [ { "saturation": "-100" }, { "lightness": "-33" } ] }, { "featureType": "road.highway", "elementType": "all", "stylers": [ { "visibility": "simplified" } ] }, { "featureType": "road.arterial", "elementType": "all", "stylers": [ { "lightness": "30" } ] }, { "featureType": "road.local", "elementType": "all", "stylers": [ { "lightness": "40" } ] }, { "featureType": "transit", "elementType": "all", "stylers": [ { "saturation": -100 }, { "visibility": "simplified" } ] }, { "featureType": "water", "elementType": "geometry", "stylers": [ { "hue": "#ffff00" }, { "lightness": "39" }, { "saturation": "-100" } ] }, { "featureType": "water", "elementType": "labels", "stylers": [ { "lightness": -25 }, { "saturation": -100 } ] } ]
+    };
+
+    var directionsService = new google.maps.DirectionsService;
+    var directionsDisplay = new google.maps.DirectionsRenderer;
+
+    var mapElement = document.getElementById('map');
+    var map = new google.maps.Map(mapElement, mapOptions);
+
+    directionsDisplay.setMap(map);
+
+
+
+    //------ ROUTE ------
+
+    // three points through which the directions pass
+    var point1 = new google.maps.LatLng(51.906981, -1.775977);
+    var point2 = new google.maps.LatLng(51.931800, -1.725867);
+    var point3 = new google.maps.LatLng(51.992151, -1.702331);
+    var point4 = new google.maps.LatLng(52.024165, -1.835578);
+
+    // build an array of the points
+    var wps = [{ location: point1 }, { location: point2 }, {location: point3}, {location: point4}];
+
+    // set the origin and destination
+    var org = new google.maps.LatLng ( 51.886064, -1.763084 );
+    var dest = new google.maps.LatLng ( 52.050415, -1.782996 );
+
+    directionsService.route({
+      origin: org,
+      destination: dest,
+      waypoints: wps,
+      travelMode: 'DRIVING'
+    }, function(response, status) {
+      if (status === 'OK') {
+        directionsDisplay.setDirections(response);
+      } else {
+        window.alert('Directions request failed due to ' + status);
+      }
+    });
+
+  }
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvcJtBKtS2zAqS-nk2AsFJvpb0L37dDjg&callback=initMap"></script>

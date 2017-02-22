@@ -1,11 +1,77 @@
 // general typographic styles
 
+@font-face {
+  font-family: 'Sentinel';
+  src: url('../fonts/Sentinel/Sentinel-Light.eot');
+  src: url('../fonts/Sentinel/Sentinel-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Sentinel/Sentinel-Light.woff') format('woff'),
+    url('../fonts/Sentinel/Sentinel-Light.ttf') format('truetype'),
+    url('../fonts/Sentinel/Sentinel-Light.svg#Sentinel-Light') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url('../fonts/Sentinel/Sentinel-LightItalic.eot');
+  src: url('../fonts/Sentinel/Sentinel-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Sentinel/Sentinel-LightItalic.woff') format('woff'),
+    url('../fonts/Sentinel/Sentinel-LightItalic.ttf') format('truetype'),
+    url('../fonts/Sentinel/Sentinel-LightItalic.svg#Sentinel-LightItalic') format('svg');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url('../fonts/Sentinel/Sentinel-Book.eot');
+  src: url('../fonts/Sentinel/Sentinel-Book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Sentinel/Sentinel-Book.woff') format('woff'),
+    url('../fonts/Sentinel/Sentinel-Book.ttf') format('truetype'),
+    url('../fonts/Sentinel/Sentinel-Book.svg#Sentinel-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url('../fonts/Sentinel/Sentinel-BookItalic.eot');
+  src: url('../fonts/Sentinel/Sentinel-BookItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Sentinel/Sentinel-BookItalic.woff') format('woff'),
+    url('../fonts/Sentinel/Sentinel-BookItalic.ttf') format('truetype'),
+    url('../fonts/Sentinel/Sentinel-BookItalic.svg#Sentinel-BookItalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url('../fonts/Sentinel/Sentinel-Semibold.eot');
+  src: url('../fonts/Sentinel/Sentinel-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Sentinel/Sentinel-Semibold.woff') format('woff'),
+    url('../fonts/Sentinel/Sentinel-Semibold.ttf') format('truetype'),
+    url('../fonts/Sentinel/Sentinel-Semibold.svg#Sentinel-Semibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url('../fonts/Sentinel/Sentinel-SemiboldItalic.eot');
+  src: url('../fonts/Sentinel/Sentinel-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Sentinel/Sentinel-SemiboldItalic.woff') format('woff'),
+    url('../fonts/Sentinel/Sentinel-SemiboldItalic.ttf') format('truetype'),
+    url('../fonts/Sentinel/Sentinel-SemiboldItalic.svg#Sentinel-SemiboldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+}
+
 
 // -------- root typography styles --------
 
 $core-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 $main-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-$title-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+$title-font-family: 'Sentinel', Georgia,Times,"Times New Roman",serif;
 
 html { font-size:62.5%; }
 body,
@@ -23,19 +89,25 @@ input, textarea, keygen, select, button {
 
 .title {
   font-family: $title-font-family;
+  color: $text-heading;
   letter-spacing: .025em;
   line-height: 1.15;
-  + * { margin-top: .5em; }
+  + * { margin-top: .6em; }
+  & + & { margin-top: .2em; }
+}
 
+.title,
+.paragraph {
   &--spacing {
     * + & { margin-top: 15px; }
   }
+  &--tracking { letter-spacing: 0.1em;}
   &--extra-margin { margin-top: 1.5em; }
   &--sub-heading { margin-top: 0 !important; }
 
   &--light     { font-weight: 200; }
-  &--bold      { font-weight: 500; }
-  &--bolder    { font-weight: 600; }
+  &--bold      { font-weight: 600; }
+  &--bolder    { font-weight: 800; }
   &--expanded  { letter-spacing: .2em; }
   &--condense  { letter-spacing: 0; }
   &--tight     { line-height: .9; }
@@ -70,19 +142,84 @@ input, textarea, keygen, select, button {
 
 .paragraph {
   &--lead {
-    font-size: 1.25em;
-    line-height: 1.25;
+    font-size: 1.1em;
+    line-height: 1.5;
   }
   &--large { font-size: 1.05em; }
   @include bp(large){
-    &--lead { font-size: 1.467em; }
+    &--lead { font-size: 1.267em; }
     &--large { font-size: 1.2em; }
+  }
+  &--small {
+    font-size: 0.85em;
+  }
+}
+
+
+// -------- lists --------
+
+dl {
+  dt { margin-bottom: 5px; }
+  dd {}
+}
+
+.list {
+  &--horizontal {
+    list-style: none; padding: 0; margin: 0;
+    li {
+      display: inline-block; position: relative; padding: 0 1em;
+    }
+    li + li:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      height: 100%;
+      width: 1px;
+      background-color: $white-15;
+      transform: translateY(-50%);
+    }
+  }
+  &--lined {
+    li {
+      list-style: none;
+      font-size: 0.9em;
+      padding: 4px 0;
+    }
+    li + li {
+      border-top: 1px solid $black-25;
+      .invert-text & { border-top: 1px solid $white-25; }
+    }
+  }
+}
+
+
+// -------- images --------
+
+.image {
+  &--fill {
+    height: 18em;
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include bp(large){
+      height: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
   }
 }
 
 
 // -------- general content styles --------
 
+p             { max-width: $xlarge; }
 p + *         { margin-top: 1em; }
 li            { list-style-position: inside; }
 ul li         { list-style-type: disc; }
@@ -92,10 +229,14 @@ strong        { font-weight: 800; }
 .align-left   { text-align: left; }
 .align-right  { text-align: right; }
 .align-center { text-align: center; }
+.align-center p,
+p.align-center { margin-left: auto; margin-right: auto; }
 
 hr {
   border: 0;
   height: 1px;
-  background-color: $light-grey;
-  margin: 1em 0;
+  background-color: $black-15;
+  margin: 2em 0;
+  .align-center &,
+  &.align-center { width: 120px; margin-left: auto; margin-right: auto; }
 }

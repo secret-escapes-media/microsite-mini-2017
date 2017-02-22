@@ -1,6 +1,5 @@
 // modal specific
 
-
 .modal {
   position: fixed;
   top: 0;
@@ -14,35 +13,70 @@
   overflow: hidden;
   &.is-open { display: block;}
   &.is-closed { display: none; }
+
+  &--vertical-align {
+    .modal {
+      &__wrap {
+        display: table;
+        overflow: auto;
+      }
+      &__content {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      &__item {
+        display: flex;
+        &-inactive {
+          display: none;
+        }
+      }
+    }
+  }
+
   &__wrap {
     position: absolute;
-    top: ($margin * 1.5);
-    left: ($margin / 2);
-    right: ($margin / 2);
-    bottom: ($margin * 1.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     cursor: auto;
-    overflow-y: auto;
+    overflow: scroll;
     margin-top: 0 !important;
-    @include bp(large){
-      left: $margin;
-      right: $margin;
-    };
+    width: 100%;
+    height: 100%;
   }
+
   &__content {
-    background-color: $white;
-    padding-top: ($margin / 2);
-    padding-bottom: ($margin / 2);
-    @include bp(large){
-      padding-top: $margin;
-      padding-bottom: $margin;
-    };
+    height: 100%;
+    overflow: scroll;
+    position: relative;
+    padding-top: $margin;
+    padding-bottom: $margin;
   }
+  &__item {
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 0px $black-5;
+    border-radius: 5px;
+    overflow: hidden;
+    display: block;
+    &-inactive { display: none; }
+    &__content {
+      padding: 2.5em 1.5em 1em;
+      @include bp(large) {
+        padding: 1.5em 2em;
+      }
+    }
+  }
+
+
+
   &__close {
     position: absolute;
     right: 0;
     top: 0;
-    height: 3em;
-    width: 3em;
+    height: 50px;
+    width: 50px;
     background-color: $se-dark-grey-85;
     background-image: url('../img/icons/close.png');
     background-position: center;
@@ -59,4 +93,35 @@
 
 .disable-scroll {
   overflow: hidden;
+}
+
+
+
+/* MODAL SLIDER */
+
+#modal__slider {
+  .slide {}
+}
+.modal__slider-nav {
+  position: relative;
+  float: right;
+}
+.modal__slider-next,
+.modal__slider-previous {
+  background-color: $black-5;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  float: left;
+
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  line-height: 50px;
+  &:hover { background-color: $black-85; }
+
+  img { width: 20px; vertical-align: baseline; }
 }

@@ -1,9 +1,7 @@
 // site header and navigation styles
-
-
-$core-nav-height: 70px;
+$site-header-height: 70px;
 $site-nav-height: 45px;
-$site-header-height: ($core-nav-height + $site-nav-height);
+
 .site-header {
   position: absolute;
   top: 0;
@@ -32,7 +30,7 @@ $site-header-height: ($core-nav-height + $site-nav-height);
   &__wrap {
     position: relative;
     display: table;
-    height: $core-nav-height;
+    height: $site-header-height;
     width: 100%;
   }
   &__column {
@@ -94,7 +92,7 @@ $site-header-height: ($core-nav-height + $site-nav-height);
   }
   &__divider {
     display: none;
-    height: ($core-nav-height / 1.5);
+    height: ($site-header-height / 1.5);
     width: 0.5em;
     margin-left: 0.5em;
     border-left: 1px solid $white-25;
@@ -351,7 +349,7 @@ $mobile-nav-width: 75%;
   }
   p { margin-top: .5em; }
   .logo--secret-escapes { max-width: 110px; }
-  .logo--partner { max-width: 100px; }
+  .logo--partner { max-width: 80px; }
 }
 
 
@@ -390,7 +388,7 @@ $icon-size: 27px;
     }
   }
   &--partner {
-    max-width: 130px;
+    max-width: 100px;
     & + & {
       padding-left: 1em;
     }
