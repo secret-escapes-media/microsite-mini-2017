@@ -9,17 +9,8 @@ layout: default
     <div class="row__column">
       {{ page.intro }}
       <hr />
-      <h4 class="title title--smallest">Read our {{ page.title }} holiday test run.</h4>
-
-      <div class="row">
-        <div class="row__column">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo corporis officiis quasi tempora itaque modi ducimus pariatur.</p>
-        </div>
-        <div class="row__column align-right">
-          <a href="{{ site.baseurl }}/expert-{{ page.class }}" class="btn btn--solid btn--invert">Read now</a>
-        </div>
-      </div>
-
+      <h4 class="title title--smallest">Read about our {{ page.title }} Roadtrip</h4>
+      <a href="{{ site.baseurl }}/expert-{{ page.class }}" class="btn btn--solid btn--invert">Read now</a>
     </div>
 
     <div class="row__column">
@@ -30,6 +21,7 @@ layout: default
         <li><a href="#offers" class="title--upper title--tracking">Offers</a></li>
       </ul>
     </div>
+    
   </div>
 </section>
 
@@ -45,7 +37,7 @@ layout: default
     </div>
 
     <div class="row__column">
-      <div class="bg-image-ratio bg-image-ratio--3-2" id="map" style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/roadtrip.jpg');">
+      <div class="bg-image-ratio bg-image-ratio--4-3" id="map" style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/roadtrip.jpg');">
       </div>
     </div>
 
@@ -58,7 +50,6 @@ layout: default
   <div class="row row--padding align-center">
     <h2 class="title title--medium title--upper title--bold">Sights</h2>
     {{ page.sights-content }}
-    <hr />
   </div>
   <div class="row row--padding row--columns-6-6-gutters">
     {% for sight in page.sights %}
@@ -105,7 +96,7 @@ layout: default
 <div class="js-modal modal modal--vertical-align is-closed" id="modal-sight">
 
   <div class="modal__wrap row">
-    <div class="modal__content row--padding" id="modal_slider">
+    <div class="modal__content" id="modal__slider">
 
       {% for sight in page.sights %}
       <div class="slide modal__item modal__item-inactive row row--columns-6-6 row--columns-vertical-align" id="modal__item-{{ sight.class }}">
@@ -129,6 +120,7 @@ layout: default
       </div>
       {% endfor %}
 
+      <!-- MODAL SLIDER NAVIGATION -->
       <div class="modal__slider-nav">
         <a class="modal__slider-previous" id="modal_slider--previous" href="javascript:void(0);">
           <img class="js-svg-swap" width="20" src="{{site.baseurl}}/img/icons/arrow-previous.png" alt="<">

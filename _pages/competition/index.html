@@ -4,13 +4,13 @@ title: Competition
 class: competition
 nav-order: 8
 
-banner-title: Competition
+banner-title: 
 banner-intro: >
-  <p class="paragraph--lead">Explore the rugged landscape of the Highlands, stepping into your Mini Countryman for unforgettable driving in the remotest parts of Scotland.</p>
+  <p class="paragraph--lead">Explore the rugged landscape of the Highlands, stepping into your MINI Countryman for unforgettable driving in the remotest parts of Scotland.</p>
 
 intro: >
-  <p class="paragraph--lead">As the comfort of the Mini propels you into the heart of the Highlands, let the landscape inspire you to drive off the beaten path, discovering secluded spots magnificent in their resplendence.</p>
-  <p>Though the weather can be unpredictable, you and your partner for the journey will be able to pick a jacket, jumper and pair of boots from Barbour, perfect for coping with the temperamental weather of this rugged land. Follow the winding roads through the Isle of Skye, where you’ll bed down for the night, before continuing your journey across the waters to the Outer Hebrides. These isolated lands offer a boundless privacy, and a comforting solace as you arrive at Òran na Mara. Five nights at this unbelievably picturesque location await, whilst intrepid exploration of the island could lead to further adventure.</p>
+  <p class="paragraph--lead">As the comfort of the MINI propels you into the heart of the Highlands, let the landscape inspire you to drive off the beaten path, discovering secluded spots magnificent in their resplendence. </p>
+  <p>Follow the winding roads through the Isle of Skye, where you’ll bed down for the night, before continuing your journey across the waters to the Outer Hebrides. These isolated lands offer a boundless privacy, and a comforting solace as you arrive at Őran na Mara. Five nights at this unbelievably picturesque location await, whilst intrepid exploration of the island could lead to further adventure. Though the weather can be unpredictable, you and your partner for the journey will be able to pick a jacket, jumper and pair of boots from Barbour, perfect for coping with the temperamental weather of this rugged land.</p>
   <a href="#enter" class="btn btn--solid btn--invert">Enter now</a>
 ---
 
@@ -64,7 +64,8 @@ intro: >
         <div class="competition-feed__content-image bg-image-ratio bg-image-ratio--21-9" style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/feed-isle-of-skye.jpg');"></div>
 
         <h2 class="title title--small title--upper title--light">Isle of Skye</h2>
-        <p>This stunning isle only improves on the incredible drive thus far embarked upon. Dramatic peaks fall to the coast, as the road twists between loch and crag with ease. As Scotland’s third biggest tourist destination, Skye is famed for its stunning landscape, within which you’ll find a host of cosy pubs, sleepy villages and fine restaurants. It makes for the perfect stop-off after a long day driving on some of the best roads in the UK. You’ll be bedding down at.... After a good night’s sleep, head to Uig to catch the ferry to Tarbert.</p>
+        <p>This stunning isle only improves on the incredible drive thus far embarked upon. Dramatic peaks fall to the coast, as the road twists between loch and crag with ease. As Scotland’s third biggest tourist destination, Skye is famed for its stunning landscape, within which you’ll find a host of cosy pubs, sleepy villages and fine restaurants. It makes for the perfect stop-off after a long day driving on some of the best roads in the UK. You’ll be bedding down [HOTEL TBC]</p>
+        <p>After a good night’s sleep, head to Uig to catch the ferry to Tarbert.</p>
       </div>
 
       <div class="row row--padding">
@@ -75,7 +76,7 @@ intro: >
         </div>
 
         <h2 class="title title--small title--upper title--light">Outer Hebrides</h2>
-        <p>As you enter Tarbert, you approach a remote collection of islands that splinter outward into the Atlantic. Rugged valleys, crystal pools and dreamy coastline awaits, begging to be explored. Your stay at Òran na Mara typifies the breathtaking panorama of the islands, and the seclusion and privacy granted at such a wonderfully remote getaway. The holiday home is graced with unique design that takes full advantage of the incredible views this beachside property affords. Floor to ceiling windows allow near full panorama of this sublime location, and cosy contemporary design tempts you to spend days indoors – but the open road awaits, and the island call for intrepid exploration.</p>
+        <p>As you enter Tarbert, you approach a remote collection of islands that splinter outward into the Atlantic. Rugged valleys, crystal pools and dreamy coastline awaits, begging to be explored.</p>
       </div>
     </div>
 
@@ -96,7 +97,7 @@ intro: >
 
     <span class="title title--smallest title--italic">Welcome to</span>
     <h2 class="title title--small title--upper title--light">Òran na Mara</h2>
-    <p>Your stay at Òran na Mara typifies the breathtaking panorama of the islands, and the seclusion and privacy granted at such a wonderfully remote getaway. The holiday home is graced with unique design that takes full advantage of the incredible views this beachside property affords. Floor to ceiling windows allow near full panorama of this sublime location, and cosy contemporary design tempts you to spend days indoors – but the open road awaits, and the island calls for intrepid exploration.</p>
+    <p>Your stay at Őran na Mara typifies the breathtaking panorama of the islands, and the seclusion and privacy granted at such a wonderfully remote getaway. The holiday home is graced with unique design that takes full advantage of the incredible views this beachside property affords. Floor to ceiling windows allow near full panorama of this sublime location, and cosy contemporary design tempts you to spend days indoors – but the open road awaits, and the island call for intrepid exploration.</p>
     <a href="#enter" class="btn">Enter now</a>
   </div>
 </section>
@@ -122,23 +123,7 @@ intro: >
 <script>
   function initMap() {
 
-    var mapOptions = {
-      center: new google.maps.LatLng(51.466848, -0.010015),
-
-      // How zoomed in you want the map to start at (always required)
-      zoom: 13,
-      panControl: false,
-      zoomControl: true,
-      mapTypeControl: false,
-      scaleControl: false,
-      streetViewControl: false,
-      overviewMapControl: false,
-      scrollwheel: false,
-
-      // How you would like to style the map.
-      // This is where you would paste any style found on Snazzy Maps.
-      styles: [ { "featureType": "administrative", "elementType": "all", "stylers": [ { "saturation": "-100" } ] }, { "featureType": "administrative.province", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "landscape", "elementType": "all", "stylers": [ { "saturation": -100 }, { "lightness": 65 }, { "visibility": "on" } ] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [ { "lightness": "-30" } ] }, { "featureType": "poi", "elementType": "all", "stylers": [ { "saturation": "-100" }, { "lightness": "50" }, { "visibility": "simplified" } ] }, { "featureType": "road", "elementType": "all", "stylers": [ { "saturation": "-100" }, { "lightness": "-33" } ] }, { "featureType": "road.highway", "elementType": "all", "stylers": [ { "visibility": "simplified" } ] }, { "featureType": "road.arterial", "elementType": "all", "stylers": [ { "lightness": "30" } ] }, { "featureType": "road.local", "elementType": "all", "stylers": [ { "lightness": "40" } ] }, { "featureType": "transit", "elementType": "all", "stylers": [ { "saturation": -100 }, { "visibility": "simplified" } ] }, { "featureType": "water", "elementType": "geometry", "stylers": [ { "hue": "#ffff00" }, { "lightness": "39" }, { "saturation": "-100" } ] }, { "featureType": "water", "elementType": "labels", "stylers": [ { "lightness": -25 }, { "saturation": -100 } ] } ]
-    };
+    {% include map-settings.html %}
 
     var directionsService = new google.maps.DirectionsService;
     var directionsDisplay = new google.maps.DirectionsRenderer;

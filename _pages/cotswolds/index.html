@@ -4,7 +4,7 @@ title: Cotswolds
 class: cotswolds
 nav-order: 2
 
-banner-title: Cotswolds
+banner-title: 
 banner-intro:
 
 intro: >
@@ -94,23 +94,7 @@ sights:
 <script>
   function initMap() {
 
-    var mapOptions = {
-      center: new google.maps.LatLng(51.466848, -0.010015),
-
-      // How zoomed in you want the map to start at (always required)
-      zoom: 13,
-      panControl: false,
-      zoomControl: true,
-      mapTypeControl: false,
-      scaleControl: false,
-      streetViewControl: false,
-      overviewMapControl: false,
-      scrollwheel: false,
-
-      // How you would like to style the map.
-      // This is where you would paste any style found on Snazzy Maps.
-      styles: [ { "featureType": "administrative", "elementType": "all", "stylers": [ { "saturation": "-100" } ] }, { "featureType": "administrative.province", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "landscape", "elementType": "all", "stylers": [ { "saturation": -100 }, { "lightness": 65 }, { "visibility": "on" } ] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [ { "lightness": "-30" } ] }, { "featureType": "poi", "elementType": "all", "stylers": [ { "saturation": "-100" }, { "lightness": "50" }, { "visibility": "simplified" } ] }, { "featureType": "road", "elementType": "all", "stylers": [ { "saturation": "-100" }, { "lightness": "-33" } ] }, { "featureType": "road.highway", "elementType": "all", "stylers": [ { "visibility": "simplified" } ] }, { "featureType": "road.arterial", "elementType": "all", "stylers": [ { "lightness": "30" } ] }, { "featureType": "road.local", "elementType": "all", "stylers": [ { "lightness": "40" } ] }, { "featureType": "transit", "elementType": "all", "stylers": [ { "saturation": -100 }, { "visibility": "simplified" } ] }, { "featureType": "water", "elementType": "geometry", "stylers": [ { "hue": "#ffff00" }, { "lightness": "39" }, { "saturation": "-100" } ] }, { "featureType": "water", "elementType": "labels", "stylers": [ { "lightness": -25 }, { "saturation": -100 } ] } ]
-    };
+    {% include map-settings.html %}
 
     var directionsService = new google.maps.DirectionsService;
     var directionsDisplay = new google.maps.DirectionsRenderer;

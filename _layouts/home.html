@@ -67,7 +67,7 @@ layout: default
              data-modal="region"
              data-modal-item="{{ region.class }}">
 
-            <span class="region__image bg-image-ratio bg-image-ratio--1-1" style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/region-{{ region.class }}.jpg');"></span>
+            <span class="region__image" style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/region-{{ region.class }}.jpg');"></span>
 
             <span class="region__content">
               <h4 class="title title--bold title--upper">{{ region.title }}</h4>
@@ -105,14 +105,15 @@ layout: default
 
 <div class="js-modal modal is-closed" id="modal-region">
 
-  <div class="modal__wrap">
-    <div class="modal__content">
+  <div class="modal__wrap row">
+    <div class="modal__content" id="modal__slider">
 
       {% for region in page.regions %}
-      <div class="modal__item row" id="modal__item-{{ region.class }}">
+      <div class="slide modal__item row" id="modal__item-{{ region.class }}">
 
         <!-- Intro -->
         <div class="banner banner--region invert-text align-center" style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/region-{{ region.class }}.jpg');">
+          <div class="js-close-modal modal__close"></div>
 
           <h2 class="title title--large title--italic">
             {{ region.title }}
@@ -124,17 +125,18 @@ layout: default
         <!-- Roadtrip -->
         <div class="row--columns-6-6 row--columns-vertical-align invert-text bg--grey">
 
-          <div class="row__column row--padding">
+          <div class="row__column row--padding row--padding-vertical">
             <h3 class="title title--smaller title--bold title--upper">Roadtrip</h3>
             <p>{{ region.roadtrip }}</p>
+            <a target="_blank" href="{{ region.roadtrip-link }}" class="btn btn--small btn--invert">View roadtrip</a>
           </div>
 
           <div class="row__column">
             <div
-              class="bg-image-ratio bg-image-ratio--16-9 roadtrip-image"
-              style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/region-roadtrip.jpg');">
+              class="bg-image-ratio bg-image-ratio--3-2 roadtrip-image"
+              style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/region-{{ region.class }}-roadtrip.jpg');">
               <span class="roadtrip-image__content align-center">
-                <a href="#" class="btn btn--invert btn--large">View Roadtrip</a>
+                <a target="_blank" href="{{ region.roadtrip-link }}" class="btn btn--large">View Roadtrip</a>
               </span>
             </div>
           </div>
@@ -144,23 +146,34 @@ layout: default
         <!-- Offers // if offers -->
         {% assign offers = site.data.offers | where:'region',region.class %}
         {% if offers.size != 0 %}
-          <div class="section section--padding-top bg--light-grey align-center">
+          <div class="section section--padding bg--light-grey align-center">
             <h4 class="title title--upper title--bold title--small">Offers</h4>
             <p class="paragraph--lead">Take to the road and leave the hustle and bustle of city life behind, with opulent stays in quiet, peaceful country digs.</p>
           </div>
-          <div class="section section--padding bg--light-grey row--columns-4-4-4-gutters">
+          <div class="section section--padding-none row--padding bg--light-grey row--columns-4-4-4-gutters">
             {% for offer in offers %}
               {% include offer/default.html %}
             {% endfor %}
+          </div>
+          <div class="section section--padding bg--light-grey align-center">
+            <a href="{{ site.baseurl }}/offers" class="btn">View all offers</a>
           </div>
         {% endif %}
 
       </div>
       {% endfor %}
 
+      <!-- MODAL SLIDER NAVIGATION -->
+      <div class="modal__slider-nav">
+        <a class="modal__slider-previous" id="modal_slider--previous" href="javascript:void(0);">
+          <img class="js-svg-swap" width="20" src="{{site.baseurl}}/img/icons/arrow-previous.png" alt="<">
+        </a>
+        <a class="modal__slider-next" id="modal_slider--next" href="javascript:void(0);">
+          <img class="js-svg-swap" width="20" src="{{site.baseurl}}/img/icons/arrow-next.png" alt=">">
+        </a>
+      </div>
+
     </div>
   </div>
 </div>
-
-
 

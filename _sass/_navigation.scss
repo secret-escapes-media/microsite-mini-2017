@@ -145,7 +145,7 @@ $nav-arrow-width: 66px;
   line-height: 1.2;
   letter-spacing: .066em;
   text-transform: uppercase;
-  background-color: $se-dark-grey-66;
+  background-color: $dark-grey;
   overflow: hidden;
   &__list {
     padding-right: $nav-arrow-width;
@@ -335,10 +335,9 @@ $mobile-nav-width: 75%;
 
 // ---------- SITE FOOTER ----------
 .footer {
-  background-color: $black-85;
+  background-color: $black;
   &__logos {
     font-size: .9em;
-    border-top: 1px solid $white-15;
     padding-top: $margin;
     padding-bottom: $margin;
   }

@@ -4,13 +4,13 @@ title: Brecon Beacons
 class: brecon-beacons
 nav-order: 5
 
-banner-title: Brecon Beacons
+banner-title:
 banner-intro:
 
 intro: >
   <p class="paragraph--lead">The rugged crags and peaks of the Brecon Beacons typify the unique landscape of Wales. Dramatic, in parts harsh, but nevertheless beautiful. Sink into the wilderness and relish the great outdoors.</p>
 
-roadtrip-title:
+roadtrip-title: Through the Black Mountain Pass
 roadtrip-content: >
   <p>Start at the southern edge of the Beacons, on the A4067. As you head north, look out for the Tarfan-y-Garreg pub (it’s a rather awful shade of pink) and take the next signposted left exit for Trecastle. This single track road may begin with obscured views from lined trees and fauna that encroaches on the lane, but perseverance rewards as the track slowly climbs to the rugged heights of the beacons. Glorious views from a winding single-track road abound. As you reach the end of this stretch, take a left instead of heading to Trecastle. As the road heads into the tiny village of Twynllanan, look out for the left turning which winds down the hillside. At the end, take a left, and then another. You have reached the highlight of the drive, the A4069, otherwise known as the Black Mountain Pass. Climb the rugged peaks, and hurtle round hairpins as the landscape unravels ahead. </p>
 
@@ -94,23 +94,7 @@ sights:
 <script>
   function initMap() {
 
-    var mapOptions = {
-      center: new google.maps.LatLng(51.466848, -0.010015),
-
-      // How zoomed in you want the map to start at (always required)
-      zoom: 13,
-      panControl: false,
-      zoomControl: true,
-      mapTypeControl: false,
-      scaleControl: false,
-      streetViewControl: false,
-      overviewMapControl: false,
-      scrollwheel: false,
-
-      // How you would like to style the map.
-      // This is where you would paste any style found on Snazzy Maps.
-      styles: [ { "featureType": "administrative", "elementType": "all", "stylers": [ { "saturation": "-100" } ] }, { "featureType": "administrative.province", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "landscape", "elementType": "all", "stylers": [ { "saturation": -100 }, { "lightness": 65 }, { "visibility": "on" } ] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [ { "lightness": "-30" } ] }, { "featureType": "poi", "elementType": "all", "stylers": [ { "saturation": "-100" }, { "lightness": "50" }, { "visibility": "simplified" } ] }, { "featureType": "road", "elementType": "all", "stylers": [ { "saturation": "-100" }, { "lightness": "-33" } ] }, { "featureType": "road.highway", "elementType": "all", "stylers": [ { "visibility": "simplified" } ] }, { "featureType": "road.arterial", "elementType": "all", "stylers": [ { "lightness": "30" } ] }, { "featureType": "road.local", "elementType": "all", "stylers": [ { "lightness": "40" } ] }, { "featureType": "transit", "elementType": "all", "stylers": [ { "saturation": -100 }, { "visibility": "simplified" } ] }, { "featureType": "water", "elementType": "geometry", "stylers": [ { "hue": "#ffff00" }, { "lightness": "39" }, { "saturation": "-100" } ] }, { "featureType": "water", "elementType": "labels", "stylers": [ { "lightness": -25 }, { "saturation": -100 } ] } ]
-    };
+    {% include map-settings.html %}
 
     var directionsService = new google.maps.DirectionsService;
     var directionsDisplay = new google.maps.DirectionsRenderer;

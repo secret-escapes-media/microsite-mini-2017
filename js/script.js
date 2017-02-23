@@ -207,7 +207,7 @@ $(document).scroll(function(){
 ///////////////////////////////////////
 
 function modal_slider_next(){
-  var parent    = $('#modal_slider');
+  var parent    = $('#modal__slider');
   var current   = parent.find('.slide').not(".modal__item-inactive");
   var next = current.next('.slide');
 
@@ -219,7 +219,7 @@ function modal_slider_next(){
 }
 
 function modal_slider_previous(){
-  var parent    = $('#modal_slider');
+  var parent    = $('#modal__slider');
   var current   = parent.find('.slide').not(".modal__item-inactive");
   var previous = current.prev('.slide');
 

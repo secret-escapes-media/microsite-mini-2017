@@ -10,7 +10,7 @@
   background-color: $black;
   background-color: $black-66;
   cursor: pointer;
-  overflow: hidden;
+  overflow: scroll;
   &.is-open { display: block;}
   &.is-closed { display: none; }
 
@@ -18,7 +18,6 @@
     .modal {
       &__wrap {
         display: table;
-        overflow: auto;
       }
       &__content {
         display: table-cell;
@@ -40,7 +39,6 @@
     right: 0;
     bottom: 0;
     cursor: auto;
-    overflow: scroll;
     margin-top: 0 !important;
     width: 100%;
     height: 100%;
@@ -55,7 +53,7 @@
   }
   &__item {
     background-color: #fff;
-    margin: 0 auto;
+    margin: 2em auto;
     box-shadow: 0 0 20px 0px $black-5;
     border-radius: 5px;
     overflow: hidden;
@@ -100,11 +98,16 @@
 /* MODAL SLIDER */
 
 #modal__slider {
+  overflow: visible;
   .slide {}
 }
 .modal__slider-nav {
-  position: relative;
-  float: right;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 .modal__slider-next,
 .modal__slider-previous {
@@ -117,6 +120,9 @@
   display: block;
   float: left;
 
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+
   font-size: 30px;
   font-weight: 800;
   color: white;
@@ -125,3 +131,5 @@
 
   img { width: 20px; vertical-align: baseline; }
 }
+.modal__slider-next { right: -50px; }
+.modal__slider-previous { left: -50px; }

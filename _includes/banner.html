@@ -4,15 +4,15 @@
 
 
 
-  <div class="row row--padding">
+  <div class="row row--padding banner__content">
 
-    <h1 class="banner__title title title--larger title--light">
-      {% if page.banner-title %}
-        {{ page.banner-title }}
-      {% else %}
+    {% if page.banner-title %}
+      {{ page.banner-title }}
+    {% else %}
+      <h1 class="banner__title title title--larger title--light">
         {{ page.title }}
-      {% endif %}
-    </h1>
+      </h1>
+    {% endif %}
 
     {% if page.class == 'overview' %}
       <span class="banner__partnership">
