@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+
+<section class="section--intro bg--dark-grey invert-text roadtrip__profile">
+  <div class="row row--padding row--columns-vertical-align mobile-align-center">
+
+    <div class="roadtrip__profile-picture">
+      <div class="bg-image-ratio bg-image-ratio--1-1 bg-image-ratio--circle" style="background-image: url({{ site.baseurl }}/img/content/{{ page.class }}/profile-picture.jpg)"></div>
+    </div>
+
+    <div class="roadtrip__profile-content">
+      <div class="row--columns-6-6-gutters">
+
+        <div class="row__column">
+          <ul class="list--lined">
+            <li><span class="title title--upper title--bold">Road Trippers:</span> {{ page.meta-by }}</li>
+              <li><span class="title title--upper title--bold">Drive details:</span> {{ page.meta-drive-route }}</li>
+              <li><span class="title title--upper title--bold">Drive distance:</span> {{ page.meta-distance }}</li>
+          </ul>
+        </div>
+
+        <div class="row__column">
+          <ul class="list--lined">
+            <li><span class="title title--upper title--bold">Driving Music:</span> {{ page.meta-music }}</li>
+            <li><span class="title title--upper title--bold">Key areas:</span> {{ page.meta-key-areas }}</li>
+            <li><span class="title title--upper title--bold">Weather:</span> {{ page.meta-weather }}</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+{{ content }}
+
+
+
+{% assign nextRoadtrip = page.roadtrip-order | plus: 1 %}
+{% assign roadtrips = site.pages | where: 'layout', 'roadtrip' %}
+{% for roadtrip in roadtrips  %}
+  {% if roadtrip.roadtrip-order == nextRoadtrip %}
+    <section class="section--padding-large bg--dark-grey invert-text" style="background-image: url({{ site.baseurl }}/img/bg/banner-{{ roadtrip.class }}.jpg)">
+      <div class="row--thin row--padding">
+        <span class="title title--smallest title--regular title--italic">Keep reading...</span>
+        <h2 class="title title--medium title--bold title--upper">{{ roadtrip.title }}</h2>
+        <a href="{{ site.baseurl }}{{ roadtrip.url }}" class="btn btn--invert">Read now</a>
+      </div>
+    </section>
+  {% endif %}
+{% endfor %}
+
+
+
+<!-- IMAGE GALLERY MODAL -->
+<div class="js-modal modal modal--vertical-align is-closed" id="modal-gallery">
+
+  <div class="modal__wrap row">
+    <div class="modal__content" id="modal__slider">
+
+
+      {% for image in page.gallery %}
+      <div class="slide modal__item modal__item-inactive row" id="modal__item-{{ image.name }}">
+
+        <div class="js-close-modal modal__close"></div>
+        <div
+          class="bg-image-ratio bg-image-ratio--16-9 gallery"
+          style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/{{ image.name }}.jpg');">
+          {% if image.caption %}<span class="gallery__caption gallery__caption--large">{{ image.caption }}</span>{% endif %}
+        </div>
+
+      </div>
+      {% endfor %}
+
+
+      <!-- MODAL SLIDER NAVIGATION -->
+      <div class="modal__slider-nav">
+        <a class="modal__slider-previous" id="modal_slider--previous" href="javascript:void(0);">
+          <img class="js-svg-swap" width="20" src="{{site.baseurl}}/img/icons/arrow-previous.png" alt="<">
+        </a>
+        <a class="modal__slider-next" id="modal_slider--next" href="javascript:void(0);">
+          <img class="js-svg-swap" width="20" src="{{site.baseurl}}/img/icons/arrow-next.png" alt=">">
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>

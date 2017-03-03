@@ -1,4 +1,10 @@
-// general typographic styles
+
+/*|---
+  | TYPOGRAPHY
+  |------------------------------------------------*/
+
+
+/*====== WEBFONTS ======*/
 
 @font-face {
   font-family: 'Sentinel';
@@ -67,7 +73,7 @@
 }
 
 
-// -------- root typography styles --------
+/*====== SITE TYPOGRAPHY ======*/
 
 $core-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 $main-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -85,25 +91,51 @@ input, textarea, keygen, select, button {
 }
 
 
-// -------- Headings --------
+
+/*====== GENERAL STYLES & CLASSES ======*/
+
+p             { max-width: $xlarge; }
+p + *         { margin-top: 1em; }
+li            { list-style-position: inside; }
+ul li         { list-style-type: disc; }
+ol li         { list-style-type: decimal; }
+em            { font-style: italic; }
+strong        { font-weight: 800; }
+.align-left   { text-align: left; }
+.align-right  { text-align: right; }
+.align-center { text-align: center; }
+.align-center p,
+p.align-center { margin-left: auto; margin-right: auto; }
+
+.mobile-align-center {
+  text-align: center;
+  @include bp(medium) { text-align: inherit; }
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: $black-15;
+  margin: 2em 0;
+  .align-center &,
+  &.align-center { width: 120px; margin-left: auto; margin-right: auto; }
+}
+
+/*====== TITLES & PARAGRAPH ======*/
 
 .title {
   font-family: $title-font-family;
   color: $text-heading;
   letter-spacing: .025em;
-  line-height: 1.15;
+  line-height: 1.1;
   + * { margin-top: .6em; }
+  + hr { margin-top: 2em; }
   & + & { margin-top: .2em; }
 }
 
 .title,
 .paragraph {
-  &--spacing {
-    * + & { margin-top: 15px; }
-  }
   &--tracking { letter-spacing: 0.1em;}
-  &--extra-margin { margin-top: 1.5em; }
-  &--sub-heading { margin-top: 0 !important; }
 
   &--light     { font-weight: 200; }
   &--bold      { font-weight: 600; }
@@ -113,21 +145,15 @@ input, textarea, keygen, select, button {
   &--tight     { line-height: .9; }
   &--tighter   { line-height: .8; }
   &--upper     { text-transform: uppercase; }
-  &--italic    { font-style: italic; }
+  &--italic    { font-style: italic; letter-spacing: 0; }
 
-  &--largest {
-    font-size: 4.3em;
-    &-sub {
-      display: block;
-      font-size: .55em;
-    }
-  }
+  &--largest     { font-size: 4.3em; }
   &--larger      { font-size: 3.375em; }
   &--large       { font-size: 2.986em; }
   &--medium      { font-size: 2.25em; }
   &--small       { font-size: 2em; }
   &--smaller     { font-size: 1.867em; }
-  &--smallest    { font-size: 1.5em; }
+  &--smallest    { font-size: 1.65em; }
   &--tiny        { font-size: 1.44em; }
   &--micro       { font-size: 1.2em; }
   @include bp(xxlarge){
@@ -139,6 +165,9 @@ input, textarea, keygen, select, button {
     &--smaller     { font-size: 2.25em; }
   }
 }
+
+
+/*====== PARAGRAPH ======*/
 
 .paragraph {
   &--lead {
@@ -156,7 +185,60 @@ input, textarea, keygen, select, button {
 }
 
 
-// -------- lists --------
+/*====== BUTTONS ======*/
+
+.btn {
+  @include transition;
+  display:inline-block;
+  padding: .5em 1.5em .4em;
+  font-family: $title-font-family;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 3px;
+  color: white;
+  background-color: $theme-primary;
+
+  font-size: 0.85em;
+  padding: .5em 1.5em .4em;
+  @include bp(large){
+    font-size: 0.9em;
+    padding: .5em 2em .4em;
+  }
+  &:hover {
+    background-color: $theme-secondary;
+    text-decoration: none;
+  }
+  & + & { margin-left: 0.5em; }
+  * + & { margin-top: 1.5em; }
+
+  &--subtle {
+    color: $dark-grey;
+    border: 2px solid rgba($dark-grey, 0.4);
+    background-color: transparent;
+    &:hover { border: 2px solid rgba($dark-grey, 0.7); background-color: transparent; }
+    &-invert {
+      background-color: transparent; color: $white;
+      border: 2px solid rgba($white, 0.4);
+      &:hover { border: 2px solid $white; background-color: $white; color: $dark-grey; }
+    }
+  }
+  &--small { font-size: 0.85em; padding: .5em 1.5em .2em; }
+  @include bp(large){
+    &--large { font-size: 1.1em; padding: .4em 2.5em; }
+  }
+  &--invert {
+    background-color: $white-85; color: $dark-grey;
+    &:hover { background-color: $white; color: $dark-grey; }
+  }
+  &--se {
+    background-color: $se-orange-85; color: $white;
+    &:hover { background-color: $se-orange; color: $white; }
+  }
+}
+
+
+/*====== LISTS ======*/
 
 dl {
   dt { margin-bottom: 5px; }
@@ -191,51 +273,4 @@ dl {
       .invert-text & { border-top: 1px solid $white-25; }
     }
   }
-}
-
-
-// -------- images --------
-
-.image {
-  &--fill {
-    height: 18em;
-    display: block;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    @include bp(large){
-      height: auto;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
-  }
-}
-
-
-// -------- general content styles --------
-
-p             { max-width: $xlarge; }
-p + *         { margin-top: 1em; }
-li            { list-style-position: inside; }
-ul li         { list-style-type: disc; }
-ol li         { list-style-type: decimal; }
-em            { font-style: italic; }
-strong        { font-weight: 800; }
-.align-left   { text-align: left; }
-.align-right  { text-align: right; }
-.align-center { text-align: center; }
-.align-center p,
-p.align-center { margin-left: auto; margin-right: auto; }
-
-hr {
-  border: 0;
-  height: 1px;
-  background-color: $black-15;
-  margin: 2em 0;
-  .align-center &,
-  &.align-center { width: 120px; margin-left: auto; margin-right: auto; }
 }

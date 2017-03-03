@@ -1,28 +1,29 @@
 
 <section class="banner align-center invert-text" style="background-image: url('{{ site.baseurl }}/img/bg/banner-{{ page.class }}.jpg');">
+
   <div class="site-header__offset"></div>
 
-
-
-  <div class="row row--padding banner__content">
+  <div class="banner__content row row--padding">
 
     {% if page.banner-title %}
       {{ page.banner-title }}
     {% else %}
-      <h1 class="banner__title title title--larger title--light">
+      <h1 class="banner__title title title--larger title--light title--italic">
         {{ page.title }}
       </h1>
     {% endif %}
 
-    {% if page.class == 'overview' %}
-      <span class="banner__partnership">
-        In partnership with MINI
-      </span>
-    {% endif %}
-
     {% if page.banner-intro %}
+    <div class="banner__content-description">
       <hr />
       {{ page.banner-intro }}
+    </div>
+    {% endif %}
+
+    {% if page.layout == 'roadtrip' %}
+      <div class="banner__roadtrip-approved">
+        <img src="{{ site.baseurl }}/img/icons/approved.png" class="js-svg-swap" width="100%">
+      </div>
     {% endif %}
 
   </div>
@@ -30,13 +31,13 @@
 
 
   <!-- SITE NAV -->
-  <div class="banner__navigation">
-    <ul class="row row--padding banner__navigation__list">
+  <div class="microsite__navigation">
+    <ul class="row row--padding microsite__navigation__list">
       {% assign nav-order = site.pages | sort:"nav-order" %}
-      {% for page in nav-order %}{% if page.nav-order %}<li class="banner__navigation__item banner__navigation__item--{{ page.title | slugify }}"><a class="banner__navigation__link" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>{% endif %}{% endfor %}
+      {% for page in nav-order %}{% if page.nav-order %}<li class="microsite__navigation__item microsite__navigation__item--{{ page.title | slugify }}"><a class="microsite__navigation__link" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>{% endif %}{% endfor %}
     </ul>
   </div><!-- END - .site-nav -->
-  <div class="banner__navigation__offset"></div>
+  <div class="microsite__navigation__offset"></div>
 
 
 

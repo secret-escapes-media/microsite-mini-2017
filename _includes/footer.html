@@ -8,30 +8,97 @@
   </div>
   <div class="footer">
     <div class="row row--padding">
-      <div class="footer__logos align-center">
+      <div class="footer__logos align-center invert-text">
+
         <a class="logo logo--secret-escapes" href="https://www.secretescapes.com/"><img class="js-svg-swap" src="{{ site.baseurl }}/img/logo/secret-escapes.png" alt="Secret Escapes logo"></a>
         {% include partner-logo.html %}
-        <p>© Copyright <span class="js-year">2016</span> Secret Escapes. <a class="js-open-modal"
-        data-modal="terms-and-conditions" href="javascript:void(0);">Terms and conditions apply.</a></p>
+
+        <hr />
+
+        <p>
+          © Copyright <span class="js-year">2016</span> Secret Escapes.
+          {% unless page.class == competition %}
+            <a class="js-open-modal" data-modal="terms-and-conditions" href="javascript:void(0);">Terms and conditions apply.</a>
+          {% endunless %}
+        </p>
+
       </div>
     </div>
   </div>
 </footer>
 
-
-<!-- SIGHT MODAL -->
-
-<div class="js-modal modal modal--vertical-align is-closed" id="modal-terms-and-conditions">
+{% unless page.class == competition %}
+<!-- TERMS AND CONDITIONS MODAL -->
+<div class="js-modal modal is-closed" id="modal-terms-and-conditions">
   <div class="modal__wrap row">
     <div class="modal__content row--padding">
       <div class="modal__item row--padding row--padding-vertical">
 
+        <div class="js-close-modal modal__close"></div>
+
         <h2 class="title title--small title--bold">Terms and conditions </h2>
-        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui.</p>
-        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui.</p>
-        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui.</p>
+        <hr />
+
+        <h4 class="title title--smallest title--bold">Entry rules</h4>
+        <ol>
+          <li>Entry is open to all Secret Escapes members who are booking a UK weekend break (excluding Northern Ireland) travelling between the 17th March and 23rd April 2017.</li>
+          <li>There is no entry fee and to be entered in the draw you must select the Opt in (enter) button to be entered into the competition.</li>
+          <li>Employees of Secret Escapes, MINI UK and their affiliated companies as well as MINI dealers, printers, agencies or anyone else professionally connected with this draw, including their families, are not eligible to take part in the draw.</li>
+          <li>Prizes are non-transferable. No cash alternative to the prizes will be offered. The prize will be awarded to the winner only and is not transferable to third parties.</li>
+        </ol>
+        <hr />
+
+        <h4 class="title title--smallest title--bold">Winning Process</h4>
+        <ol>
+          <li>There will be two (2) winners selected at random per wave of activity. Each winner will receive a MINI Countryman for the duration of their UK weekend break.</li>
+          <li>The Winner will be notified by e-mail and phone call. This will be done seven (7) working days prior to their trip. The Winner is required to follow instructions on the notification e-mail in order to claim their prize.</li>
+          <li>The Winner is required to claim their prize within 24 hours of being notified or they will be deemed to have forfeited the prize.</li>
+        </ol>
+        <hr />
+
+        <h4 class="title title--smallest title--bold">Driver</h4>
+        <ol>
+          <li>The participant confirms that he or she is the holder of a current UK driving licence permitting him or her to drive motor cars on United Kingdom highways and that he or she is over the age of 25 years of age and not older than 75 years of age.</li>
+          <li>Drivers must have held a valid full licence for a minimum of 2 years. Drivers with 9 points or more on their licence or having had a major driving offence within the past 2 years will not be able to participate in this this prize draw. The Driver agrees to abide by UK Road Traffic Law at all times.</li>
+          <li>The driver hereby declares that he or she is in good health, their eyesight is of the standard required for the UK road driving test and that they are not suffering any illness or disability which may make it unsafe for them to drive.</li>
+          <li>The driver accepts that he or she shall be solely responsible for any decision as to their fitness to drive and that if at any point they are not fit to do so, then they shall cease driving immediately. The driver confirms that at no time when he or she is in charge of the loan car, they are not over the current UK legal limit for driving whilst under the influence of alcohol or drugs that may affect their ability to drive.</li>
+          <li>The driver confirms that should he or she have any cause for concern as to the roadworthiness or safety of any vehicle, they will bring the matter immediately to the attention of a MINI UK representative.</li>
+        </ol>
+        <hr />
+
+        <h4 class="title title--smallest title--bold">Licence check</h4>
+        <ol>
+          <li>Prize can only be fulfilled once the driver passes a licence check. Failure to meet the required licence check criteria will result in the prize being revoked</li>
+          <li>Failure to submit driver licence details before the specified deadline, will result in the prize being revoked.</li>
+          <li>A maximum of two drivers are permitted to drive the vehicle.</li>
+          <li>All driving licences must be valid for insurance purposes and up to date (i.e. correct address, points removed where they are no longer valid) and must be full not provisional.</li>
+        </ol>
+        <hr />
+
+        <h4 class="title title--smallest title--bold">Vehicle</h4>
+        <ol>
+          <li>The loan of the MINI Countryman is subject to certain loan car terms by MINI UK, a trading name of BMW (UK) Limited. The winner must agree to these terms before taking possession of the vehicle.</li>
+          <li>The vehicles available for the winners of this prize draw is a MINI Countryman. MINI UK reserves the right to provide an alternative vehicle if for any reason a MINI Countryman is not available and to terminate forthwith any drivers’ involvement in the MINI car loan at any time and for any reason.</li>
+          <li>Maximum duration that vehicle can be made available is Thursday – Tuesday. The car must not be taken out of the UK.</li>
+          <li>The vehicle may only be driven by the winner and one further nominated driver, only for private use and not for business purposes or any form of racing.</li>
+          <li>Upon collection of the vehicle it will be subject to a thorough inspection. The winner will be responsible for any damage arising from his failure to take reasonable care.</li>
+          <li>The winner is solely responsible for any extra costs and fines as well as congestion, parking and other charges incurred while in possession of the vehicle. Unless stated otherwise in these terms and conditions the prize excludes transfers, meals and drinks, excursions, attractions, fuel, gratuities, telephone calls, taxes, further personal expenses and anything not expressly included in the prize.</li>
+          <li>The winner is responsible for any fines, congestion or other charges arising from use of the car and for any damage arising from failure to take reasonable care; the car is insured subject to an insurance excess of £500 for each and every claim under £5,000; £1,000 for each and every claim in excess of £5,000. Please note these excesses are in addition to any amount payable as a result of misfuelling and/or engine damage due to navigating through flooded areas. For clarity in such instances an additional excess to the value of 10% of the repair costs will be charged. Insurance does not cover personal belongings.</li>
+          <li>Smoking is not allowed within the vehicle.</li>
+          <li>The car will be provided with a full tank of fuel. However, the car does not need to be returned with a full tank of fuel.</li>
+        </ol>
+        <hr />
+
+        <h4 class="title title--smallest title--bold">Miscellaneous</h4>
+        <ol>
+          <li>By entering this competition, entrants are agreeing to accept and be bound by these terms and conditions. The driver also acknowledges safe receipt of this document and confirms that he or she has read and has understood its contents.</li>
+          <li>By taking part in the prize draw the entrant acknowledges and consents to that he/she may be contacted by MINI UK by e-mail.</li>
+          <li>The winners’ names may be used for promotional purposes and may be required to take part in publicity (including photographs) at no extra charge.</li>
+          <li>The competition promoter is Secret Escapes, 120 Holborn, London, EC1N 2TD. </li>
+        </ol>
 
       </div>
     </div>
   </div>
 </div>
+{% endunless %}

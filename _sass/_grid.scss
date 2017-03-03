@@ -33,12 +33,16 @@ section {
 .section {
   width: 100%;
   overflow: hidden;
+
+  &--padding-none { padding: 0; }
+  
   &--padding {
     padding-top: 2.25em; @include bp(large){ padding-top: 3.375em; }
     padding-bottom: 2.25em; @include bp(large){ padding-bottom: 3.375em; }
     padding-left: 2em;
     padding-right: 2em;
   }
+
   &--padding-top { padding-top: 2.25em; @include bp(large){ padding-top: 3.375em; }}
   &--padding-bottom { padding-bottom: 2.25em; @include bp(large){ padding-bottom: 3.375em; }}
   &--padding-left { padding-left: 2.25em; @include bp(large){ padding-left: 3.375em; }}
@@ -52,8 +56,6 @@ section {
       padding-top: 5.063em;
     }
   }
-
-  &--padding-none { padding: 0; }
 }
 
 
@@ -63,18 +65,18 @@ section {
 .row {
   @include container( $xxxlarge );
   position: relative;
-  & + .row { margin-top: $margin; }
+  & + & { margin-top: $margin; }
 
   &--wide {
     @include container( $xxxxlarge );
     position: relative;
-    & + .row { margin-top: $margin; }
+    & + & { margin-top: $margin; }
   }
 
   &--thin {
     @include container( $xxlarge );
     position: relative;
-    & + .row { margin-top: $margin; }
+    & + & { margin-top: $margin; }
   }
 }
 

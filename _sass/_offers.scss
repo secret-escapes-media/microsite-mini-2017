@@ -2,12 +2,45 @@
 
 
 .offer {
-  border: 1px solid $light-grey;
+  border: 1px solid $black-15;
   background-color: $white;
   border-radius: 5px;
   overflow: hidden;
+  position: relative;
   &.row__column{
     margin-bottom: 2em;
+  }
+
+  &--center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+  }
+
+  &__link {
+    @include transition();
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    display: block;
+    opacity: 0;
+    background-color: transparent;
+    .flexbox & {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &:hover {
+      opacity: 1;
+      background-color: rgba(0,0,0,.15);
+      color: #fff;
+      text-decoration: none;
+    }
+    .btn { margin-top: 50%; }
+    .flexbox & .btn { margin-top: 0; }
   }
 
   &__image {
@@ -30,8 +63,10 @@
     overflow: hidden;
     padding: 1em 1.5em;
 
-    p { font-size: 0.9em; line-height: 1.4; }
-    p + p { margin-top: .2em; }
+    &-description {
+      font-size: 0.9em; line-height: 1.4;
+      & + & { margin-top: .2em; }
+    }
 
     &-title {
       font-family: $main-font-family;
@@ -39,6 +74,7 @@
       font-weight: 500;
       color: $text-heading;
       margin-bottom: 0.2em;
+      line-height: 1.4;
     }
     &-location {
       margin-bottom: .833em;
@@ -66,6 +102,8 @@
     &-saved {
       width: 30%;
       padding-right: 5%;
+      margin-right: 5%;
+      border-right: 1px solid $black-15;
       float: left;
       text-align: center;
       &-num {
@@ -83,15 +121,14 @@
       }
     }
     &-details {
-      width: 70%;
-      padding-left: 5%;
+      width: 65%;
       display: inline-block;
-      border-left: 1px solid $black-15;
       vertical-align: top;
     }
     &-price {
       color: $se-orange;
-      font-size: 1.2em;
+      font-size: 1.3em;
+      font-weight: bold;
     }
     &-ends {
     }

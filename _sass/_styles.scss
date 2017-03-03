@@ -1,11 +1,32 @@
 
-// ALL CUSTOM STYLES FOR THE SITE
-// ==============================
-
+/*|---
+  | ALL CUSTOM STYLES FOR THE SITE
+  |------------------------------------------------*/
 
 body { background-color: $white; }
 
-// ---------- SECTION STYLES ----------
+
+/*====== FOOTER ======*/
+
+.footer {
+  background-color: $black;
+  &__logos {
+    font-size: .9em;
+    padding-top: $margin;
+    padding-bottom: $margin;
+  }
+  .logo {
+    vertical-align: middle;
+    margin-left: ($margin/4);
+    margin-right: ($margin/4);
+  }
+  p { margin-top: .5em; }
+  .logo--secret-escapes { max-width: 110px; }
+  .logo--partner { max-width: 80px; }
+}
+
+
+/*====== SECTION STYLES ======*/
 
 .invert-text {
   color: $white;
@@ -17,6 +38,7 @@ body { background-color: $white; }
   hr { background-color: $black-25; }
   .title { color: $text-heading; }
 }
+
 .bg {
   &--white      { background-color: $white; }
   &--black      { background-color: $black; }
@@ -37,46 +59,104 @@ body { background-color: $white; }
 }
 
 
-// ---------- BUTTONS ----------
+/*====== SECTIONS 50-50 ======
+ |  Home page 50-50 sections, allowing image to stay full height, then resize neatly.
+ =======================*/
 
-.btn {
-  @include transition;
-  display:inline-block;
-  padding: .7em 3em .5em;
-  font-family: $title-font-family;
-  font-size: 0.9em;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  border-radius: 3px;
-  color: white;
-  background-color: $theme-primary;
-  &:hover {
-    background-color: $theme-secondary;
-    text-decoration: none;
+.section--columns-6-6 {
+  @include bp(xlarge){
+    min-height: 450px;
   }
-  & + & { margin-left: 0.5em; }
-  * + & { margin-top: 1.5em; }
+}
 
-  &--subtle {
-    color: $dark-grey;
-    border: 2px solid rgba($dark-grey, 0.4);
-    background-color: transparent;
-    &:hover { border: 2px solid rgba($dark-grey, 0.7); background-color: transparent; }
+.section__column {
+  width: 100%;
+  position: relative;
+  @include bp(xlarge){
+    width: 50%; height: 100%;
+    position: absolute;
+    &--left { left: 0; }
+    &--right { right: 0; }
   }
-  &--small { font-size: 0.85em; padding: .5em 1.5em .2em; }
-  &--large { font-size: 1.1em; padding: .4em 2.5em; }
-  &--invert {
-    background-color: $white-85; color: $dark-grey;
-    &:hover { background-color: $white; color: $dark-grey; }
+
+  &-content {
+    @include bp(xlarge){
+      display: flex;
+      align-items: center;
+    }
+    &__text { padding: 30px 30px; }
+  }
+
+  &-image {
+    height: 200px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include bp(xlarge){
+      height: 100%;
+    }
   }
 }
 
 
-// ---------- SIGHTS & REGION CARDS ----------
+/*====== CAROUSEL ======
+ |  Used on competition page
+ =======================*/
 
-.sight,
-.region {
+#slider {
+  height: 240px;
+  width: 100%;
+  margin-bottom: 2em;
+  position: relative;;
+  .slide {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &--inactive { display: none; }
+  }
+  @include bp(large){
+    height: 500px;
+  }
+}
+#slider__next,
+#slider__previous {
+  background-color: $black-5;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  float: left;
+
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  line-height: 50px;
+  z-index: 10;
+
+  &:hover { background-color: $black-85; }
+
+  img { width: 20px; vertical-align: baseline; }
+}
+#slider__next { right: 0; }
+#slider__previous { left: 0; }
+@include bp(large){
+  #slider__next { right: -50px; }
+  #slider__previous { left: -50px; }
+}
+
+
+/*====== SIGHT CARDS ======*/
+
+.sight {
   @include transition();
   display: block;
   position: relative;
@@ -86,23 +166,26 @@ body { background-color: $white; }
   border: 1px solid $off-white;
   background-color: $white;
   border-radius: 5px;
-  padding-left: 90px;
-  height: 90px;
-  .flexbox & {
-    display: flex;
-    align-items: center;
-  }
+  height: auto;
+  padding-left: 150px;
+
+  .flexbox & { display: flex; align-items: center; }
 
   &__image {
-    position: absolute; left: 0; width: 90px; height: 100%;
-    background-size: cover; background-repeat: no-repeat; background-position: center;
+    position: absolute;
+    left: 0;
+    width: 150px; height: 100%;
+    border-radius: 5px 0 0 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
+
   &__content {
     padding: 1em 0.5em 1em 1.5em;
     overflow: hidden;
     display: block;
     text-align: left;
-    &-title {}
     &-location { margin-top: 0; }
   }
 
@@ -111,191 +194,119 @@ body { background-color: $white; }
     text-decoration: none;
   }
 
-  &--feature {
+  /*=== Large hero style feature ===*/
+  &--hero {
     height: auto;
-    margin-bottom: 0;
-    padding-left: 150px;
-    & .sight__image { width: 150px; }
+    padding-left: 0;
+    border: 1px solid $off-white;
+    & .sight__content { padding: 1em 2em; }
   }
+
 }
 
-.region {
-  border: 0;
-  background-color: $white;
-  box-shadow: 0 0 5px $black-33;
 
-  .flexbox & {
-    display: flex;
-    align-items: center;
-  }
+/*====== REGION MAP ======*/
 
-  &__image { }
+.regions {
+  background-attachment: fixed;
+
+  /*=== Content side ===*/
   &__content {
-    padding: 1em 1.5em; overflow: hidden; display: block;
-    &-title {}
-    &-location { margin-top: 0; }
-  }
-
-  &:hover {
-    background-color: $light-grey;
-    text-decoration: none;
-  }
-
-}
-
-
-// ---------- REGION MAP ----------
-
-.region-map {
-  position: relative;
-  &-section { background-attachment: fixed; }
-
-  &__points {
-    overflow: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  }
-  &__point {
-    @include transition();
-    position: absolute;
-    background-color: rgba($dark-grey, 0.8);
-    border: 1px solid $white-25;
-    padding: 1px 10px;
-    border-radius: 4em;
-    white-space: nowrap;
-    font-family: $title-font-family;
-    font-weight: 600;
-    font-size: 0.9em;
-    letter-spacing: 0.05em;
-    &:hover { text-decoration: none; background-color: $dark-grey; }
-  }
-  #point {
-    &--northern-scotland { top: 19%; left: 52%; }
-    &--southern-scotland { top: 39%; left: 51%; }
-    &--north-east { top: 45%; left: 66%; }
-    &--north-west { top: 50%; left: 57%; }
-    &--yorkshire-the-humber { top: 57%; left: 63%; }
-    &--east-midlands { top: 68%; left: 72%; }
-    &--west-midlands { top: 72%; left: 57%; }
-    &--north-wales { top: 65%; left: 49%; }
-    &--south-wales { top: 77%; left: 45%; }
-    &--east-anglia { top: 79%; left: 87%; }
-    &--south-east { top: 87%; left:67%; }
-    &--south-west { top: 89%; left: 44%; }
-  }
-  &__map {
-    // container for map background image
-    &__img {
-      // default img
-    }
-    &__current {
-      // region currently hovered on
-    }
-  }
-  #region {
-    &--northern-scotland {}
-    &--southern-scotland {}
-    &--north-east {}
-    &--north-west {}
-    &--yorkshire-the-humber {}
-    &--east-midlands {}
-    &--west-midlands {}
-    &--north-wales {}
-    &--south-wales {}
-    &--east-anglia {}
-    &--south-east {}
-    &--south-west {}
-  }
-}
-
-
-// ---------- 50-50 Sections ----------
-
-.section--columns-6-6 { }
-
-.section__column {
-  width: 100%;
-  position: relative;
-
-  &-content {
-    &__text {
-      padding: 30px 30px;
-    }
-  }
-
-  &-image {
-    height: 200px;
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-}
-
-@include bp(xlarge){
-
-  .section--columns-6-6 { min-height: 450px; }
-
-  .section__column {
-    width: 50%; height: 100%;
-    position: absolute;
-    &--left { left: 0; }
-    &--right { right: 0; }
-
-    &-content {
-      display: flex;
-      align-items: center;
-      &__text { }
-    }
-
-    &-image {
-      height: 100%;
-    }
-  }
-
-}
-
-.roadtrip-image {
-  &__content {
-    @include transition();
-    position: absolute;
-    top: 55%;
-    transform: translateY(-50%);
+    z-index: 10;
     width: 100%;
-    opacity: 0;
+    @include bp(large){
+      width: 60%;
+    }
   }
-  &:hover &__content {
-    top: 50%;
-    opacity: 1;
+
+  /*=== Map ===*/
+  &__map {
+    z-index: 1;
+    width: 100%;
+    margin-left: -10%;
+    position: relative;
+    @include bp(large){
+      width: 60%;
+      margin-left: -20%;
+    }
+
+    &-points {
+      overflow: visible;
+      position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
+    }
+
+    &-point {
+      @include transition();
+      position: absolute;
+      background-color: rgba($dark-grey, 0.8);
+      border: 1px solid $white-25;
+      padding: 1px 10px;
+      border-radius: 4em;
+      white-space: nowrap;
+      font-family: $title-font-family;
+      font-weight: 600;
+      font-size: 0.9em;
+      letter-spacing: 0.05em;
+      &:hover { text-decoration: none; background-color: $dark-grey; }
+    }
+
+    #point {
+      &--northern-scotland { top: 19%; left: 52%; }
+      &--southern-scotland { top: 39%; left: 51%; }
+      &--north-east { top: 45%; left: 66%; }
+      &--north-west { top: 50%; left: 57%; }
+      &--yorkshire-the-humber { top: 57%; left: 73%; }
+      &--east-midlands { top: 68%; left: 72%; }
+      &--west-midlands { top: 72%; left: 57%; }
+      &--north-wales { top: 65%; left: 49%; }
+      &--south-wales { top: 77%; left: 45%; }
+      &--east-anglia { top: 79%; left: 87%; }
+      &--south-east { top: 87%; left:67%; }
+      &--south-west { top: 89%; left: 44%; }
+    }
+
   }
+
+  /*=== Map ===*/
+  &__roadtrip {
+    &-content {
+      @include transition();
+      position: absolute;
+      top: 55%;
+      transform: translateY(-50%);
+      width: 100%;
+      opacity: 0;
+    }
+    &:hover &-content {
+      top: 50%;
+      opacity: 1;
+    }
+  }
+
 }
 
 
-// ---------- COMPETITION PAGE ----------
+/*====== COMPETITION PAGE ======*/
 
-.competition-feed {
+.journey {
   overflow: visible;
   position: relative;
-  max-width: 1280px;
 
   &__content {
     &-image { margin-bottom: 1.5em; }
   }
 
   &__map {
-    position: absolute;
-    top: -4em;
-    right: 0;
-    bottom: 0;
-    padding: 2em 2em 2em 0;
-    &-content {
-      background-color: #eee;
+    display: none;
+    @include bp(large){
+      display: block;
+      position: absolute;
+      top: -6em;
+      right: 0;
+      bottom: 0;
+      padding: 2em 2em 2em 0;
     }
-
-    // fixed state
     &--fixed {
       position: fixed;
       top: 3em;
@@ -309,3 +320,43 @@ body { background-color: $white; }
 }
 
 
+/*====== ROADTRIP PAGE ======*/
+
+.roadtrip-link {
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1.5em 2em;
+  &:hover { text-decoration: none; }
+}
+
+.roadtrip {
+  &__profile {
+
+    &-picture {
+      width: 70%; max-width: 240px; float: none; padding-bottom: 20px;
+      margin-left: auto; margin-right: auto;
+      .bg-image-ratio {
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+      }
+    }
+    &-content { width: 100%; float: none; }
+
+    @include bp(large){
+      &-picture {
+        width: 20%; float: left; padding-bottom: 0; padding-right: 30px;
+        .bg-image-ratio {
+          margin-left: inherit;
+          margin-right: inherit;
+          display: block;
+        }
+      }
+      &-content { width: 80%; float: left; }
+    }
+  }
+}

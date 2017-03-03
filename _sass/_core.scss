@@ -192,7 +192,78 @@ $z-background:      -1;
 .bg-image-ratio--21-9:before  { padding-top: 42.8571429%; }
 .bg-image-ratio--3-1:before  { padding-top: 33.333333%; }
 
-.bg-image-ratio--circle { overflow: hidden; border-radius: 100em; }
+.bg-image-ratio--circle {
+  overflow: hidden;
+  border-radius: 100em;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 70%;
+  @include bp(large){
+    width: 100%;
+  }
+}
+
+.gallery {
+  // Image captions
+  &__caption {
+    @include transition();
+    position: absolute;
+    bottom: -40px;
+    left: 1em;
+    right: 1em;
+    padding: 0.4em 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+    &--large {
+      bottom: 0;
+      left: 2em;
+      right: 2em;
+      padding: 0.4em 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      color: white;
+      font-weight: 600;
+      font-size: 1em;
+      letter-spacing: 0.05em;
+      text-transform: none;
+    }
+  }
+  .gallery:hover &__caption {
+    bottom: 0;
+  }
+
+
+  // Icon top right to show image has popup expand
+  &__expand {
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 40px;
+      width: 40px;
+      background-color: $black-5;
+      background-image: url('../img/icons/expand.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 1.3em;
+      cursor: pointer;
+      border-bottom-left-radius: 4px;
+      opacity: 0;
+      filter: opacity(0);
+      @include transition;
+      .svg & {
+        background-image: url('../img/icons/expand.svg');
+      }
+    }
+    &:hover:after {
+      opacity: 1;
+      filter: opacity(100);
+    }
+  }
+}
 
 
 

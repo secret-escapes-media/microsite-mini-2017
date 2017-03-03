@@ -4,7 +4,7 @@ title: Offers
 class: offers
 nav-order: 6
 
-banner-title: 
+banner-title:
 banner-intro:
 
 intro: >
@@ -22,10 +22,15 @@ intro: >
 
 <section class="offers bg--light-grey">
   <div class="row row--padding row--columns-4-4-4-gutters">
-    {% assign offers = site.data.offers %}
+    {% assign offers = site.data.offers | sort: 'price' %}
     {% for offer in offers %}
-      {% include offer/default.html %}
+      {% if offer.se-offer %}
+        {% include offer/default.html class="offer--fixed-height" %}
+      {% endif %}
     {% endfor %}
+  </div>
+  <div class="row row--padding align-center">
+    <a href="https://www.secretescapes.com/country/filter" id="tracking-country-offers-button" class="btn">View offers on Secret Escapes</a>
   </div>
 </section>
 

@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<section class="section--intro bg--dark-grey invert-text align-center">
+  <div class="row row--padding">
+    {{ page.intro }}
+  </div>
+</section>
+
+
 
 {% assign categories = site.pages | where: 'layout', 'content' | sort:"nav-order" %}
 {% for category in categories %}
@@ -49,45 +56,30 @@ layout: default
 
 
 
-<section class=" bg--dark-grey invert-text region-map-section" id="region-map" style="background-image: url('{{ site.baseurl }}/img/bg/map-bg.jpg');">
-  <div class="row row--padding row--columns-5-7-gutters">
+<section class="bg--dark-grey invert-text regions" id="region-map" style="background-image: url('{{ site.baseurl }}/img/bg/map-bg.jpg');">
+  <div class="row row--padding row--columns-vertical-align">
 
 
-    <div class="row__column section--padding-large">
+    <div class="regions__content section--padding-large">
+
       <h2 class="title title--medium title--bold title--upper">Country Breaks</h2>
-      <p>Browse by region on the map and discover epic roads that drive you through the heart of the most picturesque scenery these Isles have to offer. Tempted? Find Secret Escapes deals to complete your getaway... </p>
-      <hr />
+      <h3 class="title title--italic title--smallest">Let us inspire you to escape to the British countryside.</h3>
 
-      {% for region in page.regions %}
-      {% if region.feature %}
-        <div class="row">
-          <a
-            href="javascript:void(0);"
-            class="region default-text js-open-modal"
-             data-modal="region"
-             data-modal-item="{{ region.class }}">
+      <p>Take to the road and leave the hustle and bustle of city life behind. Breeze through quaint villages and revel in the slower pace of life. Discover the best scenic drives by region, and let Secret Escapes complete your getaway with the very best luxury country digs. Simply explore the map by clicking on a region and plan your country escape today.</p>
 
-            <span class="region__image" style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/region-{{ region.class }}.jpg');"></span>
+      <a href="javascript:void(0);" id="tracking-regions-map-button" class="btn btn--invert js-open-modal" data-modal="region" data-modal-item="south-west" >Browse the map to get inspired</a>
 
-            <span class="region__content">
-              <h4 class="title title--bold title--upper">{{ region.title }}</h4>
-              <p class="paragraph--small">{{ region.description | truncate: 47 }}</p>
-            </span>
-          </a>
-        </div>
-      {% endif %}
-      {% endfor %}
     </div>
 
 
-    <div class="row__column region-map">
-      <div class="region-map__points">
+    <div class="regions__map">
+      <div class="regions__map-points">
         {% for region in page.regions %}
-          <a href="javascript:void(0);" class="region-map__point js-open-modal" id="point--{{ region.class }}" data-modal="region" data-modal-item="{{ region.class }}">{{ region.title }}</a>
+          <a href="javascript:void(0);" class="regions__map-point js-open-modal" id="point--{{ region.class }}" data-modal="region" data-modal-item="{{ region.class }}">{{ region.title }}</a>
         {% endfor %}
       </div>
-      <div class="region-map__map">
-        <img class="region-map__map__img" src="{{ site.baseurl }}/img/content/{{ page.class }}/offer-map--default.png">
+      <div>
+        <img src="{{ site.baseurl }}/img/content/{{ page.class }}/offer-map--default.png">
       </div>
     </div>
 
@@ -133,9 +125,9 @@ layout: default
 
           <div class="row__column">
             <div
-              class="bg-image-ratio bg-image-ratio--3-2 roadtrip-image"
+              class="bg-image-ratio bg-image-ratio--3-2 regions__roadtrip"
               style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/region-{{ region.class }}-roadtrip.jpg');">
-              <span class="roadtrip-image__content align-center">
+              <span class="regions__roadtrip-content align-center">
                 <a target="_blank" href="{{ region.roadtrip-link }}" class="btn btn--large">View Roadtrip</a>
               </span>
             </div>
@@ -143,16 +135,35 @@ layout: default
 
         </div>
 
+
+
+        <!-- Competition Banner - IF Northern Scotland -->
+        {% if region.class == 'northern-scotland' %}
+          <div class="row--columns-6-6 row--columns-vertical-align bg--partner-primary invert-text">
+
+            <a href="{{ site.baseurl }}/competition" class="row__column bg-image-ratio bg-image-ratio--21-9" style="background-image: url('{{ site.baseurl }}/img/bg/banner-competition.jpg');">
+            </a>
+
+            <div class="row__column row--padding">
+              <h4 class="title title--smallest title--italic">Fancy winning a stay in the finest Scottish digs we’ve ever seen?</h4>
+              <a href="{{ site.baseurl }}/competition" class="btn btn--invert">Enter now</a>
+            </div>
+
+          </div>
+        {% endif %}
+
+
         <!-- Offers // if offers -->
         {% assign offers = site.data.offers | where:'region',region.class %}
         {% if offers.size != 0 %}
           <div class="section section--padding bg--light-grey align-center">
             <h4 class="title title--upper title--bold title--small">Offers</h4>
-            <p class="paragraph--lead">Take to the road and leave the hustle and bustle of city life behind, with opulent stays in quiet, peaceful country digs.</p>
           </div>
           <div class="section section--padding-none row--padding bg--light-grey row--columns-4-4-4-gutters">
             {% for offer in offers %}
-              {% include offer/default.html %}
+              {% if offer.se-offer %}
+                {% include offer/default.html %}
+              {% endif %}
             {% endfor %}
           </div>
           <div class="section section--padding bg--light-grey align-center">
@@ -176,4 +187,3 @@ layout: default
     </div>
   </div>
 </div>
-

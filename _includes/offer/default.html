@@ -1,43 +1,56 @@
-<div class="row__column offer">
 
-  <a href="{{ offer.link }}" class="offer__image bg-image-ratio bg-image-ratio--16-9" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.title | slugify }}.jpg')"></a>
+<div class="row__column offer{% if forloop.first and forloop.last %} offer--center{% endif %} {{ include.class }}">
+
+  <a href="{{ offer.link }}" class="offer__link">
+    <span class="btn">View Offer</span>
+  </a>
+
+  <div class="offer__image bg-image-ratio bg-image-ratio--16-9" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.class }}.jpg')"></div>
 
   <div class="offer__content">
 
 
-    <h2 class="offer__content-title"><a id="title-link-{{ offer.title | slugify }}" href="{{ offer.link }}">{{ offer.title }}</a></h2>
+    <h2 class="offer__content-title"><a id="title-link-{{ offer.class }}" href="{{ offer.link }}">{{ offer.title }}</a></h2>
     <h3 class="offer__content-location">{{ offer.location }}</h3>
 
     {% if offer.description %}
-      <p>{{ offer.description | truncate: 80 }}</p>
+      <p class="offer__content-description">{{ offer.description | truncate: 80 }}</p>
     {% endif %}
 
 
     <div class="row">
-      {% if offer.saved %}
-      <div class="offer__content-saved">
-        <span class="paragraph--small">Save up to</span>
-        <span class="offer__content-saved-num">
-          {{ offer.saved }}
-        </span>
-      </div>
-      {% endif %}
 
-      <div class="offer__content-details">
-        <p>
-          From <span class="offer__content-price">£{{ offer.price }}</span><br />
+      {% if offer.saved %}
+
+        <div class="offer__content-saved">
+          <span class="paragraph--small">Save up to</span>
+          <span class="offer__content-saved-num">
+            {{ offer.saved }}
+          </span>
+        </div>
+        <div class="offer__content-details">
+          <p>
+            From <span class="offer__content-price">£{{ offer.price }}</span><br />
+            {{ offer.price-description }}
+          </p>
+          {% if offer.expires %}
+            <span class="offer__content-ends paragraph--small">Ending on <strong>{{ offer.expires | date_to_long_string }}</strong></span>
+          {% endif %}
+        </div>
+
+      {% else %}
+
+        <p class="paragraph--bold paragraph--upper">
+          From <span class="offer__content-price">£{{ offer.price }}</span>
           {{ offer.price-description }}
         </p>
         {% if offer.expires %}
           <span class="offer__content-ends paragraph--small">Ending on <strong>{{ offer.expires | date_to_long_string }}</strong></span>
         {% endif %}
-      </div>
-    </div>
 
-    <!-- <div class="offer__content-buttons">
-      <a id="button-link-{{ offer.title | slugify }}" href="{{ offer.link }}" class="btn btn--solid btn--small">View Offer</a>
-      <a id="button-link-{{ offer.title | slugify }}" href="{{ offer.link }}" class="btn btn--small">Quickview</a>
-    </div> -->
+      {% endif %}
+
+    </div>
 
   </div>
 

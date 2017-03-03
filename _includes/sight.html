@@ -1,5 +1,26 @@
 
-{% if include.type == 'feature' %}
+{% if include.type == 'hero' %}
+
+  <div class="row sight sight--hero row--columns-6-6 row--columns-vertical-align">
+
+    <div class="sight__content row__column">
+      <h2 class="title title--small title--bold">
+        {{ sight.title }}
+      </h2>
+      <p class="paragraph--small paragraph--upper paragraph--tracking">{{ sight.location }}</p>
+      <p>{{ sight.description }}</p>
+    </div>
+
+    <div class="row__column">
+      <div
+        class="bg-image-ratio bg-image-ratio--3-2"
+        style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/sight-{{ sight.class }}.jpg');">
+      </div>
+    </div>
+
+  </div>
+
+{% else %}
 
   <div class="row__column">
     <a
@@ -16,24 +37,6 @@
         <p>{{ sight.description | truncate: 80 }}</p>
       </span>
 
-    </a>
-  </div>
-
-{% else %}
-
-  <div class="row__column">
-    <a
-      href="javascript:void(0);"
-      class="sight js-open-modal"
-      data-modal="sight"
-      data-modal-item="{{ sight.class }}">
-
-      <span class="sight__image bg-image-ratio bg-image-ratio--1-1" style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/sight-{{ sight.class }}.jpg');"></span>
-
-      <span class="sight__content">
-        <h4 class="sight__content-title title title--bold title--upper">{{ sight.title }}</h4>
-        <p class="sight__content-location paragraph--small">{{ sight.description | truncate: 32 }}</p>
-      </span>
     </a>
   </div>
 

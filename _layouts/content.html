@@ -9,8 +9,11 @@ layout: default
     <div class="row__column">
       {{ page.intro }}
       <hr />
-      <h4 class="title title--smallest">Read about our {{ page.title }} Roadtrip</h4>
-      <a href="{{ site.baseurl }}/expert-{{ page.class }}" class="btn btn--solid btn--invert">Read now</a>
+
+      <a href="{{ site.baseurl }}/expert-{{ page.class }}" class="roadtrip-link align-center" style="background-image: url({{ site.baseurl }}/img/bg/banner-expert-{{ page.class }}.jpg);">
+        <h4 class="title title--smallest title--italic">Secret Escapes visits the {{ page.title }}</h4>
+        <span class="btn btn--small btn--invert">Read here</span>
+      </a>
     </div>
 
     <div class="row__column">
@@ -21,7 +24,7 @@ layout: default
         <li><a href="#offers" class="title--upper title--tracking">Offers</a></li>
       </ul>
     </div>
-    
+
   </div>
 </section>
 
@@ -34,10 +37,13 @@ layout: default
       <h2 class="title title--medium title--upper title--bold">Roadtrip</h2>
       <h4 class="title title--italic title--smallest">{{ page.roadtrip-title }}</h4>
       {{ page.roadtrip-content }}
+      {% if page.roadtrip-link %}
+        <a href="{{ page.roadtrip-link }}" id="tracking-roadtrip-button-{{ page.class }}" class="btn btn--invert">Start Drive</a>
+      {% endif %}
     </div>
 
     <div class="row__column">
-      <div class="bg-image-ratio bg-image-ratio--4-3" id="map" style="background-image: url('{{ site.baseurl }}/img/content/{{ page.class }}/roadtrip.jpg');">
+      <div class="bg-image-ratio bg-image-ratio--4-3" id="map">
       </div>
     </div>
 
@@ -49,20 +55,22 @@ layout: default
 <section class="" id="sights">
   <div class="row row--padding align-center">
     <h2 class="title title--medium title--upper title--bold">Sights</h2>
-    {{ page.sights-content }}
+    <p class="paragraph--lead">Discover our top picks perfect for guiding your exploration of these country destinations</p>
+  </div>
+  <div class="row row--padding">
+
+    {% for sight in page.sights %}
+    {% if sight.hero %}
+      {% include sight.html type="hero" %}
+    {% endif %}
+    {% endfor %}
+
   </div>
   <div class="row row--padding row--columns-6-6-gutters">
     {% for sight in page.sights %}
-      {% if sight.feature %}
-        {% include sight.html type="feature" %}
-      {% endif %}
-    {% endfor %}
-  </div>
-  <div class="row row--padding row--columns-4-4-4-gutters">
-    {% for sight in page.sights %}
-      {% unless sight.feature %}
-        {% include sight.html %}
-      {% endunless %}
+    {% unless sight.hero %}
+      {% include sight.html %}
+    {% endunless %}
     {% endfor %}
   </div>
 </section>
@@ -75,9 +83,11 @@ layout: default
     <p>It’s time to let us inspire you with only the best luxury country stays. Take to the road and leave the hustle and bustle of city life behind, with opulent stays in quiet, peaceful country digs.</p>
   </div>
   <div class="row row--padding row--columns-4-4-4-gutters">
-    {% assign offers = site.data.offers | where:'category',page.class %}
+    {% assign offers = site.data.offers | where:'category',page.class | sort: 'price' %}
     {% for offer in offers %}
-      {% include offer/default.html %}
+      {% if offer.se-offer %}
+        {% include offer/default.html class="offer--fixed-height" %}
+      {% endif %}
     {% endfor %}
   </div>
   <div class="row row--padding align-center">

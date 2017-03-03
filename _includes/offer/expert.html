@@ -1,0 +1,30 @@
+
+{% assign offers = site.data.offers %}
+
+{% for offer in offers %}
+  {% if offer.class == include.offer %}
+  <div class="row row--columns-6-6 row--columns-vertical-align offer">
+    <div class="row__column offer__image bg-image-ratio bg-image-ratio--16-9" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.class }}.jpg')">
+      <a class="offer__image-link" id="tracking-image-link-{{ offer.class }}" href="{{ offer.link }}"></a>
+    </div>
+
+    <div class="row__column offer__content">
+
+      <h2 class="title title--bold title--smallest"><a id="tracking-title-link-{{ offer.class }}" href="{{ offer.link }}">{{ offer.title }}</a></h2>
+      <h3 class="h4 offer__content-location">{{ offer.location }}</h3>
+
+      {% if offer.description %}
+        <p>{{ offer.description }}</p>
+      {% endif %}
+
+      {% if offer.se-offer %}
+        <a id="tracking-button-link-{{ offer.class }}" href="{{ offer.link }}" class="btn btn--small btn--se">Book now</a>
+      {% else %}
+        <a id="tracking-button-link-{{ offer.class }}" href="{{ offer.link }}" class="btn btn--small">Find out more</a>
+      {% endif %}
+
+    </div>
+
+  </div>
+  {% endif %}
+{% endfor %}

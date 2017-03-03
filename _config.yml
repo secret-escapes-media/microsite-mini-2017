@@ -1,7 +1,7 @@
 # Site settings
 title: Country Breaks
 description: >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi veniam voluptatibus totam accusantium laborum quo dolore.
+  Discover epic drives and breathtaking landscapes in our curated guide to Britain’s best country breaks.
 baseurl: "/country-breaks" # the subpath of your site, e.g. /blog/
 url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
 
