@@ -144,4 +144,15 @@
       .btn + .btn { margin-left: 4%; }
     }
   }
+
+
+  // Badge for offers tried on roadtrips
+  &__tried {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: -2px;
+    left: -4px;
+    margin-left: auto;
+  }
 }

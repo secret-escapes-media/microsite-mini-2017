@@ -29,6 +29,7 @@
     link: https://www.secretescapes.com/the-slaughters-manor-house-lower-slaughter-cotswolds/sale?utm_source=SE&utm_campaign=MINI_20170301&utm_medium=Hub
 
   - se-offer:
+    tried: true
     title: The Old Stocks Inn
     class: the-old-stocks-inn
     location: Stow-on-the-Wold
@@ -36,7 +37,7 @@
     category:
     description: Boutique Cotswolds digs set in a unique 17th-century coaching inn
     price:
-    price-description:
+    price-description: per room per night
     saved:
     expires:
     link: http://www.oldstocksinn.com/
@@ -84,6 +85,7 @@
     link: https://www.secretescapes.com/the-wordsworth-hotel-and-spa-grasmere-lake-district/sale?utm_source=SE&utm_campaign=MINI_20170301&utm_medium=Hub
 
   - se-offer: true
+    tried: true
     title: Miller Howe
     class: miller-howe
     location: Windermere, Lake District
@@ -123,6 +125,7 @@
     link: https://www.secretescapes.com/lovelady-shield-country-house-hotel-cumbria-lake-district/sale?utm_source=SE&utm_campaign=MINI_20170301&utm_medium=Hub
 
   - se-offer: true
+    tried: true
     title: Rothay Manor
     class: rothay-manor
     location: Ambleside. Lake District
@@ -130,12 +133,13 @@
     category: lake-district
     description: A peaceful country stay at the head of Lake Windermere, with breakfast and three-course dinner
     price: 184
-    price-description:
+    price-description: per room per night
     saved:
     expires:
     link: https://www.secretescapes.com/rothay-manor-ambleside-lake-district/sale?utm_source=SE&utm_campaign=MINI_20170303&utm_medium=hub
 
   - se-offer: true
+    tried: true
     title: Inn on the Lake
     class: inn-on-the-lake
     location: Glenridding, Lake District
@@ -143,7 +147,7 @@
     category: lake-district
     description: A charming stay at a family-run hotel by Lake Ullswater, with award-winning dining included
     price: 169
-    price-description:
+    price-description: per room per night
     saved:
     expires:
     link: https://www.secretescapes.com/inn-on-the-lake-glenridding-lake-district/sale?gce_abr=2&utm_source=SE&utm_campaign=MINI_20170303&utm_medium=hub
@@ -173,7 +177,7 @@
     category:
     description: On the edge of the Chatsworth Estate, this luxury retreat offers sublime grounds to explore
     price:
-    price-description:
+    price-description: per room per night
     saved:
     expires:
     link: http://www.cavendish-hotel.net/
@@ -209,6 +213,7 @@
     link: https://www.secretescapes.com/the-falcondale-hotel-ceredigion-wales/sale?utm_source=SE&utm_campaign=MINI_20170301&utm_medium=Hub
 
   - se-offer:
+    tried: true
     title: Foyles of Glasbury
     class: foyles-of-glasbury
     location: Glasbury-on-Wye
@@ -216,7 +221,7 @@
     category:
     description: Country stay in the Brecon Beacons with designer touches
     price:
-    price-description:
+    price-description: per room per night
     saved:
     expires:
     link: http://foylesofglasbury.com/

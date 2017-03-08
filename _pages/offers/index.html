@@ -22,12 +22,23 @@ intro: >
 
 <section class="offers bg--light-grey">
   <div class="row row--padding row--columns-4-4-4-gutters">
+
     {% assign offers = site.data.offers | sort: 'price' %}
+
     {% for offer in offers %}
-      {% if offer.se-offer %}
+      {% if offer.tried and offer.se-offer %}
         {% include offer/default.html class="offer--fixed-height" %}
       {% endif %}
     {% endfor %}
+
+    {% for offer in offers %}
+      {% if offer.se-offer %}
+        {% unless offer.tried %}
+          {% include offer/default.html class="offer--fixed-height" %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+
   </div>
   <div class="row row--padding align-center">
     <a href="https://www.secretescapes.com/country/filter" id="tracking-country-offers-button" class="btn">View offers on Secret Escapes</a>

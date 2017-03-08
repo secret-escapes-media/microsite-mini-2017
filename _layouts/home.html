@@ -29,23 +29,6 @@ layout: default
         <div class="section__column-content__text">
           <h2 class="title title--medium title--bold title--upper">{{ category.title }}</h2>
           <p>{{ category.intro | strip_html }}</p>
-          <div class="row row--columns-6-6-gutters">
-            {% for sight in category.sights %}
-              {% if sight.feature %}
-                <div class="row__column">
-                  <a href="{{ site.baseurl }}{{ category.url }}" class="sight" data-sight="{{ sight.class }}">
-
-                    <span class="sight__image bg-image-ratio bg-image-ratio--1-1" style="background-image: url('{{ site.baseurl }}/img/content/{{ category.class }}/sight-{{ sight.class }}.jpg');"></span>
-
-                    <span class="sight__content">
-                      <h4 class="sight__content-title title title--bold title--upper">{{ sight.title }}</h4>
-                      <p class="sight__content-location paragraph--small paragraph--upper paragraph--tracking">{{ sight.location }}</p>
-                    </span>
-                  </a>
-                </div>
-              {% endif %}
-            {% endfor %}
-          </div>
           <a href="{{ site.baseurl }}{{ category.url }}" class="btn btn--solid">Discover the {{ category.title }}</a>
         </div>
       </div>

@@ -5,7 +5,13 @@
     <span class="btn">View Offer</span>
   </a>
 
-  <div class="offer__image bg-image-ratio bg-image-ratio--16-9" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.class }}.jpg')"></div>
+  <div class="offer__image bg-image-ratio bg-image-ratio--16-9" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.class }}.jpg')">
+    {% if offer.tried %}
+      <span class="offer__tried">
+        <img src="{{ site.baseurl }}/img/icons/approved.png" class="js-svg-swap" width="100%">
+      </span>
+    {% endif %}
+  </div>
 
   <div class="offer__content">
 
