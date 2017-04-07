@@ -12,8 +12,6 @@
     description: Boutique Cotswolds digs set in a unique 17th-century coaching inn
     price:
     price-description: per room per night
-    saved:
-    expires:
     link: http://www.oldstocksinn.com/
 
   - se-offer: true
@@ -25,22 +23,7 @@
     description: An imposing Grade II listed manor near the Cotswolds, including three-course dinner options
     price: 99
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/the-wood-norton-evesham-worcestershire/sale?gce_urg=0&utm_source=SE&utm_campaign=MINI_201703&utm_medium=Hub
-
-  - se-offer: true
-    title: Heythrop Park
-    class: heythrop-park
-    location: Chipping Norton, Oxfordshire
-    region: west-midlands
-    category: cotswolds
-    description: A relaxing golf and spa resort among 440 acres of greenery in the Cotswolds
-    price: 69
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/heythrop-park-chipping-norton-oxfordshire/sale?gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
     title: Cheltenham Regency Hotel
@@ -51,39 +34,22 @@
     description: A newly-refurbed, refined and modern base on the edge of the Cotswolds, with three-course dinner
     price: 89
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/cheltenham-regency-hotel-cheltenham-gloucestershire/sale?gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
-    title: The Gables Hotel
-    class: the-gables-hotel
-    location: Falfield, Gloucestershire
+    title: Mercure Gloucester Bowden Hall Hotel
+    class: mercure-gloucester-bowden-hall-hotel
+    location: Gloucester, Cotswolds
     region: west-midlands
     category: cotswolds
-    description: A simple, cosy stay in a traditional building on the edge of the Cotswolds, with dinner
-    price: 89
+    description: A listed Georgian hotel with beautiful grounds and stylish new interiors in the Cotswolds
+    price: 79
     price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/the-gables-hotel-falfield-gloucestershire/sale?gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
+    link: https://www.secretescapes.com/mercure-gloucester-bowden-hall-hotel-gloucester-cotswolds/sale?gce_scp=1&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
 
 ##======= BRECON BEACONS =======##
 # south-wales
-
-  - se-offer: true
-    title: Lake Country House Hotel & Spa
-    class: lake-country-house-hotel-spa
-    location: Powys, Wales
-    region: south-wales
-    category: brecon-beacons
-    description: Stay at an award-winning country hotel with charming boutique style and an optional suite
-    price: 109
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/lake-country-house-hotel-and-spa-powys-wales/sale?gce_urg=0&utm_source=SE&utm_campaign=MINI_201703&utm_medium=Hub
 
   - se-offer:
     tried: true
@@ -95,9 +61,18 @@
     description: Country stay in the Brecon Beacons with designer touches
     price:
     price-description: per room per night
-    saved:
-    expires:
     link: http://foylesofglasbury.com/
+
+  - se-offer: true
+    title: Celtic Manor Resort
+    class: celtic-manor-resort
+    location: Newport, Wales
+    region: south-wales
+    category: brecon-beacons
+    description: A top golf and spa resort, with championship courses, fine dining and a luxury health club
+    price: 148
+    price-description: per room per night
+    link: https://www.secretescapes.com/celtic-manor-resort-newport-wales/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
 
 ##======= LAKE DISTRICT =======##
@@ -113,8 +88,6 @@
     description: Luxury stay in Ambleside with fine food offerings
     price:
     price-description:
-    saved:
-    expires:
     link: http://rothaymanor.co.uk/
 
   - se-offer:
@@ -127,8 +100,6 @@
     description: An inviting Lake District hotel, with panoramic views of Windermere
     price:
     price-description:
-    saved:
-    expires:
     link: http://millerhowe.com/
 
   - se-offer:
@@ -141,8 +112,6 @@
     description: Award-winning lakeside inn that offers remarkable views over Ullswater
     price:
     price-description:
-    saved:
-    expires:
     link: http://www.lakedistricthotels.net/innonthelake/offers.php
 
   - se-offer: true
@@ -154,8 +123,6 @@
     description: World-class dining and Lake Windermere views, with 10-course Michelin-starred dinner
     price: 379
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/the-samling-windermere-lake-district/sale?gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
@@ -167,9 +134,29 @@
     description: Peaceful Lake District stay with breakfast, three-course dinner, and tea and scones on arrival
     price: 149
     price-description: per suite per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/the-borrowdale-hotel-keswick-lake-district/sale?utm_source=SE&utm_campaign=MINI_201703&utm_medium=Hub
+
+  - se-offer: true
+    title: The Howbeck
+    class: the-howbeck
+    location: Windermere, Lake District
+    region: north-west
+    category: cotswolds
+    description: A romantic five-star stay at an award-winning hotel close to Lake Windermere
+    price: 109
+    price-description: per room per night
+    link: https://www.secretescapes.com/the-howbeck-windermere-lake-district/sale?gce_scp=1&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: Hunday Manor Country House Hotel
+    class: hunday-manor-country-house-hotel
+    location: Winscales, Lake District
+    region: north-west
+    category: cotswolds
+    description: Elegant interiors and a laid-back ambience at this charming Lake District hotel
+    price: 69
+    price-description: per room per night
+    link: https://www.secretescapes.com/hunday-manor-country-house-hotel-winscales-lake-district/sale?gce_scp=1&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
 
 ##======= PEAK DISTRICT =======##
@@ -184,8 +171,6 @@
     description: On the edge of the Chatsworth Estate, this luxury retreat offers sublime grounds to explore
     price:
     price-description: per room per night
-    saved:
-    expires:
     link: http://www.cavendish-hotel.net/
 
   - se-offer: true
@@ -197,84 +182,10 @@
     description: A peaceful retreat in the heart of the Peak District, with breakfast, dinner and more
     price: 159
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/losehill-house-hotel-and-spa-hope-peak-district/sale?gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
 
 ##======= OTHER OFFERS =======##
-
-  - se-offer: true
-    title: Mercure Brandon Hall Hotel & Spa
-    class: mercure-brandon-hall-hotel-spa
-    location: Near Coventry, Warwickshire
-    region: east-midlands
-    description: A former shooting lodge turned countryside spa hotel in 17 acres of greenery, near Coventry
-    price: 79
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/mercure-brandon-hall-hotel-and-spa-near-coventry-warwickshire/sale?utm_source=SE&utm_campaign=MINI_201703&utm_medium=Hub
-
-  - se-offer: true
-    title: The Quay Hotel & Spa
-    class: the-quay-hotel-spa
-    location: Conwy, North Wales
-    region: north-wales
-    description: A chic spa hotel on the Conwy Estuary in North Wales, with award-winning dining and pretty views
-    price: 99
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/the-quay-hotel-and-spa-conwy-north-wales/sale?gce_urg=0&utm_source=SE&utm_campaign=MINI_201703&utm_medium=Hub
-
-  - se-offer: true
-    title: The Ickworth Hotel
-    class: the-ickworth-hotel
-    location: Bury St Edmunds, Suffolk
-    region: east-anglia
-    description: An elegant, family-friendly stately home, with full English breakfast and two-course dinner
-    price: 129
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/the-ickworth-hotel-bury-st-edmunds-suffolk/sale?gce_urg=0&utm_source=SE&utm_campaign=MINI_201703&utm_medium=Hub
-
-  - se-offer: true
-    title: Beechfield House
-    class: beechfield-house
-    location: Beanacre, Wiltshire
-    region: south-west
-    description: An award-winning country escape with walled gardens, a pool, fine dining and elegant interiors
-    price: 119
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/beechfield-house-beanacre-wiltshire/sale?utm_source=SE&utm_campaign=MINI_201703&utm_medium=Hub
-
-  - se-offer: true
-    title: The White Horse
-    class: the-white-horse
-    location: Chilgrove, West Sussex
-    region: south-east
-    description: A stylish and cosy inn on the edge of the South Downs, with awards from GQ and Harper's Bazaar
-    price: 79
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/the-white-horse-chilgrove-west-sussex1/sale?gce_urg=0&utm_source=SE&utm_campaign=MINI_201703&utm_medium=Hub
-
-  - se-offer: true
-    title: Battlesteads Hotel & Restaurant
-    class: battlesteads-hotel-restaurant
-    location: Hexham, Northumberland
-    region: north-east
-    description: An indulgent foodie stay at an eco-friendly hotel near Northumberland National Park
-    price: 75
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/battlesteads-hotel-and-restaurant-hexham-northumberland/sale?se_source=ep&gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
     title: Swinton Park
@@ -284,8 +195,6 @@
     description: A luxury castle hotel with cookery school and more in the beautiful Yorkshire Dales
     price: 119
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/swinton-park-ripon-north-yorkshire/sale?gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
@@ -296,8 +205,6 @@
     description: A covetable Champneys break in the South Downs, with healthy meals and thalassotherapy
     price: 225
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/champneys-forest-mere-liphook-hampshire/sale?gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
@@ -308,8 +215,6 @@
     description: A grand Surrey stay in a historic country house, with beautiful grounds and sleek interiors
     price: 149
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/de-vere-wotton-house-dorking-surrey/sale?gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
@@ -320,21 +225,7 @@
     description: A stylish, award-winning Norfolk country inn with modern and cosy rooms by the marshes
     price: 99
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/the-george-at-cley-cley-norfolk/sale?gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
-
-  - se-offer: true
-    title: Highbullen Hotel, Golf & Country Club
-    class: highbullen-hotel-golf-country-club
-    location: Umberleigh, North Devon
-    region: south-west
-    description: A luxurious golf and leisure resort in Devon, with gourmet restaurant, tennis courts and indoor pool
-    price: 109
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/highbullen-hotel-golf-and-country-club-umberleigh-north-devon/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
     title: Ston Easton Park Hotel
@@ -344,8 +235,6 @@
     description: A splendid Palladian mansion with grand period interiors, plus 36 acres of parkland to stroll around
     price: 105
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/ston-easton-park-hotel-ston-easton-somerset/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
@@ -356,45 +245,7 @@
     description: An 18th-century manor house with spa and beautiful gardens near Shrewsbury
     price: 79
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/mercure-albrighton-hall-hotel-and-spa-shrewsbury-shropshire/sale?gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
-
-  - se-offer: true
-    title: Old Downton Lodge
-    class: old-downton-lodge
-    location: Ludlow, Shropshire
-    region: west-midlands
-    description: Rustic charm, chic interiors and award-winning dining in foodie Ludlow
-    price: 99
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/old-downton-lodge-ludlow-shropshire/sale?gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
-
-  - se-offer: true
-    title: Lympstone Manor
-    class: lympstone-manor
-    location: Exmouth, Devon
-    region: south-west
-    description: A sensational new hotel in Exmouth, created by the two Michelin-starred chef Michael Caines MBE
-    price: 208
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/lympstone-manor-exmouth-devon/sale?gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
-
-  - se-offer: true
-    title: The Welldiggers Arms
-    class: the-welldiggers-arms
-    location: Petworth, South Downs National Park
-    region: south-east
-    description: A historic and acclaimed Epicurean Collection member in the South Downs National Park
-    price: 69
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/the-welldiggers-arms-petworth-south-downs-national-park/sale?gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
     title: Swinton Bivouac
@@ -404,45 +255,7 @@
     description: Beautiful hand-crafted barns and shacks in the wild and unspoilt dales, with room for a large group
     price: 109
     price-description: per yurt per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/swinton-bivouac-masham-north-yorkshire/sale?gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
-
-  - se-offer: true
-    title: Cary Arms & Spa
-    class: cary-arms-spa
-    location: Babbacombe, South Devon
-    region: south-west
-    description: A five-star, Condé Nast Johansens award-winner on the Devonshire coast, with sleek new spa
-    price: 159
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/cary-arms-and-spa-babbacombe-south-devon/sale?set=1&gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
-
-  - se-offer: true
-    title: Macdonald Norwood Hall Hotel
-    class: macdonald-norwood-hall-hotel
-    location: Aberdeen, Scotland
-    region: northern-scotland
-    description: Stay in a 15th-century castle in the north of Scotland, with AA Rosette-awarded dinner options
-    price: 94
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/macdonald-norwood-hall-hotel-aberdeen-scotland/sale?set=1&gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
-
-  - se-offer: true
-    title: Talland Bay Hotel
-    class: talland-bay-hotel
-    location: Polperro, Cornwall
-    region: south-west
-    description: A boutique hotel on the romantic Cornish coast, with AA Rosette-awarded dining
-    price: 159
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/talland-bay-hotel-polperro-cornwall/sale?set=1&gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
     title: Champneys Henlow
@@ -452,8 +265,6 @@
     description: A relaxing stay in a covetable Champneys spa, with healthy dining and a treatment
     price: 199
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/champneys-henlow-henlow-bedfordshire/sale?set=1&gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
@@ -464,21 +275,7 @@
     description: History meets modernity at a scenic country house in the Surrey Hills, with dinner and more
     price: 169
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/barnett-hill-country-house-hotel-guildford-surrey-2/sale?set=1&gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
-
-  - se-offer: true
-    title: The Beach at Bude
-    class: the-beach-at-bude
-    location: Bude, Cornwall
-    region: south-west
-    description: Modern foodie stay at a beachfront hotel with multiple dining accolades - includes dinner and more
-    price: 169
-    price-description: per room per night
-    saved:
-    expires:
-    link: https://www.secretescapes.com/the-beach-at-bude-bude-cornwall/sale?set=1&gce_urg=1&gce_scp=0
 
   - se-offer: true
     title: Palé Hall
@@ -488,8 +285,6 @@
     description: An opulent 19th-century mansion by Snowdonia National Park, with acclaimed fine dining
     price: 149
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/pale-hall-gwynedd-north-wales/sale?set=1&gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
@@ -500,8 +295,6 @@
     description: A new boutique Cornwall retreat overlooking a Blue Flag beach, with access to a top spa nearby
     price: 99
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/the-gannet-inn-carbis-bay-cornwall/sale?set=1&gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
@@ -512,8 +305,6 @@
     description: A former coaching inn located at the entrance of Waddesdon Manor - with extras included
     price: 99
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/the-five-arrows-waddesdon-buckinghamshire/sale?set=1&gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
@@ -524,8 +315,6 @@
     description: A romantic, hilltop stay at the country's only intact medieval-style castle, with prized dining
     price: 125
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/peckforton-castle-tarporley-cheshire/sale?set=1&gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
@@ -536,8 +325,6 @@
     description: A stylish stay at a historic hotel in the Wiltshire countryside, with access to the luxury spa
     price: 149
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/the-bishopstrow-hotel-and-spa-warminster-wiltshire/sale?set=1&gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
@@ -548,6 +335,185 @@
     description: Period charm a short drive from the breathtaking Pembrokeshire coastline
     price: 69
     price-description: per room per night
-    saved:
-    expires:
     link: https://www.secretescapes.com/best-western-lamphey-court-hotel-and-spa-pembrokeshire-wales/sale?set=1&gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
+
+  - se-offer: true
+    title: Polurrian Bay Hotel
+    class: polurrian-bay-hotel
+    location: Mullion, Cornwall
+    region: south-west
+    description: A modish Mullion retreat with colour-pop interiors and views over the coastline
+    price: 109
+    price-description: per room per night
+    link: https://www.secretescapes.com/polurrian-bay-hotel-mullion-cornwall/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: Glewstone Court Country House
+    class: glewstone-court-country-house
+    location: Ross-on-Wye, Herefordshire
+    region: west-midlands
+    description: An award-winning Grade II-listed country house in Wye Valley's Area of Outstanding Natural Beauty
+    price: 119
+    price-description: per room per night
+    link: https://www.secretescapes.com/glewstone-court-country-house-ross-on-wye-herefordshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: The Billesley Manor Hotel
+    class: the-billesley-manor-hotel
+    location: Stratford-upon-Avon, Warwickshire
+    region: west-midlands
+    description: Fine dining, a spa and nearby golf at a historic hotel in Shakespeare Country
+    price: 104
+    price-description: per room per night
+    link: https://www.secretescapes.com/the-billesley-manor-hotel-stratford-upon-avon-warwickshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: Carden Park
+    class: carden-park
+    location: Near Chester, Cheshire
+    region: north-west
+    description: An award-winning spa hotel near Chester, with championship golf courses and a private vineyard
+    price: 89
+    price-description: per room per night
+    link: https://www.secretescapes.com/carden-park-near-chester-cheshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: Macdonald Berystede Hotel & Spa
+    class: macdonald-berystede-hotel-spa
+    location: Ascot, Berkshire
+    region: south-east
+    description: A French château-style stately home near Royal Windsor, with a luxury spa
+    price: 99
+    price-description: per room per night
+    link: https://www.secretescapes.com/macdonald-berystede-hotel-and-spa-ascot-berkshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: Merchants Manor
+    class: merchants-manor
+    location: Falmouth, Cornwall
+    region: south-west
+    description: Boutique digs and a blissful spa at a former merchant's house in picturesque Falmouth
+    price: 89
+    price-description: per room per night
+    link: https://www.secretescapes.com/merchants-manor-falmouth-cornwall/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: De Vere Cranage Estate
+    class: de-vere-cranage-estate
+    location: Holmes Chapel, Cheshire
+    region: north-west
+    description: Escape to the Cheshire countryside, with a stay at a grand and contemporary abode
+    price: 75
+    price-description: per room per night
+    link: https://www.secretescapes.com/de-vere-cranage-estate-holmes-chapel-cheshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: Hawkwell House
+    class: hawkwell-house
+    location: Iffley, Oxfordshire
+    region: west-midlands
+    description: A relaxing country stay with modern interiors near Oxford - includes cream tea or dinner allowance
+    price: 99
+    price-description: per room per night
+    link: https://www.secretescapes.com/hawkwell-house-iffley-oxfordshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: The New Inn
+    class: the-new-inn
+    location: Clapham, Yorkshire Dales
+    region: yorkshire-the-humber
+    description: A luxury, five-star coaching inn set within the dramatic Yorkshire Dales
+    price: 89
+    price-description: per room per night
+    link: https://www.secretescapes.com/the-new-inn-clapham-yorkshire-dales/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: Banchory Lodge
+    class: banchory-lodge
+    location: Aberdeenshire, Scotland
+    region: northern-scotland
+    description: A back-to-nature Scottish hunting and fishing lodge with a twist, close to Aberdeen
+    price: 65
+    price-description: per room per night
+    link: https://www.secretescapes.com/banchory-lodge-aberdeenshire-scotland/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: The Yarrow Hotel
+    class: the-yarrow-hotel
+    location: Broadstairs, Kent
+    region: south-east
+    description: Modern interiors within a historic Jacobean building in charming Broadstairs
+    price: 149
+    price-description: per room per night
+    link: https://www.secretescapes.com/the-yarrow-hotel-broadstairs-kent/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: Mercure Warwickshire Walton Hall Hotel & Spa
+    class: mercure-warwickshire-walton-hall-hotel-spa
+    location: Walton, Warwickshire
+    region: west-midlands
+    description: Rural charm in the Warwickshire countryside, a stone's throw from Shakespeare's birthplace
+    price: 99
+    price-description: per room per night
+    link: https://www.secretescapes.com/mercure-warwickshire-walton-hall-hotel-and-spa-walton-warwickshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: The Mill Hotel
+    class: the-mill-hotel
+    location: Sudbury, Suffolk
+    region: east-anglia
+    description: A lovely country stay between river and meadow in Sudbury, with one dinner and afternoon tea
+    price: 99
+    price-description: per room per night
+    link: https://www.secretescapes.com/the-mill-hotel-sudbury-suffolk-1/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: The West Arms
+    class: the-west-arms
+    location: Ceiriog Valley, North Wales
+    region: north-wales
+    description: English charm and renowned dining at a 16th-century inn in the tranquil Ceiriog Valley
+    price: 69
+    price-description: per room per night
+    link: https://www.secretescapes.com/the-west-arms-ceiriog-valley-north-wales/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: Lifehouse Spa & Hotel
+    class: lifehouse-spa-hotel
+    location: Thorpe-le-Soken, Essex
+    region: east-anglia
+    description: Modern design at an adults-only destination spa set among historic gardens and woodland
+    price: 89
+    price-description: per room per night
+    link: https://www.secretescapes.com/lifehouse-spa-and-hotel-thorpe-le-soken-essex/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: Bath Lodge Castle
+    class: bath-lodge-castle
+    location: Norton St Philip, Somerset
+    region: south-west
+    description: A historic castle stay with memorable rooms in the Somerset countryside - includes dinner
+    price: 159
+    price-description: per room per night
+    link: https://www.secretescapes.com/bath-lodge-castle-norton-st-philip-somerset/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: Rushton Hall
+    class: rushton-hall
+    location: Rushton, Northamptonshire
+    region: east-midlands
+    description: A magnificent Grade I-listed hotel, with a spa, beautiful grounds and an award-winning restaurant
+    price: 115
+    price-description: per room per night
+    link: https://www.secretescapes.com/rushton-hall-rushton-northamptonshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: Priest House Hotel
+    class: priest-house-hotel
+    location: Castle Donington, Derby
+    region: east-midlands
+    description: A country house hotel in Derbyshire, with breakfast, three-course dinner and late check-out
+    price: 139
+    price-description: per room per night
+    link: https://www.secretescapes.com/priest-house-hotel-castle-donington-derby/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
