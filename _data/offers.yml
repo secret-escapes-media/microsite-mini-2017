@@ -58,6 +58,17 @@
     price-description: per room per night
     link: https://www.secretescapes.com/corse-lawn-house-hotel-corse-lawn-cotswolds/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
+  - se-offer: true
+    title: White Hart Royal Hotel
+    class: white-hart-royal-hotel
+    location: Moreton-In-Marsh, Cotswolds
+    region: west-midlands
+    category: cotswolds
+    description: Explore the Cotswolds from this historic country inn, with AA Rosette-awarded dining
+    price: 99
+    price-description: per room per night
+    link: https://www.secretescapes.com/white-hart-royal-hotel-moreton-in-marsh-cotswolds/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
 
 ##======= BRECON BEACONS =======##
 # south-wales
@@ -113,17 +124,6 @@
     price:
     price-description:
     link: http://www.lakedistricthotels.net/innonthelake/offers.php
-
-  - se-offer: true
-    title: The Borrowdale Hotel
-    class: the-borrowdale-hotel
-    location: Keswick, Lake District
-    region: north-west
-    category: lake-district
-    description: Peaceful Lake District stay with breakfast, three-course dinner, and tea and scones on arrival
-    price: 149
-    price-description: per suite per night
-    link: https://www.secretescapes.com/the-borrowdale-hotel-keswick-lake-district/sale?utm_source=SE&utm_campaign=MINI_201703&utm_medium=Hub
 
   - se-offer: true
     title: The George Hotel
@@ -188,16 +188,6 @@
 ##======= OTHER OFFERS =======##
 
   - se-offer: true
-    title: Swinton Park
-    class: swinton-park
-    location: Ripon, North Yorkshire
-    region: yorkshire-the-humber
-    description: A luxury castle hotel with cookery school and more in the beautiful Yorkshire Dales
-    price: 119
-    price-description: per room per night
-    link: https://www.secretescapes.com/swinton-park-ripon-north-yorkshire/sale?gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
-
-  - se-offer: true
     title: Champneys Forest Mere
     class: champneys-forest-mere
     location: Liphook, Hampshire
@@ -216,36 +206,6 @@
     price: 79
     price-description: per room per night
     link: https://www.secretescapes.com/mercure-albrighton-hall-hotel-and-spa-shrewsbury-shropshire/sale?gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
-
-  - se-offer: true
-    title: Swinton Bivouac
-    class: swinton-bivouac
-    location: Masham, North Yorkshire
-    region: yorkshire-the-humber
-    description: Beautiful hand-crafted barns and shacks in the wild and unspoilt dales, with room for a large group
-    price: 109
-    price-description: per yurt per night
-    link: https://www.secretescapes.com/swinton-bivouac-masham-north-yorkshire/sale?gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
-
-  - se-offer: true
-    title: Champneys Henlow
-    class: champneys-henlow
-    location: Henlow, Bedfordshire
-    region: south-east
-    description: A relaxing stay in a covetable Champneys spa, with healthy dining and a treatment
-    price: 199
-    price-description: per room per night
-    link: https://www.secretescapes.com/champneys-henlow-henlow-bedfordshire/sale?set=1&gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
-
-  - se-offer: true
-    title: Barnett Hill Country House Hotel
-    class: barnett-hill-country-house-hotel
-    location: Guildford, Surrey
-    region: south-east
-    description: History meets modernity at a scenic country house in the Surrey Hills, with dinner and more
-    price: 169
-    price-description: per room per night
-    link: https://www.secretescapes.com/barnett-hill-country-house-hotel-guildford-surrey-2/sale?set=1&gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
     title: Palé Hall
@@ -268,16 +228,6 @@
     link: https://www.secretescapes.com/the-bishopstrow-hotel-and-spa-warminster-wiltshire/sale?set=1&gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
 
   - se-offer: true
-    title: Glewstone Court Country House
-    class: glewstone-court-country-house
-    location: Ross-on-Wye, Herefordshire
-    region: west-midlands
-    description: An award-winning Grade II-listed country house in Wye Valley's Area of Outstanding Natural Beauty
-    price: 119
-    price-description: per room per night
-    link: https://www.secretescapes.com/glewstone-court-country-house-ross-on-wye-herefordshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
     title: The Billesley Manor Hotel
     class: the-billesley-manor-hotel
     location: Stratford-upon-Avon, Warwickshire
@@ -286,26 +236,6 @@
     price: 104
     price-description: per room per night
     link: https://www.secretescapes.com/the-billesley-manor-hotel-stratford-upon-avon-warwickshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Carden Park
-    class: carden-park
-    location: Near Chester, Cheshire
-    region: north-west
-    description: An award-winning spa hotel near Chester, with championship golf courses and a private vineyard
-    price: 89
-    price-description: per room per night
-    link: https://www.secretescapes.com/carden-park-near-chester-cheshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: De Vere Cranage Estate
-    class: de-vere-cranage-estate
-    location: Holmes Chapel, Cheshire
-    region: north-west
-    description: Escape to the Cheshire countryside, with a stay at a grand and contemporary abode
-    price: 75
-    price-description: per room per night
-    link: https://www.secretescapes.com/de-vere-cranage-estate-holmes-chapel-cheshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
     title: Hawkwell House
@@ -318,16 +248,6 @@
     link: https://www.secretescapes.com/hawkwell-house-iffley-oxfordshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
-    title: The New Inn
-    class: the-new-inn
-    location: Clapham, Yorkshire Dales
-    region: yorkshire-the-humber
-    description: A luxury, five-star coaching inn set within the dramatic Yorkshire Dales
-    price: 89
-    price-description: per room per night
-    link: https://www.secretescapes.com/the-new-inn-clapham-yorkshire-dales/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
     title: Banchory Lodge
     class: banchory-lodge
     location: Aberdeenshire, Scotland
@@ -336,16 +256,6 @@
     price: 65
     price-description: per room per night
     link: https://www.secretescapes.com/banchory-lodge-aberdeenshire-scotland/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: The Mill Hotel
-    class: the-mill-hotel
-    location: Sudbury, Suffolk
-    region: east-anglia
-    description: A lovely country stay between river and meadow in Sudbury, with one dinner and afternoon tea
-    price: 99
-    price-description: per room per night
-    link: https://www.secretescapes.com/the-mill-hotel-sudbury-suffolk-1/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
     title: The West Arms
@@ -438,16 +348,6 @@
     link: https://www.secretescapes.com/macdonald-craxton-wood-hotel-and-spa-ledsham-chester/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
-    title: Oddfellows On The Park
-    class: oddfellows-on-the-park
-    location: Cheadle, Cheshire
-    region: north-west
-    description: Boutique interiors, a picturesque parkland setting and more at a grandiose country house
-    price: 199
-    price-description: per room per night
-    link: https://www.secretescapes.com/oddfellows-on-the-park-cheadle-united-kingdom/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
     title: Langshott Manor
     class: langshott-manor
     location: Horley, Surrey
@@ -458,16 +358,6 @@
     link: https://www.secretescapes.com/langshott-manor-horley-surrey-uk/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
-    title: Needham House
-    class: needham-house
-    location: Little Wymondley, Hertfordshire
-    region: south-east
-    description: A charming boutique hotel near historic Hitchin in Herts, with breakfast and welcome prosecco
-    price: 89
-    price-description: per room per night
-    link: https://www.secretescapes.com/needham-house-little-wymondley-hertfordshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
     title: Albion House at Ramsgate
     class: albion-house-at-ramsgate
     location: Ramsgate, Kent
@@ -476,36 +366,6 @@
     price: 129
     price-description: per room per night
     link: https://www.secretescapes.com/albion-house-at-ramsgate-ramsgate-kent/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Vintage Horsebox Glamping at Brooks Country House
-    class: vintage-horsebox-glamping-at-brooks-country-house
-    location: Ross-on-Wye, Herefordshire
-    region: west-midlands
-    description: Handsome vintage horsebox digs at a stately Georgian manor in the breathtaking Wye Valley
-    price: 84
-    price-description: per room per night
-    link: https://www.secretescapes.com/vintage-horse-box-glamping-at-brooks-country-house-ross-on-wye-herefordshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: The Valley
-    class: the-valley
-    location: Truro, Cornwall
-    region: south-west
-    description: Self-catering cottages in the lovely Cornish countryside, with space for up to four people
-    price: 73
-    price-description: per room per night
-    link: https://www.secretescapes.com/the-valley-truro-cornwall/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Stapleford Park
-    class: stapleford-park
-    location: Stapleford, Leicestershire
-    region: east-midlands
-    description: A luxury cottage stay at a country estate with an award-winning spa and championship golf
-    price: 399
-    price-description: per room per night
-    link: https://www.secretescapes.com/stapleford-park-stapleford-leicestershire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
     title: The Royal Oak
@@ -606,3 +466,23 @@
     price: 119
     price-description: per room per night
     link: https://www.secretescapes.com/guyers-house-hotel-and-restaurant-corsham-wiltshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: Champneys Springs
+    class: champneys-springs
+    location: Packington, Leicestershire
+    region: east-midlands
+    description: The ultimate spa stay from the famous Champneys group, with all meals and a treatment
+    price: 189
+    price-description: per room per night
+    link: https://www.secretescapes.com/champneys-springs-packington-leicestershire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: The Valley
+    class: the-valley
+    location: Truro, Cornwall
+    region: south-west
+    description: Self-catering cottages in the lovely Cornish countryside, with space for up to four people
+    price: 73
+    price-description: per room per night
+    link: https://www.secretescapes.com/the-valley-truro-cornwall/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
