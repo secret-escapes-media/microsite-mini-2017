@@ -15,28 +15,6 @@
     link: http://www.oldstocksinn.com/
 
   - se-offer: true
-    title: Mercure Gloucester Bowden Hall Hotel
-    class: mercure-gloucester-bowden-hall-hotel
-    location: Gloucester, Cotswolds
-    region: west-midlands
-    category: cotswolds
-    description: A listed Georgian hotel with beautiful grounds and stylish new interiors in the Cotswolds
-    price: 79
-    price-description: per room per night
-    link: https://www.secretescapes.com/mercure-gloucester-bowden-hall-hotel-gloucester-cotswolds/sale?gce_scp=1&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Sudbury House
-    class: sudbury-house
-    location: Faringdon, Oxfordshire
-    region: west-midlands
-    category: cotswolds
-    description: A relaxing stay at a country house hotel near the Cotswolds, with AA Rosette-awarded dining
-    price: 89
-    price-description: per room per night
-    link: https://www.secretescapes.com/sudbury-house-faringdon-oxfordshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
     title: Corse Lawn House Hotel
     class: corse-lawn-house-hotel
     location: Corse Lawn, Cotswolds
@@ -48,17 +26,6 @@
     link: https://www.secretescapes.com/corse-lawn-house-hotel-corse-lawn-cotswolds/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
-    title: White Hart Royal Hotel
-    class: white-hart-royal-hotel
-    location: Moreton-In-Marsh, Cotswolds
-    region: west-midlands
-    category: cotswolds
-    description: Explore the Cotswolds from this historic country inn, with AA Rosette-awarded dining
-    price: 99
-    price-description: per room per night
-    link: https://www.secretescapes.com/white-hart-royal-hotel-moreton-in-marsh-cotswolds/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
     title: Macdonald Bear Hotel
     class: macdonald-bear-hotel
     location: Woodstock, Cotswolds
@@ -68,6 +35,28 @@
     price: 129
     price-description: per room per night
     link: https://www.secretescapes.com/macdonald-bear-hotel-woodstock-oxfordshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: Tudor Farmhouse
+    class: tudor-farmhouse
+    location: Royal Forest of Dean, Gloucestershire
+    region: west-midlands
+    category: cotswolds
+    description: A boutique farmhouse surrounded by the Royal Forest of Dean, with an array of awards
+    price: 99
+    price-description: per room per night
+    link: https://www.secretescapes.com/tudor-farmhouse-royal-forest-of-dean-gloucestershire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
+
+  - se-offer: true
+    title: The White Hart
+    class: the-white-hart
+    location: Nettlebed, Oxfordshire
+    region: west-midlands
+    category: cotswolds
+    description: A quaint Oxfordshire country inn with cosy boutique interiors - includes three-course dinner
+    price: 99
+    price-description: per room per night
+    link: https://www.secretescapes.com/the-white-hart-nettlebed-oxfordshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
 
 
 ##======= BRECON BEACONS =======##
@@ -137,17 +126,6 @@
     link: https://www.secretescapes.com/the-george-hotel-penrith-lake-district/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
-    title: Lodore Falls Hotel
-    class: lodore-falls-hotel
-    location: Keswick, Lake District
-    region: north-west
-    category: lake-district
-    description: An idyllic, newly-refurbished stay overlooking Derwentwater Lake, with dinner and cream tea
-    price: 179
-    price-description: per room per night
-    link: https://www.secretescapes.com/lodore-falls-hotel-keswick-lake-district/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
     title: Hillthwaite Hotel
     class: hillthwaite-hotel
     location: Windermere, Lake District
@@ -210,56 +188,6 @@
 ##======= OTHER OFFERS =======##
 
   - se-offer: true
-    title: Champneys Forest Mere
-    class: champneys-forest-mere
-    location: Liphook, Hampshire
-    region: south-east
-    description: A covetable Champneys break in the South Downs, with healthy meals and thalassotherapy
-    price: 225
-    price-description: per room per night
-    link: https://www.secretescapes.com/champneys-forest-mere-liphook-hampshire/sale?gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201703
-
-  - se-offer: true
-    title: Banchory Lodge
-    class: banchory-lodge
-    location: Aberdeenshire, Scotland
-    region: northern-scotland
-    description: A back-to-nature Scottish hunting and fishing lodge with a twist, close to Aberdeen
-    price: 65
-    price-description: per room per night
-    link: https://www.secretescapes.com/banchory-lodge-aberdeenshire-scotland/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: The West Arms
-    class: the-west-arms
-    location: Ceiriog Valley, North Wales
-    region: north-wales
-    description: English charm and renowned dining at a 16th-century inn in the tranquil Ceiriog Valley
-    price: 69
-    price-description: per room per night
-    link: https://www.secretescapes.com/the-west-arms-ceiriog-valley-north-wales/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Lifehouse Spa & Hotel
-    class: lifehouse-spa-hotel
-    location: Thorpe-le-Soken, Essex
-    region: east-anglia
-    description: Modern design at an adults-only destination spa set among historic gardens and woodland
-    price: 89
-    price-description: per room per night
-    link: https://www.secretescapes.com/lifehouse-spa-and-hotel-thorpe-le-soken-essex/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Rushton Hall
-    class: rushton-hall
-    location: Rushton, Northamptonshire
-    region: east-midlands
-    description: A magnificent Grade I-listed hotel, with a spa, beautiful grounds and an award-winning restaurant
-    price: 115
-    price-description: per room per night
-    link: https://www.secretescapes.com/rushton-hall-rushton-northamptonshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
     title: The Cornwall Hotel, Spa & Estate
     class: the-cornwall-hotel-spa-estate
     location: St Austell, Cornwall
@@ -268,16 +196,6 @@
     price: 135
     price-description: per room per night
     link: https://www.secretescapes.com/the-cornwall-hotel-spa-and-estate-st-austell-cornwall/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Middleton Lodge
-    class: middleton-lodge
-    location: Richmond, North Yorkshire
-    region: yorkshire-the-humber
-    description: Stylish and romantic rooms at a beautiful Georgian country estate in North Yorkshire
-    price: 99
-    price-description: per room per night
-    link: https://www.secretescapes.com/middleton-lodge-richmond-north-yorkshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
     title: Balmer Lawn
@@ -298,36 +216,6 @@
     price: 85
     price-description: per room per night
     link: https://www.secretescapes.com/macdonald-craxton-wood-hotel-and-spa-ledsham-chester/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Langshott Manor
-    class: langshott-manor
-    location: Horley, Surrey
-    region: south-east
-    description: A 16th-century Elizabethan manor house in Surrey, with gourmet five-course tasting menu included
-    price: 189
-    price-description: per room per night
-    link: https://www.secretescapes.com/langshott-manor-horley-surrey-uk/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: The Bath Arms
-    class: the-bath-arms
-    location: Warminster, Wiltshire
-    region: south-west
-    description: A boutique stay on the outskirts of the Longleat Estate, with AA Rosette-awarded dining
-    price: 79
-    price-description: per room per night
-    link: https://www.secretescapes.com/the-bath-arms-warminster-wiltshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: The Queens Arms
-    class: the-queens-arms
-    location: Corton Denham, Somerset
-    region: south-west
-    description: A genteel stay in an 18th-century country pub in South Somerset, with luxe interiors
-    price: 89
-    price-description: per room per night
-    link: https://www.secretescapes.com/the-queens-arms-corton-denham-somerset/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
     title: Dunalastair Hotel Suites
@@ -358,16 +246,6 @@
     price: 65
     price-description: per room per night
     link: https://www.secretescapes.com/leasowe-castle-hotel-wirral-merseyside/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Guyers House Hotel & Restaurant
-    class: guyers-house-hotel-restaurant
-    location: Corsham, Wiltshire
-    region: south-west
-    description: A romantic 17th-century Wiltshire hideaway, with a Rosette-awarded restaurant and expansive grounds
-    price: 119
-    price-description: per room per night
-    link: https://www.secretescapes.com/guyers-house-hotel-and-restaurant-corsham-wiltshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
     title: Champneys Springs
@@ -450,16 +328,6 @@
     link: https://www.secretescapes.com/stapleford-park-stapleford-leicestershire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
-    title: Plum & Partridge
-    class: plum-partridge
-    location: Husthwaite, North Yorkshire
-    region: yorkshire-the-humber
-    description: Be one of the first to stay at a brand-new charming country pub with stylish rooms in Yorkshire
-    price: 89
-    price-description: per room per night
-    link: https://www.secretescapes.com/plum-and-partridge-husthwaite-north-yorkshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
     title: Tufton Arms Hotel
     class: tufton-arms-hotel
     location: Appleby-in-Westmorland, Eden Valley
@@ -490,16 +358,6 @@
     link: https://www.secretescapes.com/woolley-grange-bradford-on-avon-wiltshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
-    title: The Llawnroc Hotel
-    class: the-llawnroc-hotel
-    location: St Austell, Cornwall
-    region: south-west
-    description: A boutique bolthole with sublime sea views, on the scenic Cornish coast
-    price: 109
-    price-description: per room per night
-    link: https://www.secretescapes.com/the-llawnroc-hotel-st-austell-cornwall/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
     title: Ruthin Castle Hotel & Spa
     class: ruthin-castle-hotel-spa
     location: Ruthin, North Wales
@@ -528,3 +386,123 @@
     price: 109
     price-description: per room per night
     link: https://www.secretescapes.com/rowton-hall-country-house-hotel-and-spa-chester-cheshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
+
+  - se-offer: true
+    title: Champneys Tring
+    class: champneys-tring
+    location: Tring, Hertfordshire
+    region: south-east
+    description: A reinvigorating stay at the flagship Champneys spa resort, with healthy meals and more
+    price: 235
+    price-description: per room per night
+    link: https://www.secretescapes.com/champneys-tring-tring-hertfordshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
+
+  - se-offer: true
+    title: Woodlands Park Hotel
+    class: woodlands-park-hotel
+    location: Stoke d'Abernon, Surrey
+    region: south-east
+    description: A grand rural Surrey hotel with prized dining and the first of its kind to have an electric light
+    price: 149
+    price-description: per room per night
+    link: https://www.secretescapes.com/woodlands-park-hotel-stoke-dabernon-surrey/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
+
+  - se-offer: true
+    title: Long Furlong Cottages and Spa
+    class: long-furlong-cottages-and-spa
+    location: Hartland, Devon
+    region: south-west
+    description: Five-star cottage stay on Devon's Hartland peninsula, with discounted spa treatments
+    price: 115
+    price-description: per room per night
+    link: https://www.secretescapes.com/long-furlong-cottages-and-spa-hartland-devon/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
+
+  - se-offer: true
+    title: The Quay Hotel & Spa
+    class: the-quay-hotel-spa
+    location: Conwy, North Wales
+    region: north-wales
+    description: A chic spa hotel on the Conwy Estuary in North Wales, with award-winning dining and pretty views
+    price: 99
+    price-description: per room per night
+    link: https://www.secretescapes.com/the-quay-hotel-and-spa-conwy-north-wales/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
+
+  - se-offer: true
+    title: Nunsmere Hall
+    class: nunsmere-hall
+    location: Oakmere, Cheshire
+    region: north-west
+    description: An old-world mansion surrounded by a lake in the heart of Cheshire, with an award-winning restaurant
+    price: 79
+    price-description: per room per night
+    link: https://www.secretescapes.com/nunsmere-hall-oakmere-cheshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
+
+  - se-offer: true
+    title: Homewood Park Hotel & Spa
+    class: homewood-park-hotel-spa
+    location: Bath, Somerset
+    region: south-west
+    description: An award-winning country house in a listed building near pretty Bath, with praised spa and dining
+    price: 149
+    price-description: per room per night
+    link: https://www.secretescapes.com/homewood-park-hotel-and-spa-bath-somerset/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
+
+  - se-offer: true
+    title: Rowhill Grange
+    class: rowhill-grange
+    location: Dartford, Kent
+    region: south-east
+    description: An 18th-century country house in Kent, with breakfast, spa access and dinner credit
+    price: 159
+    price-description: per room per night
+    link: https://www.secretescapes.com/rowhill-grange-dartford-kent/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
+
+  - se-offer: true
+    title: The Corran Resort & Spa
+    class: the-corran-resort-spa
+    location: Carmarthenshire, Wales
+    region: south-wales
+    description: A relaxing retreat in Laugharne - home of Dylan Thomas - with full Welsh breakfast and more
+    price: 109
+    price-description: per room per night
+    link: https://www.secretescapes.com/the-corran-resort-and-spa-laugharne-wales/sale
+
+  - se-offer: true
+    title: Macdonald Bath Spa Hotel
+    class: macdonald-bath-spa-hotel
+    location: Bath, Somerset
+    region: south-west
+    description: A stay at a five-star Georgian manor in Bath, with awards for its fine dining and luxe spa
+    price: 139
+    price-description: per room per night
+    link: https://www.secretescapes.com/macdonald-bath-spa-hotel-bath-somerset/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
+
+  - se-offer: true
+    title: Beechfield House
+    class: beechfield-house
+    location: Beanacre, Wiltshire
+    region: south-west
+    description: An award-winning country escape with walled gardens, a pool, fine dining and elegant interiors
+    price: 119
+    price-description: per room per night
+    link: https://www.secretescapes.com/beechfield-house-beanacre-wiltshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
+
+  - se-offer: true
+    title: Donnington Valley Hotel & Spa
+    class: donnington-valley-hotel-spa
+    location: Newbury, Berkshire
+    region: south-east
+    description: A luxury golf and spa retreat near stunning Highclere Castle – the setting for Downton Abbey
+    price: 159
+    price-description: per room per night
+    link: https://www.secretescapes.com/donnington-valley-hotel-and-spa-newbury-berkshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
+
+  - se-offer: true
+    title: Brownsover Hall Hotel
+    class: brownsover-hall-hotel
+    location: Rugby, Warwickshire
+    region: west-midlands
+    description: A magnificent stay in a picturesque Victorian mansion on the cusp of Rugby, with breakfast and more
+    price: 79
+    price-description: per room per night
+    link: https://www.secretescapes.com/brownsover-hall-hotel-rugby-warwickshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
