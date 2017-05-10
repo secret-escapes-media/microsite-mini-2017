@@ -15,17 +15,6 @@
     link: http://www.oldstocksinn.com/
 
   - se-offer: true
-    title: Corse Lawn House Hotel
-    class: corse-lawn-house-hotel
-    location: Corse Lawn, Cotswolds
-    region: west-midlands
-    category: cotswolds
-    description: A gorgeous Queen Anne house in Gloucestershire, with award-winning dinner and scenic surrounds
-    price: 99
-    price-description: per room per night
-    link: https://www.secretescapes.com/corse-lawn-house-hotel-corse-lawn-cotswolds/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
     title: Macdonald Bear Hotel
     class: macdonald-bear-hotel
     location: Woodstock, Cotswolds
@@ -115,17 +104,6 @@
     link: http://www.lakedistricthotels.net/innonthelake/offers.php
 
   - se-offer: true
-    title: The George Hotel
-    class: the-george-hotel
-    location: Penrith, Lake District
-    region: north-west
-    category: lake-district
-    description: A character-packed, Grade I listed hotel near the Lake District, with thoroughly English interiors
-    price: 99
-    price-description: per room per night
-    link: https://www.secretescapes.com/the-george-hotel-penrith-lake-district/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
     title: Hillthwaite Hotel
     class: hillthwaite-hotel
     location: Windermere, Lake District
@@ -135,17 +113,6 @@
     price: 165
     price-description: per room per night
     link: https://www.secretescapes.com/hillthwaite-hotel-windermere-lake-district/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Uplands Hotel
-    class: uplands-hotel
-    location: Grange-over-Sands, Cumbria
-    region: north-west
-    category: lake-district
-    description: A charming Lake District escape, with breakfast and two-course dinner included
-    price: 99
-    price-description: per room per night
-    link: https://www.secretescapes.com/uplands-hotel-grange-over-sands-cumbria/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
 
 ##======= PEAK DISTRICT =======##
@@ -162,60 +129,8 @@
     price-description: per room per night
     link: http://www.cavendish-hotel.net/
 
-  - se-offer: true
-    title: Makeney Hall Hotel
-    class: makeney-hall-hotel
-    location: Milford, Derbyshire
-    region: east-midlands
-    category: peak-district
-    description: A rural base with Amber Valley views and lovely gardens near the Peak District - dinner included
-    price: 79
-    price-description: per room per night
-    link: https://www.secretescapes.com/makeney-hall-hotel-milford-derbyshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: New Bath Hotel & Spa
-    class: new-bath-hotel-spa
-    location: Matlock Bath, Derbyshire
-    region: east-midlands
-    category: peak-district
-    description: A Peak District stay in a newly-renovated 17th-century property with an ESPA spa
-    price: 89
-    price-description: per room per night
-    link: https://www.secretescapes.com/new-bath-hotel-and-spa-matlock-bath-derbyshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
 
 ##======= OTHER OFFERS =======##
-
-  - se-offer: true
-    title: The Cornwall Hotel, Spa & Estate
-    class: the-cornwall-hotel-spa-estate
-    location: St Austell, Cornwall
-    region: south-west
-    description: A spa break at a luxury Cornish retreat, with a state-of-the-art wellness centre and infinity pool
-    price: 135
-    price-description: per room per night
-    link: https://www.secretescapes.com/the-cornwall-hotel-spa-and-estate-st-austell-cornwall/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Balmer Lawn
-    class: balmer-lawn
-    location: New Forest, Hampshire
-    region: south-east
-    description: A relaxing stay at a historic hotel in the picturesque New Forest, with AA Rosette dining
-    price: 149
-    price-description: per room per night
-    link: https://www.secretescapes.com/balmer-lawn-new-forest-hampshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Macdonald Craxton Wood Hotel & Spa
-    class: macdonald-craxton-wood-hotel-spa
-    location: Ledsham, Chester
-    region: north-west
-    description: A peaceful retreat with award-winning dining and a blissful spa - optional spa treatment included
-    price: 85
-    price-description: per room per night
-    link: https://www.secretescapes.com/macdonald-craxton-wood-hotel-and-spa-ledsham-chester/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
     title: Dunalastair Hotel Suites
@@ -226,16 +141,6 @@
     price: 169
     price-description: per room per night
     link: https://www.secretescapes.com/dunalastair-hotel-suites-pitlochry-scotland/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Wood Hall Hotel & Spa
-    class: wood-hall-hotel-spa
-    location: Wetherby, West Yorkshire
-    region: yorkshire-the-humber
-    description: An 18th-century hotel and spa in the Yorkshire countryside, with an award-winning restaurant
-    price: 169
-    price-description: per room per night
-    link: https://www.secretescapes.com/wood-hall-hotel-and-spa-wetherby-west-yorkshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
     title: Leasowe Castle Hotel
@@ -258,36 +163,6 @@
     link: https://www.secretescapes.com/champneys-springs-packington-leicestershire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
-    title: Milton Hill House Hotel
-    class: milton-hill-house-hotel
-    location: Nr Abingdon, Oxfordshire
-    region: south-east
-    description: A relaxing countryside stay in a Georgian manor hotel, with breakfast and two-course dinner
-    price: 129
-    price-description: per room per night
-    link: https://www.secretescapes.com/milton-hill-house-hotel-oxfordshire-united-kingdom/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Upton Cressett Hall
-    class: upton-cressett-hall
-    location: Bridgnorth, Shropshire
-    region: west-midlands
-    description: An atmospheric stay in a Tudor gatehouse in Shropshire, with champagne on arrival
-    price: 179
-    price-description: per room per night
-    link: https://www.secretescapes.com/upton-cressett-hall-bridgnorth-shropshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Carbis Bay Hotel
-    class: carbis-bay-hotel
-    location: St Ives, Cornwall
-    region: south-west
-    description: A plush stay at a top St Ives hotel, with fine dining and a multi award-winning spa
-    price: 149
-    price-description: per room per night
-    link: https://www.secretescapes.com/carbis-bay-hotel-st-ives-cornwall/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
     title: Rudding Park Hotel, Spa & Golf
     class: rudding-park-hotel-spa-golf
     location: Harrogate, North Yorkshire
@@ -308,16 +183,6 @@
     link: https://www.secretescapes.com/grayshott-health-spa-haslemere-surrey/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
-    title: Port Lympne Hotel
-    class: port-lympne-hotel
-    location: Hythe, Kent
-    region: south-east
-    description: A unique stay at an Edwardian mansion near the sea, in grounds roamed by African wildlife
-    price: 199
-    price-description: per room per night
-    link: https://www.secretescapes.com/port-lympne-hotel-hythe-kent/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
     title: Stapleford Park
     class: stapleford-park
     location: Stapleford, Leicestershire
@@ -326,16 +191,6 @@
     price: 149
     price-description: per room per night
     link: https://www.secretescapes.com/stapleford-park-stapleford-leicestershire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Tufton Arms Hotel
-    class: tufton-arms-hotel
-    location: Appleby-in-Westmorland, Eden Valley
-    region: north-east
-    description: An intimate luxury hotel in the heart of a medieval town in the Eden Valley, with breakfast
-    price: 49
-    price-description: per room per night
-    link: https://www.secretescapes.com/tufton-arms-hotel-appleby-eden-valley/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
     title: The Falcondale Hotel & Restaurant
@@ -356,16 +211,6 @@
     price: 99
     price-description: per room per night
     link: https://www.secretescapes.com/woolley-grange-bradford-on-avon-wiltshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
-
-  - se-offer: true
-    title: Ruthin Castle Hotel & Spa
-    class: ruthin-castle-hotel-spa
-    location: Ruthin, North Wales
-    region: north-wales
-    description: A historic and award-winning former royal residence in North Wales, with dinner and spa access
-    price: 149
-    price-description: per room per night
-    link: https://www.secretescapes.com/ruthin-castle-hotel-and-spa-ruthin-north-wales/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201704
 
   - se-offer: true
     title: Farthings Country House Hotel
@@ -406,16 +251,6 @@
     price: 149
     price-description: per room per night
     link: https://www.secretescapes.com/woodlands-park-hotel-stoke-dabernon-surrey/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
-
-  - se-offer: true
-    title: Long Furlong Cottages and Spa
-    class: long-furlong-cottages-and-spa
-    location: Hartland, Devon
-    region: south-west
-    description: Five-star cottage stay on Devon's Hartland peninsula, with discounted spa treatments
-    price: 115
-    price-description: per room per night
-    link: https://www.secretescapes.com/long-furlong-cottages-and-spa-hartland-devon/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
 
   - se-offer: true
     title: The Quay Hotel & Spa
@@ -486,23 +321,3 @@
     price: 119
     price-description: per room per night
     link: https://www.secretescapes.com/beechfield-house-beanacre-wiltshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
-
-  - se-offer: true
-    title: Donnington Valley Hotel & Spa
-    class: donnington-valley-hotel-spa
-    location: Newbury, Berkshire
-    region: south-east
-    description: A luxury golf and spa retreat near stunning Highclere Castle – the setting for Downton Abbey
-    price: 159
-    price-description: per room per night
-    link: https://www.secretescapes.com/donnington-valley-hotel-and-spa-newbury-berkshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
-
-  - se-offer: true
-    title: Brownsover Hall Hotel
-    class: brownsover-hall-hotel
-    location: Rugby, Warwickshire
-    region: west-midlands
-    description: A magnificent stay in a picturesque Victorian mansion on the cusp of Rugby, with breakfast and more
-    price: 79
-    price-description: per room per night
-    link: https://www.secretescapes.com/brownsover-hall-hotel-rugby-warwickshire/sale?utm_source=SE&utm_medium=Hub&utm_campaign=MINI_201705
